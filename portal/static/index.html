@@ -183,8 +183,12 @@
   .findings li .mk { flex: 0 0 auto; font-weight: 700; font-family: var(--mono); }
   .findings li.bad .mk { color: var(--bad); }
   .findings li.ok .mk { color: var(--accent); }
-  .findings .note { font-family: var(--mono); font-size: 10.5px; letter-spacing: .09em;
-                    text-transform: uppercase; color: var(--accent); margin-top: 13px; }
+  /* The cache hit is a footnote, not a finding: it sits under the reasoning it
+     explains, behind a rule, in dim text. */
+  .findings li.cachefoot { display: block; margin-top: 4px; padding-top: 13px;
+                           border-top: 1px dashed var(--line); font-size: 11.5px;
+                           line-height: 1.6; color: var(--dim); }
+  .findings li.cachefoot .mk { color: var(--accent); margin-right: 7px; }
 
   .vtable { width: 100%; border-collapse: collapse; font-family: var(--mono); font-size: 12px; }
   .vtable th { text-align: left; padding: 10px 16px; background: var(--panel2);
@@ -753,22 +757,33 @@ function showResult(s, url, brand) {
   const conf = typeof d.confidence === "number" ? d.confidence : null;
   const q = (s.consensus && s.consensus.quorum) || {agree: 0, total: 0};
 
-  const reasons = (d.reasons && d.reasons.length)
-    ? d.reasons : ["no reasoning returned by this transaction"];
+  // A cached verdict is not a *less* real one. The transaction ran, the
+  // validators voted, the fees were paid; the contract simply recognised a
+  // domain it had already judged and returned that answer rather than
+  // re-reasoning. So lead with the reasoning from the run that decided it, and
+  // keep the cache hit as a footnote underneath. Printing "read from domain
+  // cache" as the first finding reads as "nothing happened here" — the exact
+  // opposite of what the hash on this page proves.
+  const haveOriginal = !!(d.is_cached && d.original_reasons && d.original_reasons.length);
+  const reasons = haveOriginal ? d.original_reasons
+    : (d.reasons && d.reasons.length) ? d.reasons
+    : ["no reasoning returned by this transaction"];
+
   const findings = reasons.map(t =>
     `<li class="${cls === "ok" ? "ok" : "bad"}">` +
     `<span class="mk">${cls === "ok" ? "✓" : "✕"}</span><span>${esc(t)}</span></li>`).join("");
 
-  const cachedNote = (d.is_cached && d.original_reasons && d.original_reasons.length)
-    ? `<div class="note">from the original consensus run that filled the cache</div>` +
-      d.original_reasons.map(t =>
-        `<li class="bad"><span class="mk">·</span><span>${esc(t)}</span></li>`).join("") +
+  const cacheFoot = d.is_cached
+    ? `<li class="cachefoot"><span class="mk">·</span>` +
+      `This domain had already been judged on an earlier consensus run, so the verifier ` +
+      `returned that answer instead of reasoning again — this transaction still ran ` +
+      `consensus and has its own hash` +
       (d.original_tx_id
-        ? `<li style="margin-top:10px"><span class="mk">·</span><span>` +
-          `the consensus transaction that decided it: ` +
+        ? `; the run that filled the cache is ` +
           `<a href="${EXPLORER}/tx/${esc(d.original_tx_id)}" target="_blank" rel="noopener" ` +
-          `style="color:var(--accent)">${esc(d.original_tx_id)} ↗</a></span></li>`
-        : "")
+          `style="color:var(--accent)">${esc(d.original_tx_id)} ↗</a>`
+        : "") +
+      `.</li>`
     : "";
 
   $("cons-body").innerHTML = `
@@ -791,14 +806,14 @@ function showResult(s, url, brand) {
           <div class="track"><div class="fill" id="conffill"></div></div>
           <div class="foot">
             <span>quorum ${q.agree}/${q.total} agree</span>
-            <span>${d.is_cached ? "cached verdict" : "live consensus"}</span>
+            <span>${d.is_cached ? "live tx · verdict reused from cache" : "live consensus"}</span>
           </div>
         </div>
       </div>
 
       <div class="findings">
         <div class="lbl">Validator reasoning</div>
-        <ul>${findings}${cachedNote}</ul>
+        <ul>${findings}${cacheFoot}</ul>
       </div>
 
       <div class="tablewrap">${votesTable(s.consensus)}</div>
