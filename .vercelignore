@@ -12,6 +12,17 @@ tests
 # endpoint. Without this negation `*.md` strips it from the bundle and the
 # headline "point your agent here" URL 404s in production.
 !portal/static/skill.md
+# pyproject.toml exists for `pip install`, NOT for the deploy. Vercel resolves
+# Python dependencies from pyproject.toml or requirements.txt, and it takes
+# pyproject.toml when it is present — so leaving it in the bundle made the
+# build install only the LIBRARY deps from [project.dependencies]
+# (genlayer-py, mcp) and skip fastapi/uvicorn, which live in the `portal`
+# extra. portal/app.py imports fastapi at module level, so the function died
+# on cold start with FUNCTION_INVOCATION_FAILED and took the static frontend
+# down with it (the ASGI app never booted to mount it).
+# Excluding it keeps the deploy on requirements.txt, which lists everything
+# the portal needs. If you add a runtime dependency, add it to BOTH files.
+pyproject.toml
 .git
 node_modules
 __pycache__

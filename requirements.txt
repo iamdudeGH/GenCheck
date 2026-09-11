@@ -16,3 +16,8 @@ uvicorn[standard]>=0.29
 
 # Local dev/test/lint tools (pytest, genlayer-test, genvm-linter) are in
 # requirements-dev.txt — the Vercel deployment only installs this file.
+#
+# This file is the deployment's dependency source. pyproject.toml holds the
+# same deps split into a core list plus a `portal` extra for `pip install`
+# users, and .vercelignore excludes it so Vercel cannot prefer it and install
+# a subset. Add a runtime dependency to BOTH files.

@@ -18,6 +18,10 @@ classifiers = [
 # Only what the client, the CLI and the MCP server need. The verification
 # portal's deps are in the `portal` extra so an agent installing this to gate
 # payments does not pull down a web framework it will never use.
+#
+# The deploy does NOT read this file (`.vercelignore` excludes it) — Vercel
+# installs from requirements.txt, which is the union of this list and the
+# `portal` extra. Keep the two in sync when adding a runtime dependency.
 dependencies = [
     # studio-dev runs the Consensus v0.6 RC stack, so the SDK is a pre-release.
     # An EXACT pre-release pin like this resolves without --pre (PEP 440); a
