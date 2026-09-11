@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gencheck"
+version = "0.1.0"
+description = "Pre-payment trust gate for shopping agents — GenLayer validator consensus on a checkout URL before the agent pays."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+keywords = ["genlayer", "agents", "payments", "fraud", "mcp", "trust"]
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+]
+
+# Only what the client, the CLI and the MCP server need. The verification
+# portal's deps are in the `portal` extra so an agent installing this to gate
+# payments does not pull down a web framework it will never use.
+dependencies = [
+    # studio-dev runs the Consensus v0.6 RC stack, so the SDK is a pre-release.
+    # An EXACT pre-release pin like this resolves without --pre (PEP 440); a
+    # range such as >=0.19 would quietly pick a stable release that points
+    # consensus at the wrong chain. Keep it exact.
+    "genlayer-py==0.19.0rc2",
+    "mcp>=2.0.0",
+]
+
+[project.optional-dependencies]
+portal = ["fastapi>=0.110", "uvicorn[standard]>=0.29"]
+
+[project.scripts]
+# `gencheck` is the shell gate — works for any agent that can run a process.
+gencheck = "gencheck.cli:main"
+# `gencheck-mcp` is the same gate over MCP stdio, for MCP-capable agents.
+gencheck-mcp = "gencheck.mcp_server:main"
+
+[tool.setuptools]
+packages = ["gencheck"]

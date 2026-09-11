@@ -13,6 +13,10 @@ artifacts/
 __pycache__/
 *.py[cod]
 *.egg-info/
+
+# setuptools residue from building the package locally
+build/
+dist/
 .pytest_cache/
 
 .env

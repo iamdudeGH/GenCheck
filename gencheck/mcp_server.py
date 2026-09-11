@@ -14,11 +14,11 @@ Reads work with no configuration. gencheck_validate needs
 GENCHECK_PRIVATE_KEY (funded account — each call is a real transaction).
 
 Run (stdio transport, the standard for local MCP servers):
-    set GENCHECK_PRIVATE_KEY=0x...
-    .venv-deploy/Scripts/python -m gencheck.mcp_server
+    gencheck-mcp                    # console script, after `pip install gencheck`
+    python -m gencheck.mcp_server   # equivalent, without the console script
 
 Register with Claude Code:
-    claude mcp add gencheck -- .venv-deploy/Scripts/python -m gencheck.mcp_server
+    claude mcp add gencheck --env GENCHECK_PRIVATE_KEY=0x... -- gencheck-mcp
 """
 
 import json
@@ -140,5 +140,10 @@ def gencheck_official_domain(brand: str) -> str:
     })
 
 
-if __name__ == "__main__":
+def main() -> None:
+    """Console-script entry point (`gencheck-mcp`) and `python -m` target."""
     mcp.run()
+
+
+if __name__ == "__main__":
+    main()

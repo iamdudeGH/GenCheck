@@ -241,18 +241,19 @@ secret — never in files.
 ## The Agent Skill
 
 **[`SKILL.md`](SKILL.md) is the agent-facing surface** — one markdown file an agent
-reads to know what GenCheck is, when to call it, and the one rule it must obey
-(*pay only on `is_real: true`; every other outcome is BLOCK*). It documents all three
-MCP tools, the no-MCP HTTP fallback, cost/latency, and the live contract address.
+reads to know what GenCheck is, when to call it, the one rule it must obey (*pay only
+on `is_real: true`; every other outcome is BLOCK*), and how to set itself up: fund a
+studio-dev account from the faucet, `pip install`, then call the CLI or the MCP server.
+It also documents the three MCP tools, cost/latency, and the live contract address.
 
 The portal serves it at a stable URL, so pointing an agent at GenCheck is one line:
 
 ```bash
-curl -s https://<your-deployment>/skill.md
+curl -s https://gencheck-live.vercel.app/skill.md
 ```
 
 It is also installable as a Claude Code skill (`.claude/skills/gencheck/SKILL.md`)
-and ships as the repo-root `SKILL.md`.
+and ships as the repo-root `SKILL.md`. All three copies are byte-identical.
 
 ## Integrating an AI Agent
 
@@ -260,7 +261,49 @@ GenCheck's integration model is the **active validation gate**: the agent's
 payment code fails closed — it signs nothing unless validator consensus
 explicitly cleared the domain.
 
-### Option 1: MCP server (zero integration code)
+**Who pays.** Every validation is a real transaction, so it runs on the agent's
+**own** funded studio-dev account. GenCheck operates no endpoint that spends GEN
+on your behalf — the only way to build one is to ask you for your private key,
+which is the one thing a trust tool should never do. (The hosted portal is a
+browser demo that signs with its own account; see the note under it below.)
+
+### Fund an account — GEN is free on studio-dev
+
+Create any EVM wallet, then at **https://studio-next.genlayer.com** connect it
+and click **Fund**. One claim covers roughly 12,000 validations (~0.00008 GEN
+each). Keep the key in `GENCHECK_PRIVATE_KEY`, never in a file you commit.
+
+### Install
+
+```bash
+pip install git+https://github.com/iamdudeGH/gencheck    # Python 3.12+
+```
+
+That installs two entry points: `gencheck` (the CLI) and `gencheck-mcp` (the MCP
+server). The `genlayer-py` pin is an exact pre-release, which resolves without
+`--pre` — a range would silently pick a stable release that points consensus at
+the wrong chain.
+
+### Option 1: CLI — works for any agent that can run a command
+
+The exit code *is* the gate, so a shell chain fails closed with no glue at all:
+
+```bash
+gencheck check "$CHECKOUT_URL" "$BRAND" && pay || refuse
+```
+
+| exit | meaning |
+|---|---|
+| `0` | **PAY** — consensus returned `is_real: true` |
+| `1` | **BLOCK** — a verdict came back, and it was not `is_real: true` |
+| `2` | **ERROR** — no verdict obtained (no key, network, unverifiable) |
+
+Both non-zero codes mean do not pay, so `&&` is safe without distinguishing
+them. stdout is a single JSON object for callers that would rather parse than
+check exit codes. The free reads need no key at all:
+`gencheck cache <domain>` and `gencheck domain <brand>`.
+
+### Option 2: MCP server
 
 Any MCP-capable agent (Claude Code, Claude Desktop, Cursor, custom agent
 frameworks) can add GenCheck as a tool. The server
@@ -273,8 +316,9 @@ frameworks) can add GenCheck as a tool. The server
 | `gencheck_official_domain(brand)` | free, instant | brand registry lookup |
 
 ```bash
-# register with Claude Code (writes need a funded key; reads work without)
-claude mcp add gencheck --env GENCHECK_PRIVATE_KEY=0x... -- .venv-deploy/Scripts/python -m gencheck.mcp_server
+# the key goes in the server's env — MCP stdio clients start servers with a
+# minimal default environment, so a shell export will not reach it
+claude mcp add gencheck --env GENCHECK_PRIVATE_KEY=0x... -- gencheck-mcp
 
 # verify end-to-end (spawns the server over stdio and calls every tool)
 .venv-deploy/Scripts/python scripts/test_mcp.py
@@ -284,18 +328,28 @@ The agent's policy then gates payments on the tool result: proceed only when
 `decision` is `PAY`. Verified live: `www.amazon.com` → PAY,
 `sephora.com` → BLOCK (unverifiable), unvalidated domains → BLOCK.
 
-### Option 2: Python client
+### Option 3: Python client
 
 ```python
+import os
 from gencheck import GenCheck, decide
 
 gc = GenCheck(private_key=os.environ["GENCHECK_PRIVATE_KEY"])  # writes
 gc = GenCheck()                                                # reads only
 
 cached = gc.check_cache("www.amazon.com")   # instant + free, None if unvalidated
-verdict = gc.validate(checkout_url, brand)  # full consensus: ~50–90s, once per domain
+verdict = gc.validate(checkout_url, brand)  # full consensus (~6-10s on studio-dev now)
 action, why = decide(verdict)               # ("PAY"|"BLOCK", reason) — fails closed
 ```
+
+### Not an integration: the hosted portal
+
+`https://gencheck-live.vercel.app` runs the same gate in a browser and shows the
+full jury — every validator's address, vote and model — per transaction. It is
+there to watch the gate work or to check a domain by hand. **Do not build an
+agent against it:** it signs with the portal's own account, so you get no cost
+control, no guarantee it stays funded, and no on-chain proof that *you* asked.
+The portal also serves [`SKILL.md`](SKILL.md) at `GET /skill.md`.
 
 ### The decision table (fail-closed)
 

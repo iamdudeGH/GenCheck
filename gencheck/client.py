@@ -15,6 +15,8 @@ from typing import Optional
 from genlayer_py import create_account, create_client
 from genlayer_py.chains import studio_devnet
 
+from .defaults import DEFAULT_CONTRACT, DEFAULT_FEES
+
 _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # get_transaction result names that mean "finished, no verdict coming" —
@@ -23,16 +25,31 @@ _TERMINAL_RESULTS = {"FINISHED_WITH_ERROR", "REVERTED"}
 
 
 def load_contract_address() -> str:
-    """The final deployed contract (final_contract.json at repo root,
-    overridable with GENCHECK_CONTRACT)."""
-    return os.environ.get(
-        "GENCHECK_CONTRACT",
-        json.load(open(os.path.join(_ROOT, "final_contract.json")))["contract"])
+    """The deployed GenCheck contract.
+
+    `GENCHECK_CONTRACT` wins; then `final_contract.json` when running from a
+    checkout, where the deploy script records provenance; then the address
+    baked into the package — which is the only one available after a
+    `pip install`, since the repo-root JSON is not part of the wheel.
+    """
+    env = os.environ.get("GENCHECK_CONTRACT")
+    if env:
+        return env
+    path = os.path.join(_ROOT, "final_contract.json")
+    if os.path.exists(path):
+        with open(path) as f:
+            return json.load(f)["contract"]
+    return DEFAULT_CONTRACT
 
 
 def load_fees() -> dict:
-    with open(os.path.join(_ROOT, "benchmark_fees.json")) as f:
-        return json.load(f)
+    """Fee distribution for writes — the repo-root JSON on a checkout,
+    otherwise the allocation pinned in `defaults.py`."""
+    path = os.path.join(_ROOT, "benchmark_fees.json")
+    if os.path.exists(path):
+        with open(path) as f:
+            return json.load(f)
+    return DEFAULT_FEES
 
 
 def extract_domain(url: str) -> str:
