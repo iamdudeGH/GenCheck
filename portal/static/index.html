@@ -1,0 +1,851 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/favicon.svg">
+<meta name="theme-color" content="#0e0e0f">
+<title>GenCheck — the trust layer for AI checkout</title>
+<meta name="description" content="Before an AI agent pays, GenLayer validators fetch the checkout URL and the brand's real storefront and record a verdict on-chain: genuine seller, or lookalike. Fail-closed.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0e0e0f; --bg2: #131314; --panel: #1a1a1b; --panel2: #201f20; --panel3: #2a2a2b;
+    --line: #29292b; --line2: #3a3a3d;
+    --text: #eceaec; --muted: #b6b4b8; --dim: #807e82;
+    --accent: #3ecf8e; --accent-dim: rgba(62,207,142,.10);
+    --bad: #f87171; --bad-dim: rgba(248,113,113,.10);
+    --warn: #fbbf24; --warn-dim: rgba(251,191,36,.10);
+    --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--bg); color: var(--text); min-height: 100vh;
+    font-family: Geist, Inter, system-ui, -apple-system, sans-serif;
+    font-size: 14px; line-height: 1.6; letter-spacing: -.01em;
+    -webkit-font-smoothing: antialiased;
+  }
+  .mono { font-family: var(--mono); }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+  .lbl { font-family: var(--mono); font-size: 11px; font-weight: 500;
+         letter-spacing: .09em; text-transform: uppercase; color: var(--dim); }
+  a { color: inherit; }
+
+  /* ---------- nav ---------- */
+  nav { position: sticky; top: 0; z-index: 50; background: rgba(14,14,15,.9);
+        backdrop-filter: blur(12px); border-bottom: 1px solid var(--line); }
+  nav .wrap { display: flex; align-items: center; height: 58px; gap: 18px; }
+  .brand { display: flex; align-items: center; gap: 9px; text-decoration: none; }
+  .brand .mark { color: var(--text); flex: 0 0 auto; }
+  .wordmark { font-weight: 600; font-size: 17px; letter-spacing: -.03em; }
+  .wordmark span { color: var(--accent); font-weight: 700; }
+  .chainpill { display: flex; align-items: center; gap: 7px; padding: 3px 10px;
+               border: 1px solid var(--line); border-radius: 999px; background: var(--bg2);
+               font-family: var(--mono); font-size: 10.5px; color: var(--muted);
+               letter-spacing: .02em; }
+  .chainpill .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent);
+                    animation: pulse 1.8s ease infinite; }
+  @keyframes pulse { 50% { opacity: .25; } }
+  nav .spacer { flex: 1; }
+  nav .links { display: flex; align-items: center; gap: 22px; }
+  nav .links a { font-size: 13px; color: var(--muted); text-decoration: none; transition: color .15s; }
+  nav .links a:hover { color: var(--text); }
+  .btn { display: inline-flex; align-items: center; gap: 6px; border: 0; cursor: pointer;
+         background: var(--accent); color: #04150d; font-weight: 500; font-size: 13px;
+         padding: 7px 14px; border-radius: 6px; font-family: inherit;
+         text-decoration: none; transition: background .15s; }
+  .btn:hover { background: #55dda0; }
+  .btn:disabled { opacity: .45; cursor: wait; }
+  .btn.ghost { background: transparent; color: var(--muted); border: 1px solid var(--line2); }
+  .btn.ghost:hover { color: var(--text); border-color: var(--dim); background: transparent; }
+  @media (max-width: 860px) { nav .links, .chainpill { display: none; } }
+
+  /* ---------- sections ---------- */
+  section { border-bottom: 1px solid var(--line); }
+  .sec-head { display: flex; align-items: flex-end; justify-content: space-between;
+              gap: 20px; flex-wrap: wrap; margin-bottom: 26px; }
+  h2 { font-size: 25px; font-weight: 600; letter-spacing: -.028em; }
+  .sec-head p { font-size: 13px; color: var(--dim); max-width: 460px; }
+
+  /* ---------- hero ---------- */
+  .hero { padding: 74px 0 56px; }
+  .kicker { display: inline-flex; align-items: center; gap: 8px; padding: 4px 11px;
+            border: 1px solid var(--line); border-radius: 5px; background: var(--bg2);
+            margin-bottom: 24px; }
+  .kicker .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+  .kicker span { font-family: var(--mono); font-size: 10.5px; font-weight: 500;
+                 letter-spacing: .11em; text-transform: uppercase; color: var(--accent); }
+  h1 { font-size: clamp(34px, 5.1vw, 50px); font-weight: 600; letter-spacing: -.035em;
+       line-height: 1.08; max-width: 830px; }
+  h1 em { font-style: normal; color: var(--dim); }
+  .lede { margin-top: 20px; font-size: 16px; line-height: 1.65; color: var(--muted);
+          max-width: 660px; }
+  .lede b { color: var(--text); font-weight: 500; }
+
+  /* ---------- checker ---------- */
+  .checker { margin-top: 36px; border: 1px solid var(--line2); border-radius: 10px;
+             background: var(--bg2); padding: 6px; display: flex; gap: 6px; flex-wrap: wrap;
+             transition: border-color .15s, box-shadow .15s; }
+  .checker:focus-within { border-color: rgba(62,207,142,.5);
+                          box-shadow: 0 0 0 3px rgba(62,207,142,.09); }
+  .field { display: flex; align-items: center; gap: 9px; padding: 11px 13px;
+           background: var(--bg); border-radius: 7px; }
+  .field svg { flex: 0 0 auto; color: var(--dim); }
+  .field input { flex: 1; min-width: 0; background: transparent; border: 0; outline: none;
+                 color: var(--text); font-family: var(--mono); font-size: 13px; }
+  .field input::placeholder { color: #5c5a5e; }
+  .f-url { flex: 1 1 340px; }
+  .f-brand { flex: 0 1 190px; }
+  .checker .btn { padding: 11px 24px; border-radius: 7px; font-size: 13.5px; }
+  @media (max-width: 720px) { .f-brand { flex: 1 1 100%; } }
+  .hint { margin-top: 11px; font-size: 12.5px; color: var(--dim); }
+  .hint a { color: var(--muted); text-underline-offset: 3px; }
+  .errline { margin-top: 12px; color: var(--bad); font-size: 12.5px;
+             font-family: var(--mono); }
+
+  /* ---------- live bar ---------- */
+  .livebar { display: none; margin-top: 14px; border: 1px solid var(--line);
+             border-radius: 8px; background: var(--bg2); padding: 11px 14px;
+             font-family: var(--mono); font-size: 12px; color: var(--muted);
+             align-items: center; gap: 10px; flex-wrap: wrap; }
+  .livebar .dotpulse { width: 7px; height: 7px; border-radius: 50%; background: var(--accent);
+                       animation: pulse 1.2s ease infinite; }
+  .livebar a { color: var(--accent); text-decoration: none; }
+  .livebar a:hover { text-decoration: underline; }
+  .livebar .state { color: var(--text); }
+
+  /* ---------- consensus panel ---------- */
+  .consensus { padding: 34px 0 46px; }
+  .cons-head { display: flex; align-items: center; justify-content: space-between;
+               gap: 16px; flex-wrap: wrap; margin-bottom: 14px; }
+  .cons-head-l { display: flex; align-items: center; gap: 9px; }
+  .cons-head-l .slash { color: var(--line2); }
+  #cons-tx { word-break: break-all; }
+  #cons-tx a { color: var(--accent); text-decoration: none; }
+  #cons-tx a:hover { text-decoration: underline; }
+  .cons-stats { display: flex; align-items: baseline; gap: 18px; flex-wrap: wrap; }
+  .cons-stats .stat { font-family: var(--mono); font-size: 11px; color: var(--dim);
+                      letter-spacing: .02em; }
+  .cons-stats .stat b { font-size: 12px; color: var(--text); font-weight: 500; }
+  .cons-stats .stat b.g { color: var(--accent); }
+
+  .panel { border: 1px solid var(--line2); border-radius: 10px; background: var(--bg2);
+           overflow: hidden; }
+  .panel.empty { border-style: dashed; border-color: var(--line); background: transparent;
+                 padding: 34px; text-align: center; color: var(--dim); font-size: 13px; }
+  .panel.side { border-left: 3px solid var(--line2); }
+  .panel.side.ok { border-left-color: var(--accent); }
+  .panel.side.bad { border-left-color: var(--bad); }
+  .panel.side.warn { border-left-color: var(--warn); }
+
+  .res-head { padding: 22px 24px; border-bottom: 1px solid var(--line);
+              display: flex; align-items: flex-start; justify-content: space-between;
+              gap: 24px; flex-wrap: wrap; }
+  .chips { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; flex-wrap: wrap; }
+  .chip { font-family: var(--mono); font-size: 10.5px; font-weight: 600; letter-spacing: .09em;
+          text-transform: uppercase; padding: 3px 9px; border-radius: 4px; border: 1px solid; }
+  .chip.ok { color: var(--accent); background: var(--accent-dim); border-color: rgba(62,207,142,.3); }
+  .chip.bad { color: var(--bad); background: var(--bad-dim); border-color: rgba(248,113,113,.3); }
+  .chip.warn { color: var(--warn); background: var(--warn-dim); border-color: rgba(251,191,36,.3); }
+  .chip.plain { color: var(--muted); background: var(--panel2); border-color: var(--line); }
+  .res-title { font-size: 27px; font-weight: 600; letter-spacing: -.03em; line-height: 1.15; }
+  .panel.side.ok .res-title { color: var(--accent); }
+  .panel.side.bad .res-title { color: var(--bad); }
+  .panel.side.warn .res-title { color: var(--warn); }
+  .res-policy { font-family: var(--mono); font-size: 12px; color: var(--muted); margin-top: 8px; }
+  .res-policy b { font-weight: 600; }
+  .panel.side.ok .res-policy b { color: var(--accent); }
+  .panel.side.bad .res-policy b, .panel.side.warn .res-policy b { color: var(--bad); }
+  .res-url { font-family: var(--mono); font-size: 11.5px; color: var(--dim); margin-top: 10px;
+             word-break: break-all; }
+
+  .meter { min-width: 210px; background: var(--bg); border: 1px solid var(--line);
+           border-radius: 8px; padding: 12px 14px; }
+  .meter .row { display: flex; justify-content: space-between; align-items: baseline;
+                font-family: var(--mono); font-size: 11px; margin-bottom: 7px; }
+  .meter .row .v { font-weight: 600; font-size: 12.5px; }
+  .meter .track { height: 4px; background: var(--panel3); border-radius: 99px; overflow: hidden; }
+  .meter .fill { height: 100%; width: 0; border-radius: 99px;
+                 transition: width .8s cubic-bezier(.2,.8,.3,1); }
+  .panel.side.ok .meter .fill { background: var(--accent); }
+  .panel.side.bad .meter .fill { background: var(--bad); }
+  .panel.side.warn .meter .fill { background: var(--warn); }
+  .meter .foot { display: flex; justify-content: space-between; font-family: var(--mono);
+                 font-size: 10.5px; color: var(--dim); margin-top: 8px; }
+
+  .findings { padding: 20px 24px; border-bottom: 1px solid var(--line); background: rgba(0,0,0,.18); }
+  .findings ul { list-style: none; display: flex; flex-direction: column; gap: 9px; margin-top: 12px; }
+  .findings li { display: flex; gap: 10px; font-size: 13px; line-height: 1.55; color: #d8d6d9; }
+  .findings li .mk { flex: 0 0 auto; font-weight: 700; font-family: var(--mono); }
+  .findings li.bad .mk { color: var(--bad); }
+  .findings li.ok .mk { color: var(--accent); }
+  .findings .note { font-family: var(--mono); font-size: 10.5px; letter-spacing: .09em;
+                    text-transform: uppercase; color: var(--accent); margin-top: 13px; }
+
+  .vtable { width: 100%; border-collapse: collapse; font-family: var(--mono); font-size: 12px; }
+  .vtable th { text-align: left; padding: 10px 16px; background: var(--panel2);
+               border-bottom: 1px solid var(--line); font-weight: 400; font-size: 10.5px;
+               letter-spacing: .08em; text-transform: uppercase; color: var(--dim); }
+  .vtable td { padding: 11px 16px; border-bottom: 1px solid rgba(41,41,43,.6); color: var(--muted); }
+  .vtable tr:last-child td { border-bottom: 0; }
+  .vtable tr.idle td { opacity: .45; }
+  .vtable .addr { color: var(--text); }
+  .vtable .model { color: var(--muted); max-width: 230px; overflow: hidden;
+                   text-overflow: ellipsis; white-space: nowrap; }
+  .vtable .model .prov { color: var(--dim); }
+  .vtable .num { text-align: right; }
+  .vt-ok { color: var(--accent); font-weight: 500; }
+  .vt-idle { color: var(--dim); }
+  .leaderchip { font-size: 9.5px; color: var(--accent); border: 1px solid rgba(62,207,142,.35);
+                border-radius: 3px; padding: 0 4px; margin-left: 6px; letter-spacing: .06em; }
+  .tablewrap { overflow-x: auto; }
+  .vtable .nonesuch { color: var(--dim); }
+
+  /* ---------- examples ---------- */
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(285px, 1fr)); gap: 12px; }
+  .card { text-align: left; border: 1px solid var(--line); border-radius: 9px;
+          background: var(--panel); padding: 17px 18px; cursor: pointer;
+          font-family: inherit; color: inherit; transition: border-color .15s, background .15s;
+          display: flex; flex-direction: column; justify-content: space-between; gap: 14px; }
+  .card:hover { border-color: var(--line2); background: var(--panel2); }
+  .card:disabled { opacity: .5; cursor: wait; }
+  .card-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+  .card .dotv { width: 7px; height: 7px; border-radius: 50%; flex: 0 0 auto; }
+  .card.ok .dotv { background: var(--accent); } .card.bad .dotv { background: var(--bad); }
+  .card.warn .dotv { background: var(--warn); }
+  .card .dom { font-family: var(--mono); font-size: 13px; font-weight: 500; color: var(--text);
+               word-break: break-all; }
+  .card .desc { font-size: 12px; color: var(--dim); margin-top: 5px; }
+  .card-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px;
+               padding-top: 11px; border-top: 1px solid var(--line); font-family: var(--mono);
+               font-size: 10.5px; letter-spacing: .04em; text-transform: uppercase; }
+  .card-foot .k { color: var(--dim); }
+  .card.ok .card-foot .v { color: var(--accent); font-weight: 600; }
+  .card.bad .card-foot .v { color: var(--bad); font-weight: 600; }
+  .card.warn .card-foot .v { color: var(--warn); font-weight: 600; }
+
+  /* ---------- pipeline ---------- */
+  .pipe { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--line);
+          border-radius: 10px; overflow: hidden; background: var(--panel); }
+  @media (max-width: 900px) { .pipe { grid-template-columns: 1fr 1fr; } }
+  @media (max-width: 560px) { .pipe { grid-template-columns: 1fr; } }
+  .step { padding: 22px; border-right: 1px solid var(--line);
+          display: flex; flex-direction: column; justify-content: space-between; gap: 16px; }
+  .step:last-child { border-right: 0; }
+  @media (max-width: 900px) { .step { border-bottom: 1px solid var(--line); } }
+  .step .n { font-family: var(--mono); font-size: 11px; font-weight: 600; color: var(--accent); }
+  .step h3 { font-size: 15px; font-weight: 500; margin: 8px 0 7px; letter-spacing: -.015em; }
+  .step p { font-size: 12.5px; color: var(--muted); line-height: 1.6; }
+  .step .code { font-family: var(--mono); font-size: 10.5px; color: var(--dim);
+                border-top: 1px solid var(--line); padding-top: 11px; }
+
+  /* ---------- stats (benchmarks) ---------- */
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; }
+  @media (max-width: 860px) { .stats { grid-template-columns: 1fr 1fr; } }
+  .stats .stat b { display: block; font-size: 40px; font-weight: 600; letter-spacing: -.035em;
+                   line-height: 1.1; }
+  .stats .stat .k { font-family: var(--mono); font-size: 10.5px; letter-spacing: .08em;
+                    text-transform: uppercase; color: var(--accent); margin-top: 8px; }
+  .stats .stat p { font-size: 12.5px; color: var(--dim); margin-top: 5px; line-height: 1.55; }
+
+  /* ---------- integrate ---------- */
+  .intgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  @media (max-width: 800px) { .intgrid { grid-template-columns: 1fr; } }
+  .codecard { border: 1px solid var(--line); border-radius: 10px; background: var(--panel);
+              overflow: hidden; }
+  .codecard .bar { padding: 10px 15px; background: var(--panel2); border-bottom: 1px solid var(--line);
+                   display: flex; align-items: center; justify-content: space-between; gap: 12px;
+                   font-family: var(--mono); font-size: 11px; }
+  .codecard .bar .t { color: var(--text); }
+  .codecard .bar .f { color: var(--dim); }
+  pre { padding: 15px 16px; overflow-x: auto; font-family: var(--mono); font-size: 11.8px;
+        line-height: 1.75; color: #d8d6d9; background: #0b0b0c; }
+  pre .c { color: #6b696d; } pre .a { color: var(--accent); } pre .k { color: #9d9ba0; }
+  .skillstrip { margin-top: 14px; border: 1px solid var(--line); border-radius: 10px;
+                background: var(--panel); padding: 20px 22px; display: flex; align-items: center;
+                justify-content: space-between; gap: 22px; flex-wrap: wrap; }
+  .skillstrip h3 { font-size: 14.5px; font-weight: 500; margin-bottom: 4px; }
+  .skillstrip h3 .badge { font-family: var(--mono); font-size: 9.5px; letter-spacing: .08em;
+                          text-transform: uppercase; color: var(--accent);
+                          border: 1px solid rgba(62,207,142,.3); border-radius: 999px;
+                          padding: 2px 8px; margin-left: 9px; vertical-align: 1px; }
+  .skillstrip .sub { font-size: 12.5px; color: var(--dim); }
+  .skillstrip pre { margin: 0; border: 1px solid var(--line); border-radius: 7px; padding: 11px 14px; }
+
+  footer { padding: 30px 0 40px; color: var(--dim); font-size: 12.5px; }
+  footer .wrap { display: flex; align-items: center; justify-content: space-between;
+                 gap: 16px; flex-wrap: wrap; }
+  footer a { color: var(--muted); text-decoration: none; }
+  footer a:hover { color: var(--accent); }
+  footer .mono { font-family: var(--mono); font-size: 11.5px; }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <svg class="mark" viewBox="0 0 64 64" width="23" height="23" aria-hidden="true">
+        <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 13 H10 V51 H18" stroke="currentColor" stroke-width="5"/>
+          <path d="M46 13 H54 V51 H46" stroke="currentColor" stroke-width="5"/>
+          <path d="M24 32.5 L30 38.5 L42 26" stroke="#3ecf8e" stroke-width="5"/>
+        </g>
+      </svg>
+      <span class="wordmark">gen<span>check</span></span>
+    </a>
+    <span class="chainpill"><span class="dot"></span>studio-dev · chain 61997</span>
+    <span class="spacer"></span>
+    <div class="links">
+      <a href="#consensus">Consensus</a>
+      <a href="#examples">Examples</a>
+      <a href="#benchmarks">Benchmarks</a>
+      <a href="#integration">Integrate</a>
+      <a id="nav-skill" href="/skill.md">Skill</a>
+    </div>
+    <button class="btn" id="nav-cta" type="button">Verify a URL</button>
+  </div>
+</nav>
+
+<main id="top">
+
+<section class="hero">
+  <div class="wrap">
+    <div class="kicker"><span class="dot"></span><span>live on GenLayer</span></div>
+    <h1>Your AI agent is about to pay.<br><em>GenCheck makes sure it should not.</em></h1>
+    <p class="lede">
+      The cheapest offer an agent finds is often a lookalike storefront. Before it signs a
+      payment, GenCheck sends the checkout URL to <b>GenLayer validator consensus</b>:
+      independent validators fetch the page and the brand's real site, judge whether the
+      domain actually belongs to that brand, and write the verdict on-chain — where anyone
+      can check it. An agent pays only on a verified <b>real</b>.
+    </p>
+
+    <div class="checker">
+      <label class="field f-url">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/>
+          <path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/>
+        </svg>
+        <input id="url" type="url" spellcheck="false" aria-label="checkout URL"
+               placeholder="https://merchant-checkout.domain/cart/pay">
+      </label>
+      <label class="field f-brand">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M3 9l1.5-5h15L21 9"/><path d="M3 9h18v11H3z"/><path d="M9 20v-6h6v6"/>
+        </svg>
+        <input id="brand" type="text" spellcheck="false" aria-label="claimed brand"
+               placeholder="claimed brand · amazon">
+      </label>
+      <button class="btn" id="go" type="button">Verify</button>
+    </div>
+    <div class="hint">Every check submits a real on-chain transaction — the hash appears in
+      ~2 s, the verdict when validators finalize.
+      <a href="#examples">Or run a verified example.</a></div>
+    <div class="errline" id="err"></div>
+    <div class="livebar" id="livebar">
+      <span class="dotpulse"></span>
+      <span id="live-state">submitting…</span>
+      <a id="live-tx" href="#" target="_blank" rel="noopener" style="display:none"></a>
+      <span id="live-elapsed" style="margin-left:auto;color:var(--dim)"></span>
+    </div>
+  </div>
+</section>
+
+<section class="consensus" id="consensus">
+  <div class="wrap">
+    <div class="cons-head">
+      <div class="cons-head-l">
+        <span class="lbl">Live consensus</span>
+        <span class="slash">/</span>
+        <span class="mono" id="cons-tx" style="font-size:11.5px;color:var(--dim)">no transaction yet</span>
+      </div>
+      <div class="cons-stats" id="cons-stats"></div>
+    </div>
+    <div id="cons-body">
+      <div class="panel empty">Run a check above — the on-chain verdict, the validator jury,
+        and the transaction's real cost appear here.</div>
+    </div>
+  </div>
+</section>
+
+<section id="examples" style="padding:52px 0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="lbl">Audited transactions</span>
+        <h2 style="margin-top:6px">Decisions the validator network has reached</h2>
+      </div>
+      <p>Each card runs a <b>new</b> transaction against the live contract — the hash is yours
+        to verify on the explorer.</p>
+    </div>
+    <div class="cards" id="exgrid"></div>
+  </div>
+</section>
+
+<section style="padding:52px 0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="lbl">Architectural flow</span>
+        <h2 style="margin-top:6px">What happens between a URL and a verdict</h2>
+      </div>
+    </div>
+    <div class="pipe">
+      <div class="step">
+        <div>
+          <div class="n">01</div>
+          <h3>Transaction</h3>
+          <p>The agent calls <code>validate_checkout</code> before signing the payment. The
+            hash is public immediately, so the decision is auditable whether or not the
+            agent proceeds.</p>
+        </div>
+        <div class="code">gl.public.write</div>
+      </div>
+      <div class="step">
+        <div>
+          <div class="n">02</div>
+          <h3>Investigation</h3>
+          <p>Each validator independently fetches the checkout page and the brand's official
+            site inside the GenVM sandbox, and compares what it finds.</p>
+        </div>
+        <div class="code">gl.nondet.web.render</div>
+      </div>
+      <div class="step">
+        <div>
+          <div class="n">03</div>
+          <h3>Judgment &amp; vote</h3>
+          <p>Every validator's LLM — different models from different operators — judges
+            domain ownership and page content, then votes. Validators must agree on the
+            verdict itself.</p>
+        </div>
+        <div class="code">gl.eq_principle.prompt_comparative</div>
+      </div>
+      <div class="step">
+        <div>
+          <div class="n">04</div>
+          <h3>On-chain verdict</h3>
+          <p>The agreed verdict is written to contract storage and cached per domain. A
+            fetch that fails fails closed — unverifiable is never treated as safe.</p>
+        </div>
+        <div class="code">TreeMap cache · fail-closed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="benchmarks" style="padding:52px 0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="lbl">Benchmarks</span>
+        <h2 style="margin-top:6px">Measured, not projected</h2>
+      </div>
+      <p>Live URLs through real validator consensus on studio-dev. Methodology and the
+        v1 → v3 prompt-fix arc are in the repo.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>21/21</b><div class="k">labeled URL set</div>
+        <p>Live OpenPhish phishing pages, wrong-seller sites, and legitimate checkouts —
+          all correct under the v3 prompt.</p></div>
+      <div class="stat"><b>96.0%</b><div class="k">412-row dataset</div>
+        <p>A 412-row labeled CSV benchmark scored 24/25 verdicts correct.</p></div>
+      <div class="stat"><b>0</b><div class="k">false positives</div>
+        <p>No legitimate merchant was ever blocked in the labeled evaluation.</p></div>
+      <div class="stat"><b>0</b><div class="k">phishing allowed</div>
+        <p>Not one known phishing URL was cleared for payment.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="integration" style="padding:52px 0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div>
+        <span class="lbl">Developer integration</span>
+        <h2 style="margin-top:6px">One rule: no consensus-backed real, no payment</h2>
+      </div>
+      <p>The gate lives in the agent's own payment path and fails closed — anything other
+        than a verified <code>real</code> blocks.</p>
+    </div>
+    <div class="intgrid">
+      <div class="codecard">
+        <div class="bar"><span class="t">MCP server</span><span class="f">zero integration code</span></div>
+<pre><span class="c"># reads are free; writes need a funded key</span>
+claude mcp add gencheck \
+  --env <span class="a">GENCHECK_PRIVATE_KEY=0x…</span> \
+  -- python -m gencheck.mcp_server</pre>
+      </div>
+      <div class="codecard">
+        <div class="bar"><span class="t">Python client</span><span class="f">the agent's payment gate</span></div>
+<pre><span class="k">from</span> gencheck <span class="k">import</span> GenCheck, decide
+
+gc = GenCheck(private_key=<span class="a">os.environ["GENCHECK_PRIVATE_KEY"]</span>)
+verdict = gc.validate(checkout_url, brand)
+action, why = decide(verdict)  <span class="c"># fail-closed</span>
+<span class="k">if</span> action != <span class="a">"PAY"</span>: halt(why)</pre>
+      </div>
+    </div>
+    <div class="skillstrip">
+      <div>
+        <h3>Point your agent at the skill<span class="badge">for your agent</span></h3>
+        <div class="sub">One markdown file — what GenCheck is, when to call it, and the one
+          rule it must obey.</div>
+      </div>
+<pre>curl -s <span class="a" id="skill-url">/skill.md</span></pre>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>GenCheck — built on
+      <a href="https://genlayer.com" target="_blank" rel="noopener">GenLayer</a>
+      for the Agent Tank hackathon</span>
+    <span class="mono">
+      <a id="foot-contract" href="#" target="_blank" rel="noopener">contract</a> ·
+      <a id="foot-explorer" href="https://explorer-studio-dev.genlayer.com" target="_blank" rel="noopener">explorer</a> ·
+      <a id="foot-skill" href="/skill.md">skill</a><span id="foot-gh"></span>
+    </span>
+  </div>
+</footer>
+
+<script>
+const $ = id => document.getElementById(id);
+const EXPLORER = "https://explorer-studio-dev.genlayer.com";
+
+// Set this once the repo is pushed — the nav/footer GitHub link stays hidden
+// while it is empty, so the page never shows a link that 404s.
+const GITHUB_URL = "";
+
+let contract = "";
+let running = false;
+let activeTx = null;   // the tx the console currently shows — guards late patches
+
+const short = h => h ? h.slice(0, 8) + "…" + h.slice(-6) : "";
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c =>
+  ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+// on-chain processing_time arrives as a string of milliseconds
+function fmtMs(v) {
+  const n = Number(v);
+  if (!v || Number.isNaN(n) || n <= 0) return "—";
+  return n >= 1000 ? (n / 1000).toFixed(1) + " s" : n + " ms";
+}
+function fmtGen(v) {
+  if (typeof v !== "number" || !v) return "—";
+  return v.toFixed(7).replace(/0+$/, "").replace(/\.$/, "") + " GEN";
+}
+/* Fee accounting on the node settles a beat after the transaction finalizes,
+   so `settled: false` means the figure is real but not readable yet. Saying so
+   beats printing a dash, which reads like the check failed. */
+const costLabel = chain => (!chain || chain.settled === false)
+  ? "settling…" : fmtGen(chain.cost_gen);
+const domainOf = u => { try { return new URL(u).hostname; } catch { return u; } };
+
+/* ---------------------------------------------------------------- boot --- */
+async function boot() {
+  if (GITHUB_URL) {
+    const a = document.createElement("a");
+    a.href = GITHUB_URL; a.target = "_blank"; a.rel = "noopener";
+    a.textContent = " · github";
+    $("foot-gh").appendChild(a);
+  }
+  const res = await fetch("/api/examples");
+  const data = await res.json();
+  contract = data.contract;
+  $("foot-contract").href = EXPLORER + "/address/" + contract;
+  $("foot-contract").textContent = "contract " + short(contract);
+  $("skill-url").textContent = location.origin + "/skill.md";
+
+  const grid = $("exgrid");
+  data.examples.forEach(ex => {
+    const cls = ex.expected === "cleared" ? "ok"
+              : ex.expected === "unverifiable" ? "warn" : "bad";
+    const label = ex.expected === "cleared" ? "cleared" : ex.expected;
+    const action = ex.expected === "cleared" ? "PROCEED"
+                 : ex.expected === "unverifiable" ? "BLOCK · fail closed" : "BLOCK";
+    const b = document.createElement("button");
+    b.type = "button";
+    b.className = "card " + cls;
+    b.innerHTML =
+      `<div>
+         <div class="card-top">
+           <span class="chip ${cls}">${esc(label)}</span>
+           <span class="dotv"></span>
+         </div>
+         <div class="dom">${esc(domainOf(ex.url))}</div>
+         <div class="desc">${esc(ex.label.replace(/^[^\w]+\s*/, ""))}</div>
+       </div>
+       <div class="card-foot">
+         <span class="k">agent policy</span><span class="v">${esc(action)}</span>
+       </div>`;
+    b.onclick = () => {
+      $("url").value = ex.url; $("brand").value = ex.brand; runCheck();
+    };
+    grid.appendChild(b);
+  });
+}
+
+/* ------------------------------------------------------------ live bar --- */
+function livebar(show, state, txId, elapsed) {
+  const lb = $("livebar");
+  lb.style.display = show ? "flex" : "none";
+  if (state) $("live-state").innerHTML = state;
+  const a = $("live-tx");
+  if (txId) {
+    a.href = EXPLORER + "/tx/" + txId;
+    a.textContent = short(txId) + " ↗";
+    a.style.display = "";
+  } else a.style.display = "none";
+  $("live-elapsed").textContent = elapsed || "";
+}
+
+function setConsHead(txId, stats) {
+  // the hash is the proof — show it in full, and link it to the explorer
+  $("cons-tx").innerHTML = txId
+    ? `TX# <a href="${EXPLORER}/tx/${esc(txId)}" target="_blank" rel="noopener">${esc(txId)} ↗</a>`
+    : "no transaction yet";
+  // a stat may carry an id so it can be patched later without redrawing the row
+  $("cons-stats").innerHTML = (stats || []).map(s =>
+    `<span class="stat">${esc(s.k)} <b class="${s.g ? "g" : ""}"` +
+    `${s.id ? ` id="${esc(s.id)}"` : ""}>${esc(s.v)}</b></span>`).join("");
+}
+
+/* ------------------------------------------------------------ the check --- */
+async function runCheck() {
+  if (running) return;
+  const url = $("url").value.trim(), brand = $("brand").value.trim().toLowerCase();
+  $("err").textContent = "";
+  if (!url || !brand) return;
+  running = true;
+  $("go").disabled = true;
+  document.querySelectorAll(".card").forEach(c => c.disabled = true);
+  livebar(true, "submitting transaction to GenLayer…", null, "");
+  setConsHead(null, []);
+
+  try {
+    let res = await fetch("/api/submit", {
+      method: "POST", headers: {"Content-Type": "application/json"},
+      body: JSON.stringify({url, brand}),
+    });
+    const data = await res.json();
+    if (data.error) { $("err").textContent = data.error; livebar(false); return; }
+
+    // From here a real transaction exists on-chain. There is no cached
+    // shortcut — every check, including these example cards, is its own tx.
+    if (!data.tx_id) {
+      livebar(false);
+      $("err").textContent = data.reason || "could not submit a transaction";
+      return;
+    }
+    activeTx = data.tx_id;
+
+    livebar(true, "transaction submitted — validators picking it up", data.tx_id, "0 s");
+    setConsHead(data.tx_id, [{k: "stage", v: "awaiting validators"}]);
+    const started = Date.now();
+    while (Date.now() - started < 300000) {
+      await sleep(3000);
+      res = await fetch(`/api/status?tx_id=${encodeURIComponent(data.tx_id)}` +
+                        `&url=${encodeURIComponent(url)}&brand=${encodeURIComponent(brand)}`);
+      const s = await res.json();
+      const el = Math.round((Date.now() - started) / 1000) + " s";
+      if (s.stage === "final") {
+        livebar(true, `consensus final · ${esc(s.tx.state)}`, s.tx.id, el);
+        showResult(s, url, brand);
+        refreshFinal(s, url, brand);
+        setTimeout(() => livebar(false), 4000);
+        return;
+      }
+      livebar(true, `watching validators · chain state ` +
+                    `<span class="state">${esc(s.tx.state)}</span>`, s.tx.id, el);
+      setConsHead(data.tx_id, [
+        {k: "chain state", v: s.tx.state || "…"},
+        {k: "elapsed", v: el},
+      ]);
+    }
+    $("err").textContent = "consensus is taking unusually long — the transaction is still " +
+      "on-chain; follow the explorer link above";
+  } catch (e) {
+    $("err").textContent = "request failed: " + e;
+  } finally {
+    running = false;
+    $("go").disabled = false;
+    document.querySelectorAll(".card").forEach(c => c.disabled = false);
+  }
+}
+
+/* --------------------------------------------------------- the verdict --- */
+/* A just-finalized transaction is not fully readable yet: the node's fee
+   accounting lands ~35 s later (measured: 35.4 s) and the vote map can still
+   be empty at the instant of finality even though the round is over. Keep
+   re-reading — these are reads, not transactions — and redraw when the
+   picture is complete, rather than printing a cost or a quorum we don't have. */
+const unfinished = x => !!x && (
+  (x.chain && x.chain.settled === false) ||
+  (x.consensus && x.consensus.complete === false));
+
+async function refreshFinal(s, url, brand) {
+  const txId = s.tx.id;
+  if (!unfinished(s)) return;
+  let best = s;
+  for (let i = 0; i < 12; i++) {
+    await sleep(5000);
+    if (activeTx !== txId) return;            // a newer check owns the console
+    let n;
+    try {
+      const res = await fetch(`/api/status?tx_id=${encodeURIComponent(txId)}` +
+                              `&url=${encodeURIComponent(url)}&brand=${encodeURIComponent(brand)}`);
+      n = await res.json();
+    } catch (e) { continue; }                 // transient — try again
+    if (n.stage !== "final") continue;
+    if (n.chain && n.chain.settled) patchCost(n.chain);
+    if (!unfinished(n)) { showResult(n, url, brand); return; }
+    best = n;
+  }
+  if (activeTx !== txId) return;
+  patchCost(best.chain);                      // draw the most complete read we got
+  showResult(best, url, brand);
+}
+
+function patchCost(chain) {
+  const el = $("stat-cost");
+  if (!el) return;
+  el.textContent = (chain && chain.settled) ? fmtGen(chain.cost_gen) : "—";
+}
+
+function showResult(s, url, brand) {
+  const d = s.verdict || {};
+  const chain = s.chain || {};
+  let cls, title, policy;
+
+  if (d.decision === "PAY") {
+    cls = "ok"; title = "Verified seller";
+    policy = `POLICY TRIGGERED: [PROCEED] → consensus confirms the genuine seller for “${brand}”`;
+  } else if (d.verdict === "unverifiable" || d.status === "no_verdict" || d.status === "error") {
+    cls = "warn"; title = "Unverifiable";
+    policy = "POLICY TRIGGERED: [STOP_PAYMENT] → validators could not verify this page — fail closed";
+  } else {
+    cls = "bad"; title = "Not this brand's store";
+    policy = d.verdict === "wrong_seller"
+      ? `POLICY TRIGGERED: [STOP_PAYMENT] → domain does not belong to “${brand}”`
+      : `POLICY TRIGGERED: [STOP_PAYMENT] → consensus flagged a lookalike for “${brand}”`;
+  }
+
+  setConsHead(s.tx.id, [
+    {k: "cost", v: costLabel(chain), g: true, id: "stat-cost"},
+    {k: "leader", v: fmtMs(s.consensus && s.consensus.leader && s.consensus.leader.processing_time)},
+    {k: "quorum", v: s.consensus
+        ? (s.consensus.complete === false ? "reading…"
+           : `${s.consensus.quorum.agree}/${s.consensus.quorum.total}`)
+        : "—"},
+  ]);
+
+  const conf = typeof d.confidence === "number" ? d.confidence : null;
+  const q = (s.consensus && s.consensus.quorum) || {agree: 0, total: 0};
+
+  const reasons = (d.reasons && d.reasons.length)
+    ? d.reasons : ["no reasoning returned by this transaction"];
+  const findings = reasons.map(t =>
+    `<li class="${cls === "ok" ? "ok" : "bad"}">` +
+    `<span class="mk">${cls === "ok" ? "✓" : "✕"}</span><span>${esc(t)}</span></li>`).join("");
+
+  const cachedNote = (d.is_cached && d.original_reasons && d.original_reasons.length)
+    ? `<div class="note">from the original consensus run that filled the cache</div>` +
+      d.original_reasons.map(t =>
+        `<li class="bad"><span class="mk">·</span><span>${esc(t)}</span></li>`).join("") +
+      (d.original_tx_id
+        ? `<li style="margin-top:10px"><span class="mk">·</span><span>` +
+          `the consensus transaction that decided it: ` +
+          `<a href="${EXPLORER}/tx/${esc(d.original_tx_id)}" target="_blank" rel="noopener" ` +
+          `style="color:var(--accent)">${esc(d.original_tx_id)} ↗</a></span></li>`
+        : "")
+    : "";
+
+  $("cons-body").innerHTML = `
+    <div class="panel side ${cls}">
+      <div class="res-head">
+        <div style="min-width:280px;flex:1">
+          <div class="chips">
+            <span class="chip ${cls}">${
+              cls === "ok" ? "verified" : cls === "warn" ? "unverifiable" : "flagged"
+            }</span>
+            <span class="chip plain">tag: ${esc(d.verdict || "blocked")}</span>
+          </div>
+          <div class="res-title">${esc(title)}</div>
+          <div class="res-policy">${esc(policy)}</div>
+          <div class="res-url">checkout ${esc(url)} · claimed brand ${esc(brand)}</div>
+        </div>
+        <div class="meter">
+          <div class="row"><span style="color:var(--dim)">Consensus confidence</span>
+            <span class="v">${conf === null ? "—" : conf + "%"}</span></div>
+          <div class="track"><div class="fill" id="conffill"></div></div>
+          <div class="foot">
+            <span>quorum ${q.agree}/${q.total} agree</span>
+            <span>${d.is_cached ? "cached verdict" : "live consensus"}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="findings">
+        <div class="lbl">Validator reasoning</div>
+        <ul>${findings}${cachedNote}</ul>
+      </div>
+
+      <div class="tablewrap">${votesTable(s.consensus)}</div>
+    </div>`;
+
+  if (conf !== null) {
+    setTimeout(() => { const f = $("conffill"); if (f) f.style.width = Math.max(3, conf) + "%"; }, 60);
+  }
+}
+
+function votesTable(consensus) {
+  const vs = (consensus && consensus.validators) || [];
+  if (!vs.length) {
+    return `<div style="padding:18px 24px;font-size:12.5px;color:var(--dim)">
+      no validator votes were returned for this transaction</div>`;
+  }
+  const rows = vs.map(v => {
+    const idle = v.vote !== "agree";
+    const model = v.model
+      ? esc(v.model) + (v.provider ? ` <span class="prov">${esc(v.provider)}</span>` : "")
+      : `<span class="nonesuch">— not queried</span>`;
+    return `<tr class="${idle ? "idle" : ""}">
+      <td class="addr">${esc(short(v.address))}${v.role === "leader"
+        ? '<span class="leaderchip">LEADER</span>' : ""}</td>
+      <td class="model">${model}</td>
+      <td class="num">${esc(fmtMs(v.processing_time))}</td>
+      <td class="${idle ? "vt-idle" : "vt-ok"}">${esc(v.vote || "—")}</td>
+    </tr>`;
+  }).join("");
+  return `<table class="vtable">
+    <thead><tr>
+      <th>Validator address</th><th>Model</th>
+      <th class="num">Processing</th><th>Vote</th>
+    </tr></thead>
+    <tbody>${rows}</tbody>
+  </table>`;
+}
+
+/* ------------------------------------------------------------- wiring --- */
+$("go").addEventListener("click", runCheck);
+$("url").addEventListener("keydown", e => { if (e.key === "Enter") runCheck(); });
+$("brand").addEventListener("keydown", e => { if (e.key === "Enter") runCheck(); });
+$("nav-cta").addEventListener("click", () => {
+  $("url").scrollIntoView({behavior: "smooth", block: "center"});
+  $("url").focus({preventScroll: true});
+});
+boot();
+</script>
+</body>
+</html>

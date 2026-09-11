@@ -1,0 +1,3901 @@
+[
+ {
+  "url": "https://primeone.org/wp-content/plugins/gravityforms/includes/ht/data/4ecf59382bac4af5da9b5be55d3ec23f/pwd.php",
+  "domain": "primeone.org",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 11816,
+  "fetchable": false
+ },
+ {
+  "url": "https://vhsbf6g9dxu0jnuba.qwo231sdx.club/index/usps/index.html",
+  "domain": "vhsbf6g9dxu0jnuba.qwo231sdx.club",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 200,
+  "body_len": 0,
+  "fetchable": false
+ },
+ {
+  "url": "https://www.wejdan-clinic.com/wp-content/uploads/2020/03/banenr-slide-l-bg-rt1.html",
+  "domain": "www.wejdan-clinic.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.wejdan-clinic.com', port=443): Max retries exceeded with url: /wp-cont"
+ },
+ {
+  "url": "https://groups.google.com",
+  "domain": "groups.google.com",
+  "brand": "groups",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 1237201,
+  "fetchable": true
+ },
+ {
+  "url": "https://nmhospital.in/wp-includes/ncc/tgoodman/3mail@b.c",
+  "domain": "nmhospital.in",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 49940,
+  "fetchable": false
+ },
+ {
+  "url": "https://microsoft-online-outlook-office365-authentication-o365-auth.tak-sang-cn.com",
+  "domain": "microsoft-online-outlook-office365-authentication-o365-auth.tak-sang-cn.com",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='microsoft-online-outlook-office365-authentication-o365-auth.tak-sang-cn.co"
+ },
+ {
+  "url": "http://compte-paypal-fr.net/home/fr/signin/5b35e/connectez-vous-votre-compte-paypal.html",
+  "domain": "compte-paypal-fr.net",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='compte-paypal-fr.net', port=80): Max retries exceeded with url: /home/fr/si"
+ },
+ {
+  "url": "https://shopify.com/checkout",
+  "domain": "shopify.com",
+  "brand": "shopify",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "status": 200,
+  "body_len": 488718,
+  "fetchable": true
+ },
+ {
+  "url": "https://samsung.serv00.net/css/css/image/index/index/ahab",
+  "domain": "samsung.serv00.net",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 403,
+  "body_len": 2625,
+  "fetchable": false
+ },
+ {
+  "url": "http://id.service.paypal.c1581156.ferozo.com/home/fr/signin/52582087b1aba31eedd3e6c8c3c8a89f/erreur-login/connectez-vous-votre-compte-paypal.html",
+  "domain": "id.service.paypal.c1581156.ferozo.com",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='id.service.paypal.c1581156.ferozo.com', port=80): Max retries exceeded with"
+ },
+ {
+  "url": "https://6a84ds3a2s1g6a8s1d.g4893h1a6s5d1.dynv6.net/a/session/?view=classic&appidkey=f6e2646c2fed2f7&country=us",
+  "domain": "6a84ds3a2s1g6a8s1d.g4893h1a6s5d1.dynv6.net",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='6a84ds3a2s1g6a8s1d.g4893h1a6s5d1.dynv6.net', port=443): Max retries exceed"
+ },
+ {
+  "url": "https://www.apple.loc-dm.us/expire",
+  "domain": "www.apple.loc-dm.us",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.apple.loc-dm.us', port=443): Max retries exceeded with url: /expire (C"
+ },
+ {
+  "url": "https://target-doc.targetpoint.repl.co",
+  "domain": "target-doc.targetpoint.repl.co",
+  "brand": "target",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='target-doc.targetpoint.repl.co', port=443): Max retries exceeded with url:"
+ },
+ {
+  "url": "https://usps.com-trackuuxf.top/l",
+  "domain": "usps.com-trackuuxf.top",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='usps.com-trackuuxf.top', port=443): Max retries exceeded with url: /l (Cau"
+ },
+ {
+  "url": "https://uol.com.br",
+  "domain": "uol.com.br",
+  "brand": "uol",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 785481,
+  "fetchable": true
+ },
+ {
+  "url": "http://sellercentral-europe.amazon.com-sign-in.cashcreations.com/cgi-bin/sign-in.pl/en/c0/68747470733a2f2f73656c6c657263656e7472616c2e616d617a6f6e2e636f2e756b2f61702f72656d6f76656163636f756e743f6172623d35646166313364342d643065302d343033372d396663322d353132356264646539393635",
+  "domain": "sellercentral-europe.amazon.com-sign-in.cashcreations.com",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='sellercentral-europe.amazon.com-sign-in.cashcreations.com', port=80): Max r"
+ },
+ {
+  "url": "https://gea.pages.dev/https:/tapestry.tapad.com/tapestry/1?ta_partner_id=950",
+  "domain": "gea.pages.dev",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 500,
+  "body_len": 4614,
+  "fetchable": false
+ },
+ {
+  "url": "http://paypal.aisgwb.org/7bae4c7fc7ed0942a9d0b1061e813f7bmzzkzmfln2iznjc1ndg5mzywyzu2ymeyogq4zddinzm=/resolution/websc_login/?country.x=&locale.x=en_",
+  "domain": "paypal.aisgwb.org",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='paypal.aisgwb.org', port=80): Max retries exceeded with url: /7bae4c7fc7ed0"
+ },
+ {
+  "url": "https://shyelawel2.pages.dev",
+  "domain": "shyelawel2.pages.dev",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 403,
+  "body_len": 5069,
+  "fetchable": false
+ },
+ {
+  "url": "https://steamcommynyti.ru/tradffer/new/partner/token/2859323903",
+  "domain": "steamcommynyti.ru",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='steamcommynyti.ru', port=443): Max retries exceeded with url: /tradffer/ne"
+ },
+ {
+  "url": "https://package.blurrybooks.com/public/gw5qkovqcsrkpnta4ba8sbjgwp0ftypb",
+  "domain": "package.blurrybooks.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='package.blurrybooks.com', port=443): Max retries exceeded with url: /publi"
+ },
+ {
+  "url": "https://store.microsoft-surface.ru/aksiessuary/klaviatury/surface-pro-type-cover/surface-pro-type-cover-black",
+  "domain": "store.microsoft-surface.ru",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 200,
+  "body_len": 53745,
+  "fetchable": true
+ },
+ {
+  "url": "https://login-shopify-billing-com-d0eeb2c8.activervotrepotentiel.com/shopify/?auth_token=a17ca5b1d5ca154c19ee586fb7f17051c4e18733475a43dce0f59de2fbf10a1c&cur=home&page=cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e.",
+  "domain": "login-shopify-billing-com-d0eeb2c8.activervotrepotentiel.com",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='login-shopify-billing-com-d0eeb2c8.activervotrepotentiel.com', port=443): "
+ },
+ {
+  "url": "https://www.opensea.io.offer.restorationplus.org.za",
+  "domain": "www.opensea.io.offer.restorationplus.org.za",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.opensea.io.offer.restorationplus.org.za', port=443): Max retries excee"
+ },
+ {
+  "url": "https://steamcommunulty.com/princesssa",
+  "domain": "steamcommunulty.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='steamcommunulty.com', port=443): Max retries exceeded with url: /princesss"
+ },
+ {
+  "url": "https://linkedin.com",
+  "domain": "linkedin.com",
+  "brand": "linkedin",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 20363,
+  "fetchable": true
+ },
+ {
+  "url": "http://thesdrfeds.com/amazkn/mazon/879c4/homepage",
+  "domain": "thesdrfeds.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='thesdrfeds.com', port=80): Max retries exceeded with url: /amazkn/mazon/879"
+ },
+ {
+  "url": "https://hostinger.com",
+  "domain": "hostinger.com",
+  "brand": "hostinger",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 868007,
+  "fetchable": true
+ },
+ {
+  "url": "https://shopify-dl.shop/wap",
+  "domain": "shopify-dl.shop",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='shopify-dl.shop', port=443): Max retries exceeded with url: /wap (Caused b"
+ },
+ {
+  "url": "https://samsung-find.support/fmicode/code.php",
+  "domain": "samsung-find.support",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='samsung-find.support', port=443): Max retries exceeded with url: /fmicode/"
+ },
+ {
+  "url": "https://www.apple.apite.cn/ht/savea.asp",
+  "domain": "www.apple.apite.cn",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.apple.apite.cn', port=443): Max retries exceeded with url: /ht/savea.a"
+ },
+ {
+  "url": "https://nba.com",
+  "domain": "nba.com",
+  "brand": "nba",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 526443,
+  "fetchable": true
+ },
+ {
+  "url": "https://google.com.br",
+  "domain": "google.com.br",
+  "brand": "google",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 217405,
+  "fetchable": true
+ },
+ {
+  "url": "https://house.gov",
+  "domain": "house.gov",
+  "brand": "house",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 186804,
+  "fetchable": true
+ },
+ {
+  "url": "https://lambent-target.000webhostapp.com",
+  "domain": "lambent-target.000webhostapp.com",
+  "brand": "target",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='lambent-target.000webhostapp.com', port=443): Max retries exceeded with ur"
+ },
+ {
+  "url": "https://caff2ab6-0dd2-46bf-954e-aaefb895e16f.id.repl.co",
+  "domain": "caff2ab6-0dd2-46bf-954e-aaefb895e16f.id.repl.co",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='caff2ab6-0dd2-46bf-954e-aaefb895e16f.id.repl.co', port=443): Max retries e"
+ },
+ {
+  "url": "https://login-shopify-billing-com-eb6babb9.boutaleb.fr/Shopify/?AUTH_TOKEN=0186b93d20bdea761a668c77a5e26e84801efc973b2e2a5b74b21d2931834aab&cur=home&page=cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e.",
+  "domain": "login-shopify-billing-com-eb6babb9.boutaleb.fr",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='login-shopify-billing-com-eb6babb9.boutaleb.fr', port=443): Max retries ex"
+ },
+ {
+  "url": "https://accesdver.info/telus/directing/www.atbonline.com/atb/login.html",
+  "domain": "accesdver.info",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='accesdver.info', port=443): Max retries exceeded with url: /telus/directin"
+ },
+ {
+  "url": "https://tarifbri.com/login.php",
+  "domain": "tarifbri.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='tarifbri.com', port=443): Max retries exceeded with url: /login.php (Cause"
+ },
+ {
+  "url": "https://cloudflare-6s0.pages.dev",
+  "domain": "cloudflare-6s0.pages.dev",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 403,
+  "body_len": 4463,
+  "fetchable": false
+ },
+ {
+  "url": "https://nike.com/checkout",
+  "domain": "nike.com",
+  "brand": "nike",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "status": 200,
+  "body_len": 409633,
+  "fetchable": true
+ },
+ {
+  "url": "https://samsung-id.online/expire/index2.html",
+  "domain": "samsung-id.online",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='samsung-id.online', port=443): Max retries exceeded with url: /expire/inde"
+ },
+ {
+  "url": "https://landing.cuiweb.edu.ar/wp-includes/css/a/anz/index.htm",
+  "domain": "landing.cuiweb.edu.ar",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='landing.cuiweb.edu.ar', port=443): Max retries exceeded with url: /wp-incl"
+ },
+ {
+  "url": "https://www.apple.com-idm.asia/find",
+  "domain": "www.apple.com-idm.asia",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.apple.com-idm.asia', port=443): Max retries exceeded with url: /find ("
+ },
+ {
+  "url": "https://zdnet.com",
+  "domain": "zdnet.com",
+  "brand": "zdnet",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 346975,
+  "fetchable": true
+ },
+ {
+  "url": "https://www.ip.amazon.mycountersign.com",
+  "domain": "www.ip.amazon.mycountersign.com",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.ip.amazon.mycountersign.com', port=443): Max retries exceeded with url"
+ },
+ {
+  "url": "https://inveravica.com/wp/wevili/FERO/12/paiement.php",
+  "domain": "inveravica.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 200,
+  "body_len": 0,
+  "fetchable": false
+ },
+ {
+  "url": "https://mailboxspheretoday.weebly.com",
+  "domain": "mailboxspheretoday.weebly.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 3909,
+  "fetchable": false
+ },
+ {
+  "url": "http://www.costco-survey.rest/l/lt4ST10316UL125L/4900PL6821RW8797X236F146866963WW392077550",
+  "domain": "www.costco-survey.rest",
+  "brand": "costco",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='www.costco-survey.rest', port=80): Max retries exceeded with url: /l/lt4ST1"
+ },
+ {
+  "url": "https://nike-socceroutlet.com/login.pk.php?lp=qyk0j&pk?=v3rbpku4fqxcdsm",
+  "domain": "nike-socceroutlet.com",
+  "brand": "nike",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='nike-socceroutlet.com', port=443): Max retries exceeded with url: /login.p"
+ },
+ {
+  "url": "http://54.236.113.113/mua/user/scis/j6unvhzsitlyrxstpnfun4tssjgejkn7dldp6fxsjfxo/3d/no-back-button",
+  "domain": "54.236.113.113",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='54.236.113.113', port=80): Max retries exceeded with url: /mua/user/scis/j6"
+ },
+ {
+  "url": "https://ameblo.jp",
+  "domain": "ameblo.jp",
+  "brand": "ameblo",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 109358,
+  "fetchable": true
+ },
+ {
+  "url": "https://paypal-safetyin.shop/signin",
+  "domain": "paypal-safetyin.shop",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='paypal-safetyin.shop', port=443): Max retries exceeded with url: /signin ("
+ },
+ {
+  "url": "https://netflix-5hh.pages.dev/robots.txt",
+  "domain": "netflix-5hh.pages.dev",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 403,
+  "body_len": 4463,
+  "fetchable": false
+ },
+ {
+  "url": "https://news-amazon.2o1.top/pc",
+  "domain": "news-amazon.2o1.top",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='news-amazon.2o1.top', port=443): Max retries exceeded with url: /pc (Cause"
+ },
+ {
+  "url": "https://wa.me",
+  "domain": "wa.me",
+  "brand": "wa",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 400,
+  "body_len": 6278,
+  "fetchable": false
+ },
+ {
+  "url": "https://delivery.attempt.failure.ebbs.co.za/public/psrHK1dKyS6I0BpTpvQC7JKhh1nvzw63",
+  "domain": "delivery.attempt.failure.ebbs.co.za",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='delivery.attempt.failure.ebbs.co.za', port=443): Max retries exceeded with"
+ },
+ {
+  "url": "https://shyajwhskfdseaisf-mdifuejnasgkjds435.duckdns.org/session/?view=login&appidkey=16559de721f775d&country=us",
+  "domain": "shyajwhskfdseaisf-mdifuejnasgkjds435.duckdns.org",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='shyajwhskfdseaisf-mdifuejnasgkjds435.duckdns.org', port=443): Max retries "
+ },
+ {
+  "url": "https://business-page-ads.com/tSAiBqjLOgCdLEiWcuqjKCo5sDaq08folVBKTgMjU48z1IUPVrDnsT3wUnjrut5GW5D2d5UcQl8ZCZAgTrangdau.html",
+  "domain": "business-page-ads.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='business-page-ads.com', port=443): Max retries exceeded with url: /tSAiBqj"
+ },
+ {
+  "url": "https://adidas.com/checkout",
+  "domain": "adidas.com",
+  "brand": "adidas",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "status": 403,
+  "body_len": 3369,
+  "fetchable": false
+ },
+ {
+  "url": "https://ns2.apple-prq-portal-support-online.com/go.php",
+  "domain": "ns2.apple-prq-portal-support-online.com",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ns2.apple-prq-portal-support-online.com', port=443): Max retries exceeded "
+ },
+ {
+  "url": "https://empower-target-definition.vercel.app",
+  "domain": "empower-target-definition.vercel.app",
+  "brand": "target",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 451,
+  "body_len": 109,
+  "fetchable": false
+ },
+ {
+  "url": "https://cutt.ly",
+  "domain": "cutt.ly",
+  "brand": "cutt",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 224436,
+  "fetchable": true
+ },
+ {
+  "url": "https://qq.com",
+  "domain": "qq.com",
+  "brand": "qq",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 112650,
+  "fetchable": true
+ },
+ {
+  "url": "https://paypal-secureagent.help/signin?1",
+  "domain": "paypal-secureagent.help",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='paypal-secureagent.help', port=443): Max retries exceeded with url: /signi"
+ },
+ {
+  "url": "https://microsoft-105376.square.site",
+  "domain": "microsoft-105376.square.site",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 404,
+  "body_len": 1547,
+  "fetchable": false
+ },
+ {
+  "url": "https://intelliants.dev/mcn/app/console/cibc",
+  "domain": "intelliants.dev",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 236,
+  "fetchable": false
+ },
+ {
+  "url": "https://costco-member-reward.ca/finance/atb/details.php",
+  "domain": "costco-member-reward.ca",
+  "brand": "costco",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='costco-member-reward.ca', port=443): Max retries exceeded with url: /finan"
+ },
+ {
+  "url": "https://telegraph.co.uk",
+  "domain": "telegraph.co.uk",
+  "brand": "telegraph",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 402,
+  "body_len": 1028,
+  "fetchable": false
+ },
+ {
+  "url": "http://tomsupholsterycleaning.com.au/wp-includes/rc/roundcube/1316a7a3afab2e4485819ead7ef12ceb/roundcube.php?https:/cpsess1530024440/webmail/paper_lantern/index.html?mailclient=roundcube/mail&service=mail&flowname=glifwebsignin&flowentry=addsession",
+  "domain": "tomsupholsterycleaning.com.au",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='tomsupholsterycleaning.com.au', port=80): Max retries exceeded with url: /w"
+ },
+ {
+  "url": "https://me-ebay.win",
+  "domain": "me-ebay.win",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='me-ebay.win', port=443): Max retries exceeded with url: / (Caused by NameR"
+ },
+ {
+  "url": "https://pub-1810907793d946d7adeb1de6606848a4.r2.dev/eknt.html?maqta",
+  "domain": "pub-1810907793d946d7adeb1de6606848a4.r2.dev",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 403,
+  "body_len": 4463,
+  "fetchable": false
+ },
+ {
+  "url": "http://microsoft.userid-81d.ws/subscription/yjfnbtcfowt-av53dwkb-bfjjnw1_yum9wew=/xvhduik4ammt5ynspz59mzl5ikd_6hnh",
+  "domain": "microsoft.userid-81d.ws",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 200,
+  "body_len": 6728,
+  "fetchable": true
+ },
+ {
+  "url": "https://amazon.com/checkout",
+  "domain": "amazon.com",
+  "brand": "amazon",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "status": 500,
+  "body_len": 2672,
+  "fetchable": false
+ },
+ {
+  "url": "https://www.amazon-log.xyz/signim/?openid.pape.max_auth_age=0&openid.return_to=https://www.amazon.co.jp/?ref_=nav_em_hd_re_signin&openid.identity=http://specs.openid.net/auth/2.0/identifier_select&openid.assoc_handle=jpflex&openid.mode=checkid_setup&key=a@b.c&openid.claimed_id=http://specs.openid.net/auth/2.0/identifier_select&openid.ns=http://specs.openid.net/auth/2.0&&ref_=nav_em_hd_clc_signin",
+  "domain": "www.amazon-log.xyz",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.amazon-log.xyz', port=443): Max retries exceeded with url: /signim/?op"
+ },
+ {
+  "url": "https://checkusersafety.icu/105650/P7XsZ4o2gTJyNeu/N4XzHgjRIyGeAFn/643730358875/nv0pADOKHtIohug/sfEKGtrOCH2pMTy/do_login.php",
+  "domain": "checkusersafety.icu",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='checkusersafety.icu', port=443): Max retries exceeded with url: /105650/P7"
+ },
+ {
+  "url": "https://hceirwpceq.web.app",
+  "domain": "hceirwpceq.web.app",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 21265,
+  "fetchable": false
+ },
+ {
+  "url": "https://netflix-clone-ten-nu-98.vercel.app",
+  "domain": "netflix-clone-ten-nu-98.vercel.app",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 451,
+  "body_len": 109,
+  "fetchable": false
+ },
+ {
+  "url": "https://login-shopify-billing-com-0650dc78.activervotrepotentiel.com/shopify/?auth_token=ec8e35f4d6dfe8d08939b1838da4acc2c4dc5e8e6bd6e3100d25fdadb9f48a3e&cur=home&page=cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e.",
+  "domain": "login-shopify-billing-com-0650dc78.activervotrepotentiel.com",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='login-shopify-billing-com-0650dc78.activervotrepotentiel.com', port=443): "
+ },
+ {
+  "url": "https://www.apple.com.icloud.outdoorsporting.com/ap/signin",
+  "domain": "www.apple.com.icloud.outdoorsporting.com",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.apple.com.icloud.outdoorsporting.com', port=443): Max retries exceeded"
+ },
+ {
+  "url": "https://theguardian.com",
+  "domain": "theguardian.com",
+  "brand": "theguardian",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 1423262,
+  "fetchable": true
+ },
+ {
+  "url": "https://walmart.com/checkout",
+  "domain": "walmart.com",
+  "brand": "walmart",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "status": 200,
+  "body_len": 362237,
+  "fetchable": true
+ },
+ {
+  "url": "https://tel-gucci-offic.my-sarah.com",
+  "domain": "tel-gucci-offic.my-sarah.com",
+  "brand": "gucci",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='tel-gucci-offic.my-sarah.com', port=443): Max retries exceeded with url: /"
+ },
+ {
+  "url": "https://google.fr",
+  "domain": "google.fr",
+  "brand": "google",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 221820,
+  "fetchable": true
+ },
+ {
+  "url": "https://mobilelegends-free-skin9759.webiz.sbs/id",
+  "domain": "mobilelegends-free-skin9759.webiz.sbs",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='mobilelegends-free-skin9759.webiz.sbs', port=443): Max retries exceeded wi"
+ },
+ {
+  "url": "https://netflix.ryandey.xyz",
+  "domain": "netflix.ryandey.xyz",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='netflix.ryandey.xyz', port=443): Max retries exceeded with url: / (Caused "
+ },
+ {
+  "url": "https://ebay.com/checkout",
+  "domain": "ebay.com",
+  "brand": "ebay",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "status": 200,
+  "body_len": 88283,
+  "fetchable": true
+ },
+ {
+  "url": "https://chosen-forhypesquad.com",
+  "domain": "chosen-forhypesquad.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='chosen-forhypesquad.com', port=443): Max retries exceeded with url: / (Cau"
+ },
+ {
+  "url": "https://www.microsoft.littlephishies.link",
+  "domain": "www.microsoft.littlephishies.link",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.microsoft.littlephishies.link', port=443): Max retries exceeded with u"
+ },
+ {
+  "url": "https://oc5p5jb3eyyqrvmlqpftgsrflm--www-paypal-com.translate.goog/signin/phone-confirmation/loadprimaryphone",
+  "domain": "oc5p5jb3eyyqrvmlqpftgsrflm--www-paypal-com.translate.goog",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 429,
+  "body_len": 5907,
+  "fetchable": false
+ },
+ {
+  "url": "https://rlqtaoot2dtwjzcclgmwftt4um--www-paypal-com.translate.goog",
+  "domain": "rlqtaoot2dtwjzcclgmwftt4um--www-paypal-com.translate.goog",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 404,
+  "body_len": 5864,
+  "fetchable": false
+ },
+ {
+  "url": "https://ox.ac.uk",
+  "domain": "ox.ac.uk",
+  "brand": "ox",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 403,
+  "body_len": 5573,
+  "fetchable": false
+ },
+ {
+  "url": "https://globalservice-apple-support.com/signin.html?invitationurl=8904c2d5648c88e6bc251812831fe4f7&keyinvite=8904c2d5648c88e6bc251812831fe4f7",
+  "domain": "globalservice-apple-support.com",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='globalservice-apple-support.com', port=443): Max retries exceeded with url"
+ },
+ {
+  "url": "https://icloud.apple-style.ezike.cn/sign-insetup",
+  "domain": "icloud.apple-style.ezike.cn",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='icloud.apple-style.ezike.cn', port=443): Max retries exceeded with url: /s"
+ },
+ {
+  "url": "https://costco-reward-campaign.ca/finance/atb/secquestions.php",
+  "domain": "costco-reward-campaign.ca",
+  "brand": "costco",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='costco-reward-campaign.ca', port=443): Max retries exceeded with url: /fin"
+ },
+ {
+  "url": "https://expireddomains.com",
+  "domain": "expireddomains.com",
+  "brand": "expireddomains",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 904585,
+  "fetchable": true
+ },
+ {
+  "url": "https://ebay.com-itm.8723648.rocks/2007-EZ-GO-gas-powered-golf-cart/parentrq-3Adb7040fd1780a77dcd1d5713ffe47116/hgf67.html",
+  "domain": "ebay.com-itm.8723648.rocks",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ebay.com-itm.8723648.rocks', port=443): Max retries exceeded with url: /20"
+ },
+ {
+  "url": "https://paypal.com/checkout",
+  "domain": "paypal.com",
+  "brand": "paypal",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "status": 200,
+  "body_len": 498549,
+  "fetchable": true
+ },
+ {
+  "url": "https://target.com/checkout",
+  "domain": "target.com",
+  "brand": "target",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "status": 200,
+  "body_len": 91562,
+  "fetchable": true
+ },
+ {
+  "url": "https://netflix-wb.vercel.app",
+  "domain": "netflix-wb.vercel.app",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 451,
+  "body_len": 109,
+  "fetchable": false
+ },
+ {
+  "url": "https://netflix-customercareid.com/ne/n/login",
+  "domain": "netflix-customercareid.com",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='netflix-customercareid.com', port=443): Max retries exceeded with url: /ne"
+ },
+ {
+  "url": "https://medicalnewstoday.com",
+  "domain": "medicalnewstoday.com",
+  "brand": "medicalnewstoday",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 310186,
+  "fetchable": true
+ },
+ {
+  "url": "http://teams.microsoft.com.fslsg.kenshivpn.filegear-sg.me",
+  "domain": "teams.microsoft.com.fslsg.kenshivpn.filegear-sg.me",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='teams.microsoft.com.fslsg.kenshivpn.filegear-sg.me', port=80): Max retries "
+ },
+ {
+  "url": "https://thenai.org",
+  "domain": "thenai.org",
+  "brand": "thenai",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 299850,
+  "fetchable": true
+ },
+ {
+  "url": "https://ft.com",
+  "domain": "ft.com",
+  "brand": "ft",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 403,
+  "body_len": 270382,
+  "fetchable": false
+ },
+ {
+  "url": "https://www.amazon-check-co-jp.j8a.top/?rve62qemxac9hmzp",
+  "domain": "www.amazon-check-co-jp.j8a.top",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.amazon-check-co-jp.j8a.top', port=443): Max retries exceeded with url:"
+ },
+ {
+  "url": "https://weforum.org",
+  "domain": "weforum.org",
+  "brand": "weforum",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 403,
+  "body_len": 369,
+  "fetchable": false
+ },
+ {
+  "url": "https://oup.com",
+  "domain": "oup.com",
+  "brand": "oup",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 87869,
+  "fetchable": true
+ },
+ {
+  "url": "https://dio-interface-netflix.vercel.app",
+  "domain": "dio-interface-netflix.vercel.app",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 404,
+  "body_len": 107,
+  "fetchable": false
+ },
+ {
+  "url": "https://samsung.sign-ios.com/au3v29?vweeoztrnhw19dcys57r6sglnvdf0xhvyiwyfznnwbecbvbzu9odlslwvjnrfcmizmem3vfejblfq4xzpzvxx2nwi8tq4ibswx91gxq4eh74ncajbec4hsbnawqw3qy8lfesfxq2ufuwgeestojx0ikqy6ixiasnrhi5vjg9gs=",
+  "domain": "samsung.sign-ios.com",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='samsung.sign-ios.com', port=443): Max retries exceeded with url: /au3v29?v"
+ },
+ {
+  "url": "https://gucci-109221.weeblysite.com",
+  "domain": "gucci-109221.weeblysite.com",
+  "brand": "gucci",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 404,
+  "body_len": 1547,
+  "fetchable": false
+ },
+ {
+  "url": "https://dctmnvk.cyou",
+  "domain": "dctmnvk.cyou",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='dctmnvk.cyou', port=443): Max retries exceeded with url: / (Caused by Name"
+ },
+ {
+  "url": "https://ebay-seller-profile.negative-feedback.info/ZSH6FhGSUf-hEfpbDCPth-M8bVHeanqz/Sign_in_or_Register_eBay.php?id=b156328bf83aef07e87971809464aa58b156328bf83aef07e87971809464aa58&session=b156328bf83aef07e87971809464aa58b156328bf83aef07e87971809464aa58",
+  "domain": "ebay-seller-profile.negative-feedback.info",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ebay-seller-profile.negative-feedback.info', port=443): Max retries exceed"
+ },
+ {
+  "url": "https://complianceguidelinesbrandvault.vercel.app/3a36efff&cf6=5a&1eG=K9dHF3da4b=D400e.html",
+  "domain": "complianceguidelinesbrandvault.vercel.app",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 451,
+  "body_len": 109,
+  "fetchable": false
+ },
+ {
+  "url": "https://nature.com",
+  "domain": "nature.com",
+  "brand": "nature",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 234840,
+  "fetchable": true
+ },
+ {
+  "url": "http://costco-rewards.ca/finance/mobilesco",
+  "domain": "costco-rewards.ca",
+  "brand": "costco",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='costco-rewards.ca', port=80): Max retries exceeded with url: /finance/mobil"
+ },
+ {
+  "url": "https://tulip-puzzling-target.glitch.me/jade.html",
+  "domain": "tulip-puzzling-target.glitch.me",
+  "brand": "target",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 410,
+  "body_len": 228794,
+  "fetchable": false
+ },
+ {
+  "url": "http://trinet.houseofgoldmore.com/?cmvuzwuud2fybmvyqhryaw5ldc5jb20=/0",
+  "domain": "trinet.houseofgoldmore.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='trinet.houseofgoldmore.com', port=80): Max retries exceeded with url: /?cmv"
+ },
+ {
+  "url": "https://netflix-gpt-main-392be.firebaseapp.com",
+  "domain": "netflix-gpt-main-392be.firebaseapp.com",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 404,
+  "body_len": 21265,
+  "fetchable": false
+ },
+ {
+  "url": "https://ebay-kleinanzeigen.pay-continue.org/cash70132605",
+  "domain": "ebay-kleinanzeigen.pay-continue.org",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ebay-kleinanzeigen.pay-continue.org', port=443): Max retries exceeded with"
+ },
+ {
+  "url": "https://locate-apple.support/aU3V44/code.php/codigo.php",
+  "domain": "locate-apple.support",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='locate-apple.support', port=443): Max retries exceeded with url: /aU3V44/c"
+ },
+ {
+  "url": "https://arxiv.org",
+  "domain": "arxiv.org",
+  "brand": "arxiv",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 38051,
+  "fetchable": true
+ },
+ {
+  "url": "https://bbc.com",
+  "domain": "bbc.com",
+  "brand": "bbc",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 630358,
+  "fetchable": true
+ },
+ {
+  "url": "https://netflix-clone-dvp.pages.dev",
+  "domain": "netflix-clone-dvp.pages.dev",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 403,
+  "body_len": 5068,
+  "fetchable": false
+ },
+ {
+  "url": "https://pos-target.com/m.data/onecpanel/info.html",
+  "domain": "pos-target.com",
+  "brand": "target",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 404,
+  "body_len": 355,
+  "fetchable": false
+ },
+ {
+  "url": "https://shopify-04.com/wap",
+  "domain": "shopify-04.com",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='shopify-04.com', port=443): Max retries exceeded with url: /wap (Caused by"
+ },
+ {
+  "url": "https://trackyourpackageusps.blogspot.com.br",
+  "domain": "trackyourpackageusps.blogspot.com.br",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 200,
+  "body_len": 78523,
+  "fetchable": true
+ },
+ {
+  "url": "https://halition.love",
+  "domain": "halition.love",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='halition.love', port=443): Max retries exceeded with url: / (Caused by Nam"
+ },
+ {
+  "url": "https://shopify-xjp.shop/wap",
+  "domain": "shopify-xjp.shop",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='shopify-xjp.shop', port=443): Max retries exceeded with url: /wap (Caused "
+ },
+ {
+  "url": "https://mozilla.com",
+  "domain": "mozilla.com",
+  "brand": "mozilla",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 46177,
+  "fetchable": true
+ },
+ {
+  "url": "https://columbustrailapt.buzz/servercom/fbg",
+  "domain": "columbustrailapt.buzz",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='columbustrailapt.buzz', port=443): Max retries exceeded with url: /serverc"
+ },
+ {
+  "url": "https://ibmbucket7060.s3.jp-osa.cloud-object-storage.appdomain.cloud/gripped/OFFICE2.html",
+  "domain": "ibmbucket7060.s3.jp-osa.cloud-object-storage.appdomain.cloud",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 403,
+  "body_len": 278,
+  "fetchable": false
+ },
+ {
+  "url": "https://www.amazon.ahdg.club",
+  "domain": "www.amazon.ahdg.club",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.amazon.ahdg.club', port=443): Max retries exceeded with url: / (Caused"
+ },
+ {
+  "url": "https://networkadvertising.org",
+  "domain": "networkadvertising.org",
+  "brand": "networkadvertising",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 299850,
+  "fetchable": true
+ },
+ {
+  "url": "https://itsssl.com/3odbV",
+  "domain": "itsssl.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 4130,
+  "fetchable": false
+ },
+ {
+  "url": "https://microsoft.infosynergie.dev",
+  "domain": "microsoft.infosynergie.dev",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 503,
+  "body_len": 4151,
+  "fetchable": false
+ },
+ {
+  "url": "https://mediafire.com",
+  "domain": "mediafire.com",
+  "brand": "mediafire",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 35820,
+  "fetchable": true
+ },
+ {
+  "url": "https://vercel.app",
+  "domain": "vercel.app",
+  "brand": "vercel",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 525453,
+  "fetchable": true
+ },
+ {
+  "url": "https://rc3vees.whatsmapp.download/down/oukvppr",
+  "domain": "rc3vees.whatsmapp.download",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='rc3vees.whatsmapp.download', port=443): Max retries exceeded with url: /do"
+ },
+ {
+  "url": "https://netflix-gpt-d1637.firebaseapp.com",
+  "domain": "netflix-gpt-d1637.firebaseapp.com",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 404,
+  "body_len": 21265,
+  "fetchable": false
+ },
+ {
+  "url": "http://rrs.srvsupportinfo2019.nl/irs/id.php",
+  "domain": "rrs.srvsupportinfo2019.nl",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='rrs.srvsupportinfo2019.nl', port=80): Max retries exceeded with url: /irs/i"
+ },
+ {
+  "url": "https://warm-unexpected-target.glitch.me/public/sec.htm",
+  "domain": "warm-unexpected-target.glitch.me",
+  "brand": "target",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 410,
+  "body_len": 228794,
+  "fetchable": false
+ },
+ {
+  "url": "https://costco-membership-reward.ca/Finance/tang/antibot.php",
+  "domain": "costco-membership-reward.ca",
+  "brand": "costco",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='costco-membership-reward.ca', port=443): Max retries exceeded with url: /F"
+ },
+ {
+  "url": "https://microsoft.enterpriserewards.com.au/107519/8af662/475d964a-0243-46bf-aefd-66da26254efa",
+  "domain": "microsoft.enterpriserewards.com.au",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='microsoft.enterpriserewards.com.au', port=443): Max retries exceeded with "
+ },
+ {
+  "url": "http://costco-annual-expenses-reward.ca/finance/mobilesco",
+  "domain": "costco-annual-expenses-reward.ca",
+  "brand": "costco",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='costco-annual-expenses-reward.ca', port=80): Max retries exceeded with url:"
+ },
+ {
+  "url": "https://costco-annual-reward.ca/finance/atb/secquestions.php",
+  "domain": "costco-annual-reward.ca",
+  "brand": "costco",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='costco-annual-reward.ca', port=443): Max retries exceeded with url: /finan"
+ },
+ {
+  "url": "https://shopify-rt.shop/wap",
+  "domain": "shopify-rt.shop",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='shopify-rt.shop', port=443): Max retries exceeded with url: /wap (Caused b"
+ },
+ {
+  "url": "https://login-microsoft-authorize02.dt.r.appspot.com",
+  "domain": "login-microsoft-authorize02.dt.r.appspot.com",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 404,
+  "body_len": 272,
+  "fetchable": false
+ },
+ {
+  "url": "https://netflix-service.xyz",
+  "domain": "netflix-service.xyz",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='netflix-service.xyz', port=443): Max retries exceeded with url: / (Caused "
+ },
+ {
+  "url": "https://ebay.display-negative-feedback.info/uvaa2r3vftjy-bsrbkwlapvhs-k34xdrjq8jgw/sign_in_or_register_ebay.php?id=f89da98c915eb12c1e9f94fff27f45e0f89da98c915eb12c1e9f94fff27f45e0&session=f89da98c915eb12c1e9f94fff27f45e0f89da98c915eb12c1e9f94fff27f45e0",
+  "domain": "ebay.display-negative-feedback.info",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ebay.display-negative-feedback.info', port=443): Max retries exceeded with"
+ },
+ {
+  "url": "https://frontiersin.org",
+  "domain": "frontiersin.org",
+  "brand": "frontiersin",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 243349,
+  "fetchable": true
+ },
+ {
+  "url": "https://rococo-concha-b283d0.netlify.app",
+  "domain": "rococo-concha-b283d0.netlify.app",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 50,
+  "fetchable": false
+ },
+ {
+  "url": "https://picasa.google.com",
+  "domain": "picasa.google.com",
+  "brand": "picasa",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 5315,
+  "fetchable": true
+ },
+ {
+  "url": "https://express.co.uk",
+  "domain": "express.co.uk",
+  "brand": "express",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 408914,
+  "fetchable": true
+ },
+ {
+  "url": "https://chronopost-colis.info/chhshdronco93/b.php?fgdd=1",
+  "domain": "chronopost-colis.info",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='chronopost-colis.info', port=443): Max retries exceeded with url: /chhshdr"
+ },
+ {
+  "url": "https://lamagraconsulting.com/tusa",
+  "domain": "lamagraconsulting.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 457506,
+  "fetchable": false
+ },
+ {
+  "url": "https://ebay.myprofiles.icu/profile/ywdcnzmoucuq1djq",
+  "domain": "ebay.myprofiles.icu",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ebay.myprofiles.icu', port=443): Max retries exceeded with url: /profile/y"
+ },
+ {
+  "url": "https://target.thehostelhelpscustomers.net",
+  "domain": "target.thehostelhelpscustomers.net",
+  "brand": "target",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='target.thehostelhelpscustomers.net', port=443): Max retries exceeded with "
+ },
+ {
+  "url": "https://netflix-clone-lkmjzdl7y-wildanjr09.vercel.app/login",
+  "domain": "netflix-clone-lkmjzdl7y-wildanjr09.vercel.app",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 404,
+  "body_len": 107,
+  "fetchable": false
+ },
+ {
+  "url": "https://nationalgeographic.com",
+  "domain": "nationalgeographic.com",
+  "brand": "nationalgeographic",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 593484,
+  "fetchable": true
+ },
+ {
+  "url": "http://ebay.com-sony-ps5-brand-new-blu-ray-disc-edition-console.itm1902759.live/283569973051epid=170409353trkpispr3dhash",
+  "domain": "ebay.com-sony-ps5-brand-new-blu-ray-disc-edition-console.itm1902759.live",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='ebay.com-sony-ps5-brand-new-blu-ray-disc-edition-console.itm1902759.live', "
+ },
+ {
+  "url": "https://carpetsuppliersmorecambe.co.uk/backup/wp-content/plugins/three-column-screen-layout/BOfA/24ef1175cc7698a42dff0f447d03242f/surf4.php",
+  "domain": "carpetsuppliersmorecambe.co.uk",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='carpetsuppliersmorecambe.co.uk', port=443): Max retries exceeded with url:"
+ },
+ {
+  "url": "https://samsung.com/checkout",
+  "domain": "samsung.com",
+  "brand": "samsung",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "status": 404,
+  "body_len": 92358,
+  "fetchable": false
+ },
+ {
+  "url": "https://ebay.com-itm.cc/electronics/1645678784598/index.html",
+  "domain": "ebay.com-itm.cc",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 526,
+  "body_len": 7256,
+  "fetchable": false
+ },
+ {
+  "url": "https://gsx-new-apple.com/?invitationlink-id?=u3u2-e744-c3n8-a43o-b8p0",
+  "domain": "gsx-new-apple.com",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='gsx-new-apple.com', port=443): Max retries exceeded with url: /?invitation"
+ },
+ {
+  "url": "https://w-tr.curraden.ch/tisofpfc7chbepn-2/oviuimtqk5nlwuf/?email=mmaurath@brabender-technologie.com",
+  "domain": "w-tr.curraden.ch",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='w-tr.curraden.ch', port=443): Max retries exceeded with url: /tisofpfc7chb"
+ },
+ {
+  "url": "https://youronlinechoices.com",
+  "domain": "youronlinechoices.com",
+  "brand": "youronlinechoices",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 7418,
+  "fetchable": true
+ },
+ {
+  "url": "http://shopify.sendnine.com/login",
+  "domain": "shopify.sendnine.com",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 200,
+  "body_len": 114,
+  "fetchable": false
+ },
+ {
+  "url": "http://paypal-limited.pdcotton.com/signb/3vchhlx",
+  "domain": "paypal-limited.pdcotton.com",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='paypal-limited.pdcotton.com', port=80): Max retries exceeded with url: /sig"
+ },
+ {
+  "url": "https://microsoft-103838.weeblysite.com",
+  "domain": "microsoft-103838.weeblysite.com",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 403,
+  "body_len": 5069,
+  "fetchable": false
+ },
+ {
+  "url": "https://netflix.com/checkout",
+  "domain": "netflix.com",
+  "brand": "netflix",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "status": 200,
+  "body_len": 23190,
+  "fetchable": true
+ },
+ {
+  "url": "https://ipv4.google.com",
+  "domain": "ipv4.google.com",
+  "brand": "ipv4",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 217487,
+  "fetchable": true
+ },
+ {
+  "url": "https://majorsevenmusic.com/new/auth/now/y1vahq/am9llnnhbmdozxjhqgrvbwluby11ay5jb20=",
+  "domain": "majorsevenmusic.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='majorsevenmusic.com', port=443): Max retries exceeded with url: /new/auth/"
+ },
+ {
+  "url": "https://xing.com",
+  "domain": "xing.com",
+  "brand": "xing",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 430348,
+  "fetchable": true
+ },
+ {
+  "url": "https://microsoft-106372.weeblysite.com",
+  "domain": "microsoft-106372.weeblysite.com",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 404,
+  "body_len": 1547,
+  "fetchable": false
+ },
+ {
+  "url": "https://sephora.com/checkout",
+  "domain": "sephora.com",
+  "brand": "sephora",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "status": 200,
+  "body_len": 600212,
+  "fetchable": true
+ },
+ {
+  "url": "https://wix.com",
+  "domain": "wix.com",
+  "brand": "wix",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 3028771,
+  "fetchable": true
+ },
+ {
+  "url": "https://faciet-esports.ru/free/nitro",
+  "domain": "faciet-esports.ru",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='faciet-esports.ru', port=443): Max retries exceeded with url: /free/nitro "
+ },
+ {
+  "url": "https://kor-shopify.shop",
+  "domain": "kor-shopify.shop",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='kor-shopify.shop', port=443): Max retries exceeded with url: / (Caused by "
+ },
+ {
+  "url": "https://wonderful-banzai.109-71-253-24.plesk.page/rabo",
+  "domain": "wonderful-banzai.109-71-253-24.plesk.page",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "SSLError: HTTPSConnectionPool(host='wonderful-banzai.109-71-253-24.plesk.page', port=443): Max retries exceede"
+ },
+ {
+  "url": "https://apple.com/checkout",
+  "domain": "apple.com",
+  "brand": "apple",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "status": 404,
+  "body_len": 111055,
+  "fetchable": false
+ },
+ {
+  "url": "https://myaccess-ur-apple.com/go.php?ssl=yes",
+  "domain": "myaccess-ur-apple.com",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='myaccess-ur-apple.com', port=443): Max retries exceeded with url: /go.php?"
+ },
+ {
+  "url": "http://sg3plvwcpnl378889.prod.sin3.secureserver.net/~aloyst/fonts/excel1",
+  "domain": "sg3plvwcpnl378889.prod.sin3.secureserver.net",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='sg3plvwcpnl378889.prod.sin3.secureserver.net', port=80): Max retries exceed"
+ },
+ {
+  "url": "https://developers.google.com",
+  "domain": "developers.google.com",
+  "brand": "developers",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 144650,
+  "fetchable": true
+ },
+ {
+  "url": "http://silent-encouraging-target.glitch.me/fanta.html",
+  "domain": "silent-encouraging-target.glitch.me",
+  "brand": "target",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 410,
+  "body_len": 228794,
+  "fetchable": false
+ },
+ {
+  "url": "https://fb-support-ads-e0995.web.app",
+  "domain": "fb-support-ads-e0995.web.app",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 21265,
+  "fetchable": false
+ },
+ {
+  "url": "http://secureghsiverify.duckdns.org",
+  "domain": "secureghsiverify.duckdns.org",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectTimeout: HTTPConnectionPool(host='secureghsiverify.duckdns.org', port=80): Max retries exceeded with url: / ("
+ },
+ {
+  "url": "https://react-netflix-iota.vercel.app",
+  "domain": "react-netflix-iota.vercel.app",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 404,
+  "body_len": 107,
+  "fetchable": false
+ },
+ {
+  "url": "https://dev-salmanislove.pantheonsite.io/swiss/chfinal/be65e",
+  "domain": "dev-salmanislove.pantheonsite.io",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 530,
+  "body_len": 570,
+  "fetchable": false
+ },
+ {
+  "url": "http://login0365organizationsigning.com/1b81bf40423faee8738dec6cec97167466613fafc1ef9log1b81bf40423faee8738dec6cec97167466613fafc1efa",
+  "domain": "login0365organizationsigning.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 200,
+  "body_len": 4650,
+  "fetchable": true
+ },
+ {
+  "url": "https://wikia.com",
+  "domain": "wikia.com",
+  "brand": "wikia",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 403,
+  "body_len": 5645,
+  "fetchable": false
+ },
+ {
+  "url": "https://www.netflix-try.duckdns.org/netovie.php",
+  "domain": "www.netflix-try.duckdns.org",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='www.netflix-try.duckdns.org', port=443): Max retries exceeded with url: /n"
+ },
+ {
+  "url": "http://bafutcouncil.net/valid/onlinelogin/sign.in.attempt.=generalindex.phpsrc=zwppzxdpb2u5/paypal/customer_center/user-923343/payment.php",
+  "domain": "bafutcouncil.net",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 61087,
+  "fetchable": false
+ },
+ {
+  "url": "http://login.netflix.restore-membership.com/files/youraccountbillingus.php",
+  "domain": "login.netflix.restore-membership.com",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='login.netflix.restore-membership.com', port=80): Max retries exceeded with "
+ },
+ {
+  "url": "https://ikea.saa-palkintosi.com/win.php/redeem?link=bGlua3ByZWZpeDYy",
+  "domain": "ikea.saa-palkintosi.com",
+  "brand": "ikea",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ikea.saa-palkintosi.com', port=443): Max retries exceeded with url: /win.p"
+ },
+ {
+  "url": "https://dev-notificacionpybancoitau.pantheonsite.io",
+  "domain": "dev-notificacionpybancoitau.pantheonsite.io",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 530,
+  "body_len": 570,
+  "fetchable": false
+ },
+ {
+  "url": "https://walmart-wl.cn",
+  "domain": "walmart-wl.cn",
+  "brand": "walmart",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='walmart-wl.cn', port=443): Max retries exceeded with url: / (Caused by Nam"
+ },
+ {
+  "url": "http://netflix.login.admin-cdn.com/files",
+  "domain": "netflix.login.admin-cdn.com",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='netflix.login.admin-cdn.com', port=80): Max retries exceeded with url: /fil"
+ },
+ {
+  "url": "https://samsung.inc-cloud.com/au3v38/code.php",
+  "domain": "samsung.inc-cloud.com",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='samsung.inc-cloud.com', port=443): Max retries exceeded with url: /au3v38/"
+ },
+ {
+  "url": "http://systemsofplay.net",
+  "domain": "systemsofplay.net",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='systemsofplay.net', port=80): Max retries exceeded with url: / (Caused by N"
+ },
+ {
+  "url": "https://pamcakekswap.com",
+  "domain": "pamcakekswap.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='pamcakekswap.com', port=443): Max retries exceeded with url: / (Caused by "
+ },
+ {
+  "url": "https://appleld-apple.accountlocked-feedbackld.thebrera.com/idmswebauth/?controls=login&sessionid=&country=ca&error=1",
+  "domain": "appleld-apple.accountlocked-feedbackld.thebrera.com",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='appleld-apple.accountlocked-feedbackld.thebrera.com', port=443): Max retri"
+ },
+ {
+  "url": "https://www.wwdc-apple-business.com",
+  "domain": "www.wwdc-apple-business.com",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.wwdc-apple-business.com', port=443): Max retries exceeded with url: / "
+ },
+ {
+  "url": "https://louisvuitton.com/checkout",
+  "domain": "louisvuitton.com",
+  "brand": "louisvuitton",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "status": 403,
+  "body_len": 12541,
+  "fetchable": false
+ },
+ {
+  "url": "http://settings-apple.info/fmicode/code.php",
+  "domain": "settings-apple.info",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='settings-apple.info', port=80): Max retries exceeded with url: /fmicode/cod"
+ },
+ {
+  "url": "https://pos-target.com/m.data/onecpanel",
+  "domain": "pos-target.com",
+  "brand": "target",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 404,
+  "body_len": 355,
+  "fetchable": false
+ },
+ {
+  "url": "https://euronews.com",
+  "domain": "euronews.com",
+  "brand": "euronews",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 600947,
+  "fetchable": true
+ },
+ {
+  "url": "https://www.apple.lnc.uinra.cn/mim/f2m0jbn92cq088d4425w11769izil71y2x71h13732088z6429.html",
+  "domain": "www.apple.lnc.uinra.cn",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.apple.lnc.uinra.cn', port=443): Max retries exceeded with url: /mim/f2"
+ },
+ {
+  "url": "https://microsoft-mail-outlook.myportfolio.com",
+  "domain": "microsoft-mail-outlook.myportfolio.com",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 200,
+  "body_len": 20668,
+  "fetchable": true
+ },
+ {
+  "url": "https://www.admin-update-amazon.co.jp.69825.cn",
+  "domain": "www.admin-update-amazon.co.jp.69825.cn",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "SSLError: HTTPSConnectionPool(host='www.admin-update-amazon.co.jp.69825.cn', port=443): Max retries exceeded w"
+ },
+ {
+  "url": "https://legifrance.gouv.fr",
+  "domain": "legifrance.gouv.fr",
+  "brand": "legifrance",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 403,
+  "body_len": 5668,
+  "fetchable": false
+ },
+ {
+  "url": "https://cn-shopify.shop/wap",
+  "domain": "cn-shopify.shop",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='cn-shopify.shop', port=443): Max retries exceeded with url: /wap (Caused b"
+ },
+ {
+  "url": "http://cpcalendars.beautyblendersponge.xyz/sos/chase/vbv.php?websrc=e17ea285ad581008aac6b89b49ab879e&dispatched=49&id=2895345024&servid=service_login_&_authentication=309d00fc1ce876c274161036e2031be5fd6c5058",
+  "domain": "cpcalendars.beautyblendersponge.xyz",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='cpcalendars.beautyblendersponge.xyz', port=80): Max retries exceeded with u"
+ },
+ {
+  "url": "https://zara-facebook.weebly.com",
+  "domain": "zara-facebook.weebly.com",
+  "brand": "zara",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 404,
+  "body_len": 3909,
+  "fetchable": false
+ },
+ {
+  "url": "https://securelogin-paypal.pages.dev",
+  "domain": "securelogin-paypal.pages.dev",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 403,
+  "body_len": 4463,
+  "fetchable": false
+ },
+ {
+  "url": "https://pub-3f2f97ddd6bb4b0ab8304c46971962b1.r2.dev/gsdvcxc.html",
+  "domain": "pub-3f2f97ddd6bb4b0ab8304c46971962b1.r2.dev",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 403,
+  "body_len": 5093,
+  "fetchable": false
+ },
+ {
+  "url": "https://www.samsung.sign-ios.com/au3v29?mpkvjbsvdoblnmyz6eg5rmcyq4ehvvzqpjfzqaoxg69urt5lcf8le1la6o3dkqwt1ufkh7xnob1csrfxgrhpsk87j3d8xwgszbcdqtmtdlzujwg0r5mefuroyrthpqeolxu9c6pnrilsywqlqcnrksl4jnep7qyivauopamwx6=",
+  "domain": "www.samsung.sign-ios.com",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.samsung.sign-ios.com', port=443): Max retries exceeded with url: /au3v"
+ },
+ {
+  "url": "https://www.samsung.support-maps.in/au3v29",
+  "domain": "www.samsung.support-maps.in",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.samsung.support-maps.in', port=443): Max retries exceeded with url: /a"
+ },
+ {
+  "url": "https://shutterstock.com",
+  "domain": "shutterstock.com",
+  "brand": "shutterstock",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 403,
+  "body_len": 784,
+  "fetchable": false
+ },
+ {
+  "url": "http://www.findmymobile-samsung.us/fmicode/code.php?id=33357&digitos=6&url=ilocated-findcloud.com",
+  "domain": "www.findmymobile-samsung.us",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='www.findmymobile-samsung.us', port=80): Max retries exceeded with url: /fmi"
+ },
+ {
+  "url": "https://www.samsung.support-maps.in/au3v38/code.php",
+  "domain": "www.samsung.support-maps.in",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.samsung.support-maps.in', port=443): Max retries exceeded with url: /a"
+ },
+ {
+  "url": "https://zara.com/checkout",
+  "domain": "zara.com",
+  "brand": "zara",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "status": 404,
+  "body_len": 373083,
+  "fetchable": false
+ },
+ {
+  "url": "https://actp.com.au/public/arcr8bprtbff2ou0yeqxnwgolkdnjeld",
+  "domain": "actp.com.au",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 77951,
+  "fetchable": false
+ },
+ {
+  "url": "http://www.account-samsung.com-mx.me/signnewesp.php",
+  "domain": "www.account-samsung.com-mx.me",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='www.account-samsung.com-mx.me', port=80): Max retries exceeded with url: /s"
+ },
+ {
+  "url": "https://cumnec-d22a.femjmrusdiae.workers.dev/7755862a-d46b-4cf4-b4ee-d3177ccdde56",
+  "domain": "cumnec-d22a.femjmrusdiae.workers.dev",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 500,
+  "body_len": 4683,
+  "fetchable": false
+ },
+ {
+  "url": "https://siasky.net/fagm9wbkwzfrdtbvgsbqh95_y4zsvkhpayqtx--_wlosog",
+  "domain": "siasky.net",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 403,
+  "body_len": 1338,
+  "fetchable": false
+ },
+ {
+  "url": "https://biggeeslot888.com/dir/authorize_client_id:cnb46krm-kspb-p5zw-jft5-u2dhyvx7k1me_2ecuoqhsrfakyt9zw8pnm1dv54i7bg0x3l6jwby0fxqm7rvpzo3k684tlediug529jcn1shazpwivast9g6nmfhe7bxd08c3rq5oyu2l14jk?data=y3dvbgzlqhzpc2euy29t",
+  "domain": "biggeeslot888.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='biggeeslot888.com', port=443): Max retries exceeded with url: /dir/authori"
+ },
+ {
+  "url": "https://mail.google.com",
+  "domain": "mail.google.com",
+  "brand": "mail",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 1238269,
+  "fetchable": true
+ },
+ {
+  "url": "https://user-support-assist.firebaseapp.com",
+  "domain": "user-support-assist.firebaseapp.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 21265,
+  "fetchable": false
+ },
+ {
+  "url": "https://www.netflix.ejmusinagem.com.br",
+  "domain": "www.netflix.ejmusinagem.com.br",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='www.netflix.ejmusinagem.com.br', port=443): Max retries exceeded with url:"
+ },
+ {
+  "url": "https://paypal-login.gitbook.io",
+  "domain": "paypal-login.gitbook.io",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 403,
+  "body_len": 35,
+  "fetchable": false
+ },
+ {
+  "url": "https://iaruc.fommenx.click/?ihm=2bZGF2aWQuc2htdWVsQGFkYW1hLmNvbQ==",
+  "domain": "iaruc.fommenx.click",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='iaruc.fommenx.click', port=443): Max retries exceeded with url: /?ihm=2bZG"
+ },
+ {
+  "url": "https://costco.com/checkout",
+  "domain": "costco.com",
+  "brand": "costco",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "status": 200,
+  "body_len": 2316249,
+  "fetchable": true
+ },
+ {
+  "url": "http://154.41.229.11/sh/accepted/coco/login.php?cmd=login_submit&id=19af30d536e1c70bfa53408be703af7f19af30d536e1c70bfa53408be703af7f&session=19af30d536e1c70bfa53408be703af7f19af30d536e1c70bfa53408be703af7f",
+  "domain": "154.41.229.11",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectTimeout: HTTPConnectionPool(host='154.41.229.11', port=80): Max retries exceeded with url: /sh/accepted/coco/"
+ },
+ {
+  "url": "https://channelhub.info/8fe696b7fxd8c64947nbef9a0d2j699bbafc.html",
+  "domain": "channelhub.info",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 403,
+  "body_len": 6089,
+  "fetchable": false
+ },
+ {
+  "url": "https://orlenpltfm.com",
+  "domain": "orlenpltfm.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='orlenpltfm.com', port=443): Max retries exceeded with url: / (Caused by Na"
+ },
+ {
+  "url": "https://jlvjr.000webhostapp.com/index.php/false/false/py1n.htm%E2%80%A6",
+  "domain": "jlvjr.000webhostapp.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='jlvjr.000webhostapp.com', port=443): Max retries exceeded with url: /index"
+ },
+ {
+  "url": "https://paypal-me.protect-services-de.com/login/rvufdgrpzdxj&amp;vryqyfnmvciovae=opbxarngunoo-wdponxbtislpxxt&amp;xgleqlbkbatsvqnmmeqh=mcmfpyfvdzz",
+  "domain": "paypal-me.protect-services-de.com",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='paypal-me.protect-services-de.com', port=443): Max retries exceeded with u"
+ },
+ {
+  "url": "http://rentacarinaruba.com/dss/@%23@%23/at&t/index.php",
+  "domain": "rentacarinaruba.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 64338,
+  "fetchable": false
+ },
+ {
+  "url": "https://pinterest.com",
+  "domain": "pinterest.com",
+  "brand": "pinterest",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 1035111,
+  "fetchable": true
+ },
+ {
+  "url": "https://cozinhaideal.online/z-589622140058/789520l/product.php?sku=122",
+  "domain": "cozinhaideal.online",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='cozinhaideal.online', port=443): Max retries exceeded with url: /z-5896221"
+ },
+ {
+  "url": "https://dutsh-helppackage.ecranul.ro/public/MSxENu46NPwLhLP11649VTXHrPXDSbM1",
+  "domain": "dutsh-helppackage.ecranul.ro",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='dutsh-helppackage.ecranul.ro', port=443): Max retries exceeded with url: /"
+ },
+ {
+  "url": "https://shubham-ebay-clone.netlify.app/sell",
+  "domain": "shubham-ebay-clone.netlify.app",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 200,
+  "body_len": 22128,
+  "fetchable": true
+ },
+ {
+  "url": "http://paypal-service-client.c1610970.ferozo.com/id/home/fr/signin/83e59/connectez-vous-votre-compte-paypal.html",
+  "domain": "paypal-service-client.c1610970.ferozo.com",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='paypal-service-client.c1610970.ferozo.com', port=80): Max retries exceeded "
+ },
+ {
+  "url": "http://microsoft-outlook-authen.df.r.appspot.com/login.microsoftonline.com/common/oauth2/authorize=vnews2&amp;amp;email=microsoftonline.com/common/oauth2/authorize&amp;amp;hashed_email=y7xy6xczj3r4t4mn&amp;amp;utm_campaign=phx_trigger_uk_pop_email4&amp;amp;utm_source=photobox&amp;amp;utm_medium=email&amp;amp;uid=4978854645473&amp;amp;brandname=photobox",
+  "domain": "microsoft-outlook-authen.df.r.appspot.com",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 404,
+  "body_len": 272,
+  "fetchable": false
+ },
+ {
+  "url": "https://instareportsplus.blogspot.com.uy/?m=1",
+  "domain": "instareportsplus.blogspot.com.uy",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 118368,
+  "fetchable": false
+ },
+ {
+  "url": "https://it.wikipedia.org",
+  "domain": "it.wikipedia.org",
+  "brand": "it",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 195810,
+  "fetchable": true
+ },
+ {
+  "url": "https://paypal-caseid458.com/users/userid-79958/season.php?country.x=8",
+  "domain": "paypal-caseid458.com",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='paypal-caseid458.com', port=443): Max retries exceeded with url: /users/us"
+ },
+ {
+  "url": "https://flqwakhjxr.np9q2f3.sbs",
+  "domain": "flqwakhjxr.np9q2f3.sbs",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 200,
+  "body_len": 1532,
+  "fetchable": true
+ },
+ {
+  "url": "http://apple-seed-event-portal.com/smsverification.php",
+  "domain": "apple-seed-event-portal.com",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='apple-seed-event-portal.com', port=80): Max retries exceeded with url: /sms"
+ },
+ {
+  "url": "https://lefigaro.fr",
+  "domain": "lefigaro.fr",
+  "brand": "lefigaro",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 1205812,
+  "fetchable": true
+ },
+ {
+  "url": "https://samsung.serv00.net/css/css/index/image/index/ahab",
+  "domain": "samsung.serv00.net",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 403,
+  "body_len": 2625,
+  "fetchable": false
+ },
+ {
+  "url": "http://walmart.couponcloud.co",
+  "domain": "walmart.couponcloud.co",
+  "brand": "walmart",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='walmart.couponcloud.co', port=80): Max retries exceeded with url: / (Caused"
+ },
+ {
+  "url": "https://homefoodfav.ga/8df78b0/wallet.html",
+  "domain": "homefoodfav.ga",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='homefoodfav.ga', port=443): Max retries exceeded with url: /8df78b0/wallet"
+ },
+ {
+  "url": "https://ebay.com-itm-2014-bass-tracker-pro-160.cgial.bar/11ea-b06a-74dbd180c969_parentrq:80d708001720a9e8469d5c4dffedb62a/117_index.html",
+  "domain": "ebay.com-itm-2014-bass-tracker-pro-160.cgial.bar",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ebay.com-itm-2014-bass-tracker-pro-160.cgial.bar', port=443): Max retries "
+ },
+ {
+  "url": "https://ebay-de.acces-pay.org/getpayment/253515727",
+  "domain": "ebay-de.acces-pay.org",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ebay-de.acces-pay.org', port=443): Max retries exceeded with url: /getpaym"
+ },
+ {
+  "url": "https://microsoft-108673.weeblysite.com",
+  "domain": "microsoft-108673.weeblysite.com",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 403,
+  "body_len": 5068,
+  "fetchable": false
+ },
+ {
+  "url": "https://goal.com",
+  "domain": "goal.com",
+  "brand": "goal",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 570595,
+  "fetchable": true
+ },
+ {
+  "url": "https://microsoft-106453.weeblysite.com",
+  "domain": "microsoft-106453.weeblysite.com",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 403,
+  "body_len": 5069,
+  "fetchable": false
+ },
+ {
+  "url": "http://walmart.ilearnballet.com/inst",
+  "domain": "walmart.ilearnballet.com",
+  "brand": "walmart",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='walmart.ilearnballet.com', port=80): Max retries exceeded with url: /inst ("
+ },
+ {
+  "url": "https://costco-membership-reward.ca/finance/tang/antibot.php",
+  "domain": "costco-membership-reward.ca",
+  "brand": "costco",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='costco-membership-reward.ca', port=443): Max retries exceeded with url: /f"
+ },
+ {
+  "url": "https://bestbuy.com/checkout",
+  "domain": "bestbuy.com",
+  "brand": "bestbuy",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "fetchable": false,
+  "error": "ReadTimeout: HTTPSConnectionPool(host='www.bestbuy.com', port=443): Read timed out. (read timeout=15)"
+ },
+ {
+  "url": "https://samsung.support-maps.in/au3v29",
+  "domain": "samsung.support-maps.in",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='samsung.support-maps.in', port=443): Max retries exceeded with url: /au3v2"
+ },
+ {
+  "url": "https://freefire.membership.gearena.vn/vlonlcohuigtiermss3lpfxgmpukcijx7wgyszteccltrly7vnuiaj3loj2egw3n8wlcsh1ktoufqzgwqcma9t4h4zmhkvcbigdkf",
+  "domain": "freefire.membership.gearena.vn",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='freefire.membership.gearena.vn', port=443): Max retries exceeded with url:"
+ },
+ {
+  "url": "http://studiodomenicocarbone.com.usrfiles.com/html/3b1110_677083d48a67dd6ad5b939da8ac162ba.html",
+  "domain": "studiodomenicocarbone.com.usrfiles.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 403,
+  "body_len": 9,
+  "fetchable": false
+ },
+ {
+  "url": "https://login-shopify-billing-com-eb6babb9.activervotrepotentiel.com/Shopify/?AUTH_TOKEN=0186b93d20bdea761a668c77a5e26e84801efc973b2e2a5b74b21d2931834aab&cur=home&page=cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e.",
+  "domain": "login-shopify-billing-com-eb6babb9.activervotrepotentiel.com",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='login-shopify-billing-com-eb6babb9.activervotrepotentiel.com', port=443): "
+ },
+ {
+  "url": "https://office.com",
+  "domain": "office.com",
+  "brand": "office",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 308853,
+  "fetchable": true
+ },
+ {
+  "url": "http://id.service.paypal.c1581156.ferozo.com/home/fr/signin/30042f11c8431eae56a855d727cbf5e9/connectez-vous-votre-compte-paypal.html",
+  "domain": "id.service.paypal.c1581156.ferozo.com",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='id.service.paypal.c1581156.ferozo.com', port=80): Max retries exceeded with"
+ },
+ {
+  "url": "https://view.genial.ly/60f6e43bd7bf860d83b73eb3/interactive-content-genially",
+  "domain": "view.genial.ly",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 245903,
+  "fetchable": false
+ },
+ {
+  "url": "https://oups-impots-gouv-fr-mobile24-default0files.prohoster.biz/frmobile-semanticscholarorg/gouv-fr/s1.html",
+  "domain": "oups-impots-gouv-fr-mobile24-default0files.prohoster.biz",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='oups-impots-gouv-fr-mobile24-default0files.prohoster.biz', port=443): Max "
+ },
+ {
+  "url": "https://gucci.com/checkout",
+  "domain": "gucci.com",
+  "brand": "gucci",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "fetchable": false,
+  "error": "ReadTimeout: HTTPSConnectionPool(host='www.gucci.com', port=443): Read timed out. (read timeout=15)"
+ },
+ {
+  "url": "https://aliexpress.com",
+  "domain": "aliexpress.com",
+  "brand": "aliexpress",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 1871,
+  "fetchable": true
+ },
+ {
+  "url": "http://ebay.de-wsisapidllsignsecurblleds.aba.vg/saf2wwwdefbaydewsbayisapidllsigninruan20rs/defbaydewsbayisapi/einlogg.htm",
+  "domain": "ebay.de-wsisapidllsignsecurblleds.aba.vg",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 402,
+  "body_len": 443964,
+  "fetchable": false
+ },
+ {
+  "url": "https://www.amazon-user.auth.jpp-2.top/signim/homepage",
+  "domain": "www.amazon-user.auth.jpp-2.top",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.amazon-user.auth.jpp-2.top', port=443): Max retries exceeded with url:"
+ },
+ {
+  "url": "https://ikea.com/checkout",
+  "domain": "ikea.com",
+  "brand": "ikea",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "status": 404,
+  "body_len": 463542,
+  "fetchable": false
+ },
+ {
+  "url": "https://my.yahoo.com",
+  "domain": "my.yahoo.com",
+  "brand": "my",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 645822,
+  "fetchable": true
+ },
+ {
+  "url": "https://nike.m-h-azaddel9225.workers.dev",
+  "domain": "nike.m-h-azaddel9225.workers.dev",
+  "brand": "nike",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 403,
+  "body_len": 4463,
+  "fetchable": false
+ },
+ {
+  "url": "https://www.amazon.jp.0dpv.xyz/signin",
+  "domain": "www.amazon.jp.0dpv.xyz",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.amazon.jp.0dpv.xyz', port=443): Max retries exceeded with url: /signin"
+ },
+ {
+  "url": "https://www.samsung-lost.info/au3v38/code.php",
+  "domain": "www.samsung-lost.info",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.samsung-lost.info', port=443): Max retries exceeded with url: /au3v38/"
+ },
+ {
+  "url": "http://www.cafdo.africa/wp-content/uploads/https/officeonline/cgi-bin1/index.php",
+  "domain": "www.cafdo.africa",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 279,
+  "fetchable": false
+ },
+ {
+  "url": "https://linktr.ee",
+  "domain": "linktr.ee",
+  "brand": "linktr",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 443122,
+  "fetchable": true
+ },
+ {
+  "url": "http://paypal-member.serveirc.com/customer_center/customer-idpp00c192/myaccount/identity",
+  "domain": "paypal-member.serveirc.com",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='paypal-member.serveirc.com', port=80): Max retries exceeded with url: /cust"
+ },
+ {
+  "url": "https://ebay-club.top",
+  "domain": "ebay-club.top",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ebay-club.top', port=443): Max retries exceeded with url: / (Caused by Nam"
+ },
+ {
+  "url": "http://paypal-member.serveirc.com/customer_center/customer-idpp00c761",
+  "domain": "paypal-member.serveirc.com",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='paypal-member.serveirc.com', port=80): Max retries exceeded with url: /cust"
+ },
+ {
+  "url": "http://shopify-wo.shop",
+  "domain": "shopify-wo.shop",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='shopify-wo.shop', port=80): Max retries exceeded with url: / (Caused by Nam"
+ },
+ {
+  "url": "https://login-shopify-billing-com-d6151256.boutaleb.fr/shopify/?auth_token=2d63b2fe56756737b073a767bc7d365437ffeb697eb0e9f2401cddc763aac2c1&cur=home&page=cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e.",
+  "domain": "login-shopify-billing-com-d6151256.boutaleb.fr",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='login-shopify-billing-com-d6151256.boutaleb.fr', port=443): Max retries ex"
+ },
+ {
+  "url": "http://lo-zrecords.com/.well-known/pki-validation/admin/login.html",
+  "domain": "lo-zrecords.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='lo-zrecords.com', port=80): Max retries exceeded with url: /.well-known/pki"
+ },
+ {
+  "url": "http://adspayment-support.com.tr/7zm509donsn4lczk3nkhz4jkjlyrajmbnp6bszjbssxzmlgqt3bt9fpydisoaynqowd9kopkn4x3lcwqtrangdau.html",
+  "domain": "adspayment-support.com.tr",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='adspayment-support.com.tr', port=80): Max retries exceeded with url: /7zm50"
+ },
+ {
+  "url": "https://ebay-test.com",
+  "domain": "ebay-test.com",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ebay-test.com', port=443): Max retries exceeded with url: / (Caused by Nam"
+ },
+ {
+  "url": "http://sindhuj1042.github.io/netflixclone",
+  "domain": "sindhuj1042.github.io",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 9115,
+  "fetchable": false
+ },
+ {
+  "url": "https://account.samsung-uy.com/au3v88/c1.php",
+  "domain": "account.samsung-uy.com",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='account.samsung-uy.com', port=443): Max retries exceeded with url: /au3v88"
+ },
+ {
+  "url": "https://books.google.com",
+  "domain": "books.google.com",
+  "brand": "books",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 634632,
+  "fetchable": true
+ },
+ {
+  "url": "http://payments-costco.ca/finance/tang/antibot.php",
+  "domain": "payments-costco.ca",
+  "brand": "costco",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='payments-costco.ca', port=80): Max retries exceeded with url: /finance/tang"
+ },
+ {
+  "url": "https://jp-amazon.1avip.top",
+  "domain": "jp-amazon.1avip.top",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='jp-amazon.1avip.top', port=443): Max retries exceeded with url: / (Caused "
+ },
+ {
+  "url": "https://hermitagegardens.com.au/deeley/llc",
+  "domain": "hermitagegardens.com.au",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "SSLError: HTTPSConnectionPool(host='hermitagegardens.com.au', port=443): Max retries exceeded with url: /deele"
+ },
+ {
+  "url": "http://shopify-nl.shop",
+  "domain": "shopify-nl.shop",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='shopify-nl.shop', port=80): Max retries exceeded with url: / (Caused by Nam"
+ },
+ {
+  "url": "https://www.amazon-co-jp.kqx2.co",
+  "domain": "www.amazon-co-jp.kqx2.co",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.amazon-co-jp.kqx2.co', port=443): Max retries exceeded with url: / (Ca"
+ },
+ {
+  "url": "https://www.samsung-cloud.info/expire",
+  "domain": "www.samsung-cloud.info",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.samsung-cloud.info', port=443): Max retries exceeded with url: /expire"
+ },
+ {
+  "url": "http://login.microsoftonline.com.common.login.invoice.213245354.contrastnacht.com/office365/211629745_282249_20/signin.php",
+  "domain": "login.microsoftonline.com.common.login.invoice.213245354.contrastnacht.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='login.microsoftonline.com.common.login.invoice.213245354.contrastnacht.com'"
+ },
+ {
+  "url": "https://webdisk.amazon-online.top",
+  "domain": "webdisk.amazon-online.top",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='webdisk.amazon-online.top', port=443): Max retries exceeded with url: / (C"
+ },
+ {
+  "url": "https://amazon.it",
+  "domain": "amazon.it",
+  "brand": "amazon",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 202,
+  "body_len": 0,
+  "fetchable": false
+ },
+ {
+  "url": "https://apache.org",
+  "domain": "apache.org",
+  "brand": "apache",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 53998,
+  "fetchable": true
+ },
+ {
+  "url": "https://jp-amazon.4uut.top",
+  "domain": "jp-amazon.4uut.top",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='jp-amazon.4uut.top', port=443): Max retries exceeded with url: / (Caused b"
+ },
+ {
+  "url": "http://www.account.samsung-id.us/signnewesp.php",
+  "domain": "www.account.samsung-id.us",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='www.account.samsung-id.us', port=80): Max retries exceeded with url: /signn"
+ },
+ {
+  "url": "https://elpais.com",
+  "domain": "elpais.com",
+  "brand": "elpais",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 470039,
+  "fetchable": true
+ },
+ {
+  "url": "https://microsoft.com/checkout",
+  "domain": "microsoft.com",
+  "brand": "microsoft",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "status": 404,
+  "body_len": 784306,
+  "fetchable": false
+ },
+ {
+  "url": "https://independent.co.uk",
+  "domain": "independent.co.uk",
+  "brand": "independent",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 325449,
+  "fetchable": true
+ },
+ {
+  "url": "http://vwp.xng.mybluehost.me/wp-admin/js/-/csom/vbxmoulaaappp/67abe99182cfb7b65565100cf9836568",
+  "domain": "vwp.xng.mybluehost.me",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 355,
+  "fetchable": false
+ },
+ {
+  "url": "https://zfskdnhnzmegbpxnljnhuspleu-dot-gle39404049.rj.r.appspot.com",
+  "domain": "zfskdnhnzmegbpxnljnhuspleu-dot-gle39404049.rj.r.appspot.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 503,
+  "body_len": 302,
+  "fetchable": false
+ },
+ {
+  "url": "https://akamaihd.net",
+  "domain": "akamaihd.net",
+  "brand": "akamaihd",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='akamaihd.net', port=443): Max retries exceeded with url: / (Caused by Name"
+ },
+ {
+  "url": "https://ebay-kleinanzeigen.confirm-3ds.org/cash60396161",
+  "domain": "ebay-kleinanzeigen.confirm-3ds.org",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ebay-kleinanzeigen.confirm-3ds.org', port=443): Max retries exceeded with "
+ },
+ {
+  "url": "https://wayfair.com/checkout",
+  "domain": "wayfair.com",
+  "brand": "wayfair",
+  "expected_verdict": "real",
+  "source": "curated_brand_list",
+  "status": 429,
+  "body_len": 5849,
+  "fetchable": false
+ },
+ {
+  "url": "https://chase43n.com/home/myaccount/billing.php?websrc=e17ea285ad581008aac6b89b49ab879e&dispatched=90&id=5102215929",
+  "domain": "chase43n.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='chase43n.com', port=443): Max retries exceeded with url: /home/myaccount/b"
+ },
+ {
+  "url": "https://andrewkingphotography.com.au/chase/chase_suspected/978e00c46996191091a7c282cf779da0",
+  "domain": "andrewkingphotography.com.au",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 1251,
+  "fetchable": false
+ },
+ {
+  "url": "https://samsung-id.online/expire",
+  "domain": "samsung-id.online",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='samsung-id.online', port=443): Max retries exceeded with url: /expire (Cau"
+ },
+ {
+  "url": "https://rift-dramatic-target.glitch.me/tdfgn.html",
+  "domain": "rift-dramatic-target.glitch.me",
+  "brand": "target",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 410,
+  "body_len": 228794,
+  "fetchable": false
+ },
+ {
+  "url": "https://amazon.ca",
+  "domain": "amazon.ca",
+  "brand": "amazon",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 202,
+  "body_len": 0,
+  "fetchable": false
+ },
+ {
+  "url": "https://ebay.itm.com.topid.xyz/Apple-iPhone-11Pro-Max-Unlocked-256GB-Midnight-Green/154422263413hashid=item4dbASwY9fcl2-ebay0rgcviptrksidp35l257",
+  "domain": "ebay.itm.com.topid.xyz",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "SSLError: HTTPSConnectionPool(host='ebay.itm.com.topid.xyz', port=443): Max retries exceeded with url: /Apple-"
+ },
+ {
+  "url": "http://re.walmart.com.br/wf/click?upn=j5cixtfucddekwumr9aqn4vdzefqcjzfxiuasvg4ye1rllrfhm6rbhamtakkukj0wqqj9lpoonijevoggiq3vd9b3uoc3j0xlnuv944u-2f1xruupghjhrk8scxts-2fiu-2f9jyttcopxg3yrnpdokz0eva-3d-3d_952omqckpmphdq6i2-2blzzl0unk5b6ptsknvvz5ukvcdlcle2ohk26xxriu4x-2bzo3zx62reiz0g-2ftcpfvvgdmatkkuu9z8q47ap1uceppkpp5-2b8rqsybfg81o6lhmhafxdpqx-2bzyy3699omje5kac2lponfwlldn-2b67oda5a6fb3ifrm-2b8caidhjez2mizqygnph4dpxt2dzgqvnk4sugvjs0fqrspvo6ud90upkj2cgz5qgj2bemevlxozmchtzveey00zg9efjl6djk2dv-2bmi0ojbcpbxaxsya6tyirtny8veymvfrvcscqu16cavbwanilrwerny8yrnti-2f8ljxad14m-2b-2fxffpk0ir-2bvehlmw-2f5iyqlkkzhi3knilvyftmvw4-2fedouhyhw6vng9nfyenvi8us46zrnvq-2btc8a-2fctiut3uqvr-2brzdhaexd-2bz94-2f9kvyn8yqbmppi-2fsysrqb6unl9qxmfzty7xqtswg-2bnqmdbteyf6d1o-2fspmmomofuhuebnf3yxv9vpw4kt-2bruaswnsqiaysbtxr3imezjblznjz-2fzgostljeqd7xkbhhza",
+  "domain": "re.walmart.com.br",
+  "brand": "walmart",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='re.walmart.com.br', port=80): Max retries exceeded with url: /wf/click?upn="
+ },
+ {
+  "url": "https://amazon-prime-opui.openplatform.co/amazonprime/125703056665%e2%80%9d",
+  "domain": "amazon-prime-opui.openplatform.co",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='amazon-prime-opui.openplatform.co', port=443): Max retries exceeded with u"
+ },
+ {
+  "url": "http://seller.ebay-shopprodjs.com/0.5181793913103327",
+  "domain": "seller.ebay-shopprodjs.com",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='seller.ebay-shopprodjs.com', port=80): Max retries exceeded with url: /0.51"
+ },
+ {
+  "url": "https://rakuten.co.jp",
+  "domain": "rakuten.co.jp",
+  "brand": "rakuten",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 43,
+  "fetchable": false
+ },
+ {
+  "url": "https://kundenlogin.paypal.de.allesraubkatze.eu/bibaztgkmv4613",
+  "domain": "kundenlogin.paypal.de.allesraubkatze.eu",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='kundenlogin.paypal.de.allesraubkatze.eu', port=443): Max retries exceeded "
+ },
+ {
+  "url": "https://abc.es",
+  "domain": "abc.es",
+  "brand": "abc",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 360539,
+  "fetchable": true
+ },
+ {
+  "url": "https://www.chat-whatsaap2021.se.ke",
+  "domain": "www.chat-whatsaap2021.se.ke",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.chat-whatsaap2021.se.ke', port=443): Max retries exceeded with url: / "
+ },
+ {
+  "url": "https://connexion-amazon.fr/e1a41",
+  "domain": "connexion-amazon.fr",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='connexion-amazon.fr', port=443): Max retries exceeded with url: /e1a41 (Ca"
+ },
+ {
+  "url": "http://shopify-ll.shop",
+  "domain": "shopify-ll.shop",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='shopify-ll.shop', port=80): Max retries exceeded with url: / (Caused by Nam"
+ },
+ {
+  "url": "https://www.amazon-amae.cyou/pc",
+  "domain": "www.amazon-amae.cyou",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.amazon-amae.cyou', port=443): Max retries exceeded with url: /pc (Caus"
+ },
+ {
+  "url": "https://pub-034bb6071f65499fbf9ae445bb5a8175.r2.dev/pkaz.html",
+  "domain": "pub-034bb6071f65499fbf9ae445bb5a8175.r2.dev",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 403,
+  "body_len": 4463,
+  "fetchable": false
+ },
+ {
+  "url": "https://cnn.com",
+  "domain": "cnn.com",
+  "brand": "cnn",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 5627342,
+  "fetchable": true
+ },
+ {
+  "url": "https://greenpeace.org",
+  "domain": "greenpeace.org",
+  "brand": "greenpeace",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 3977,
+  "fetchable": true
+ },
+ {
+  "url": "https://evernote.com",
+  "domain": "evernote.com",
+  "brand": "evernote",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 373202,
+  "fetchable": true
+ },
+ {
+  "url": "http://secure.amazon.aadityabhardwaj.com/mazon/49497",
+  "domain": "secure.amazon.aadityabhardwaj.com",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='secure.amazon.aadityabhardwaj.com', port=80): Max retries exceeded with url"
+ },
+ {
+  "url": "https://metro.co.uk",
+  "domain": "metro.co.uk",
+  "brand": "metro",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 590177,
+  "fetchable": true
+ },
+ {
+  "url": "https://netflix-clone-eb1bb.firebaseapp.com",
+  "domain": "netflix-clone-eb1bb.firebaseapp.com",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 404,
+  "body_len": 21265,
+  "fetchable": false
+ },
+ {
+  "url": "https://tidonamoter.ombaclink.eu.org/poruifokf.htm",
+  "domain": "tidonamoter.ombaclink.eu.org",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='tidonamoter.ombaclink.eu.org', port=443): Max retries exceeded with url: /"
+ },
+ {
+  "url": "https://waliet-metmasiu.webflow.io",
+  "domain": "waliet-metmasiu.webflow.io",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 906,
+  "fetchable": false
+ },
+ {
+  "url": "https://ksbimcell.com",
+  "domain": "ksbimcell.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ksbimcell.com', port=443): Max retries exceeded with url: / (Caused by Nam"
+ },
+ {
+  "url": "https://tikakhantradersllc.com/synch/asdf/sjlhp/adxvobtwsjbweyzknjvvjypaszcmobpptosqxxaeivwbnjjalb/bwrlcm9zyubhbgxpzwrizxzlcmfnzs5jb20=",
+  "domain": "tikakhantradersllc.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='tikakhantradersllc.com', port=443): Max retries exceeded with url: /synch/"
+ },
+ {
+  "url": "https://www.paypal-free-balance2021.otzo.com/80b9dc855604d1e4f042/account/dba.php?cmd=_account-details&session=b6812fc32d50a386781030b57e13ae1c&dispatch=97141a9b93a5b9fcff185f5a47099e860fa2b03b",
+  "domain": "www.paypal-free-balance2021.otzo.com",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "SSLError: HTTPSConnectionPool(host='www.paypal-free-balance2021.otzo.com', port=443): Max retries exceeded wit"
+ },
+ {
+  "url": "https://apple-wk-portal-online.com/signin.html?invitationurl=88ef0e489bb4561f8a3c051ea3e54869&keyinvite=88ef0e489bb4561f8a3c051ea3e54869",
+  "domain": "apple-wk-portal-online.com",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='apple-wk-portal-online.com', port=443): Max retries exceeded with url: /si"
+ },
+ {
+  "url": "https://galcoservices.com/35323cf9e72385b7f3980d1e845ca0ab/verify.php?country_x=-&ACCT_x=ID-PPL=PA32465.154.226.165=ScrPg=04c6c22168bcadc161a6667f670ceba5f7f4678a57a91f8a3a177a9081fc3e40S=$1$GKgR3vq2$0bdPDNh96Y6dkBAXQMaGW0DaUxpCMwI8TGulKNvhgkX6YWFibJcZHQz32SmLyBPd0j9OAtqfsE14V7ne5oRrWXMLxQFZCKucgmJ5fkz3SlBsDy0AHRbGi2V9qdt1847TNOUYhPjenoEpravIw693712747165",
+  "domain": "galcoservices.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='galcoservices.com', port=443): Max retries exceeded with url: /35323cf9e72"
+ },
+ {
+  "url": "https://samsung.sign-ios.com/au3v38/code.php",
+  "domain": "samsung.sign-ios.com",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='samsung.sign-ios.com', port=443): Max retries exceeded with url: /au3v38/c"
+ },
+ {
+  "url": "https://microsoft-russia.online",
+  "domain": "microsoft-russia.online",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='microsoft-russia.online', port=443): Max retries exceeded with url: / (Cau"
+ },
+ {
+  "url": "https://dev-vrdeeusk6.pantheonsite.io/wp-admin/vrbank/vr/30607/login.html",
+  "domain": "dev-vrdeeusk6.pantheonsite.io",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 530,
+  "body_len": 570,
+  "fetchable": false
+ },
+ {
+  "url": "https://apple-appleid.com-policies.j-statement-29i42d.dynv6.net/terms-conditions/session/?view=login&appidkey=&country=nl",
+  "domain": "apple-appleid.com-policies.j-statement-29i42d.dynv6.net",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='apple-appleid.com-policies.j-statement-29i42d.dynv6.net', port=443): Max r"
+ },
+ {
+  "url": "https://godaddy.com",
+  "domain": "godaddy.com",
+  "brand": "godaddy",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 403,
+  "body_len": 367,
+  "fetchable": false
+ },
+ {
+  "url": "https://3ds.com",
+  "domain": "3ds.com",
+  "brand": "3ds",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 593141,
+  "fetchable": true
+ },
+ {
+  "url": "https://sagepub.com",
+  "domain": "sagepub.com",
+  "brand": "sagepub",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 73520,
+  "fetchable": true
+ },
+ {
+  "url": "https://microsoft-msvoicemessage-cloudsave-34879358r79234r3487395bf875.s3.us-east.cloud-object-storage.appdomain.cloud/undefinedindex.html?email=bill_mann@jabil.com",
+  "domain": "microsoft-msvoicemessage-cloudsave-34879358r79234r3487395bf875.s3.us-east.cloud-object-storage.appdomain.cloud",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 404,
+  "body_len": 349,
+  "fetchable": false
+ },
+ {
+  "url": "https://ebay.seller-negative-reputation.info/uY8g3mhsmZ-waJBR4sP48-8gfRAtCjce",
+  "domain": "ebay.seller-negative-reputation.info",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ebay.seller-negative-reputation.info', port=443): Max retries exceeded wit"
+ },
+ {
+  "url": "https://samsung-login-find.com/fmicode/code.php",
+  "domain": "samsung-login-find.com",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='samsung-login-find.com', port=443): Max retries exceeded with url: /fmicod"
+ },
+ {
+  "url": "https://ee-payments.com/account/12",
+  "domain": "ee-payments.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ee-payments.com', port=443): Max retries exceeded with url: /account/12 (C"
+ },
+ {
+  "url": "https://filedoc-myportfolio.myportfolio.com",
+  "domain": "filedoc-myportfolio.myportfolio.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 200,
+  "body_len": 20668,
+  "fetchable": true
+ },
+ {
+  "url": "https://renovationfiles99004.web.app",
+  "domain": "renovationfiles99004.web.app",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 21265,
+  "fetchable": false
+ },
+ {
+  "url": "https://amazon.co.uk",
+  "domain": "amazon.co.uk",
+  "brand": "amazon",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 202,
+  "body_len": 0,
+  "fetchable": false
+ },
+ {
+  "url": "https://storage.snappages.site/8rdb0tab6a/assets/files/dif1.html",
+  "domain": "storage.snappages.site",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 403,
+  "body_len": 111,
+  "fetchable": false
+ },
+ {
+  "url": "https://detail-netflix.ddns.net/logiin.php",
+  "domain": "detail-netflix.ddns.net",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='detail-netflix.ddns.net', port=443): Max retries exceeded with url: /logii"
+ },
+ {
+  "url": "https://ebay-safe-shop-service.com/produkt/hDcyr",
+  "domain": "ebay-safe-shop-service.com",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='ebay-safe-shop-service.com', port=443): Max retries exceeded with url: /pr"
+ },
+ {
+  "url": "https://draft.blogger.com",
+  "domain": "draft.blogger.com",
+  "brand": "draft",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 168646,
+  "fetchable": true
+ },
+ {
+  "url": "http://br.fbook-14588033.safimmo.com/nextvrf.html",
+  "domain": "br.fbook-14588033.safimmo.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='br.fbook-14588033.safimmo.com', port=80): Max retries exceeded with url: /n"
+ },
+ {
+  "url": "https://cloudflare-ipfs.com/ipfs/bafybeibneziprqcu3vzgs7wi32idowj4kwocq37ryue4abn2vkitcn5s54",
+  "domain": "cloudflare-ipfs.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='cloudflare-ipfs.com', port=443): Max retries exceeded with url: /ipfs/bafy"
+ },
+ {
+  "url": "https://virement-paypal.paiement-en-attente.fr",
+  "domain": "virement-paypal.paiement-en-attente.fr",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='virement-paypal.paiement-en-attente.fr', port=443): Max retries exceeded w"
+ },
+ {
+  "url": "https://sharepoint-orgs-microsoft-office365authentication-servercommon.infura-ipfs.io/ipfs/qmsd1wysttvne5hlhpzprgozxuz71ydhbcjvwhsee2c3pw?execution=jazokhxwiieklhj6fwmyygmvt6q33&e10s1=b0cbab6cc6ab6240ca32c9c48c815a618&authorize=ba98762b063c31601c0b28acab75b7",
+  "domain": "sharepoint-orgs-microsoft-office365authentication-servercommon.infura-ipfs.io",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 401,
+  "body_len": 81,
+  "fetchable": false
+ },
+ {
+  "url": "https://login-shopify-billing-com-03b159ba.boutaleb.fr/Shopify/?AUTH_TOKEN=c47c3a5ade7f02f963383f208a533cfc586ebe89c7149c3641ac7b142fc4bba8&cur=home&page=cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e.",
+  "domain": "login-shopify-billing-com-03b159ba.boutaleb.fr",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='login-shopify-billing-com-03b159ba.boutaleb.fr', port=443): Max retries ex"
+ },
+ {
+  "url": "http://stro.uscreen.io/pages/global",
+  "domain": "stro.uscreen.io",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 200,
+  "body_len": 349781,
+  "fetchable": true
+ },
+ {
+  "url": "https://disqus.com",
+  "domain": "disqus.com",
+  "brand": "disqus",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 6034,
+  "fetchable": true
+ },
+ {
+  "url": "https://amazon.account-security.amo-2.shop/signin/?openid.pape.max_auth_age=0&openid.return_to=https://www.amazon.co.jp/?ref_=nav_em_hd_re_signin&openid.identity=http://specs.openid.net/auth/2.0/identifier_select&openid.assoc_handle=jpflex&openid.mode=checkid_setup&key=*email%20address%20removed&openid.claimed_id=http://specs.openid.net/auth/2.0/identifier_select&openid.ns=http://specs.openid.net/auth/2.0&&ref_=nav_em_hd_clc_signin",
+  "domain": "amazon.account-security.amo-2.shop",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='amazon.account-security.amo-2.shop', port=443): Max retries exceeded with "
+ },
+ {
+  "url": "https://uspdelevposte-9d934a.ingress-daribow.easywp.com/home-2022/us3954850834584",
+  "domain": "uspdelevposte-9d934a.ingress-daribow.easywp.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "SSLError: HTTPSConnectionPool(host='uspdelevposte-9d934a.ingress-daribow.easywp.com', port=443): Max retries e"
+ },
+ {
+  "url": "http://ebay.com-itm-366013051869hashitem571.xyz/yt-capra-cf-2019/1yt-c06a-74d56523409257cparent-1209980d70800-173455420a9e84dffedb62a257ceed253/2019%20yt%20capra%20cf%20pro%20race",
+  "domain": "ebay.com-itm-366013051869hashitem571.xyz",
+  "brand": "ebay",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='ebay.com-itm-366013051869hashitem571.xyz', port=80): Max retries exceeded w"
+ },
+ {
+  "url": "https://abril.com.br",
+  "domain": "abril.com.br",
+  "brand": "abril",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 66417,
+  "fetchable": true
+ },
+ {
+  "url": "https://et.interac.ca.thibautmichiels.be/sh/9j304i/orange/step2.html",
+  "domain": "et.interac.ca.thibautmichiels.be",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='et.interac.ca.thibautmichiels.be', port=443): Max retries exceeded with ur"
+ },
+ {
+  "url": "https://cambridge.org",
+  "domain": "cambridge.org",
+  "brand": "cambridge",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 403,
+  "body_len": 5685,
+  "fetchable": false
+ },
+ {
+  "url": "http://userinfo-paypal.com/css",
+  "domain": "userinfo-paypal.com",
+  "brand": "paypal",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='userinfo-paypal.com', port=80): Max retries exceeded with url: /css (Caused"
+ },
+ {
+  "url": "https://shopify-02.com",
+  "domain": "shopify-02.com",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='shopify-02.com', port=443): Max retries exceeded with url: / (Caused by Na"
+ },
+ {
+  "url": "https://login-shopify-billing-com-03b159ba.activervotrepotentiel.com/Shopify/?AUTH_TOKEN=c47c3a5ade7f02f963383f208a533cfc586ebe89c7149c3641ac7b142fc4bba8&cur=home&page=cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e.",
+  "domain": "login-shopify-billing-com-03b159ba.activervotrepotentiel.com",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='login-shopify-billing-com-03b159ba.activervotrepotentiel.com', port=443): "
+ },
+ {
+  "url": "http://saltacumo.ga/ato/mygov/otp.html",
+  "domain": "saltacumo.ga",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='saltacumo.ga', port=80): Max retries exceeded with url: /ato/mygov/otp.html"
+ },
+ {
+  "url": "https://flickr.com",
+  "domain": "flickr.com",
+  "brand": "flickr",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 57606,
+  "fetchable": true
+ },
+ {
+  "url": "https://www.apple-enterprise-support-online.apple-online-portal-support.com/signin.html",
+  "domain": "www.apple-enterprise-support-online.apple-online-portal-support.com",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.apple-enterprise-support-online.apple-online-portal-support.com', port"
+ },
+ {
+  "url": "https://fishingrods-shop.com/email/verification/sf_rand_string_lowercase6/zgf2awqudmvybm9uqhdlymhlbhauy29t",
+  "domain": "fishingrods-shop.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 27838,
+  "fetchable": false
+ },
+ {
+  "url": "https://www.news-amazon.googele.top/ap/signin.php?openid.pape.max_auth_age=0&openid.return_to=*597dd171b7f283c03046442853396e2e925c5a",
+  "domain": "www.news-amazon.googele.top",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.news-amazon.googele.top', port=443): Max retries exceeded with url: /a"
+ },
+ {
+  "url": "https://t.co",
+  "domain": "t.co",
+  "brand": "t",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 3255,
+  "fetchable": true
+ },
+ {
+  "url": "https://line.me",
+  "domain": "line.me",
+  "brand": "line",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 35792,
+  "fetchable": true
+ },
+ {
+  "url": "https://microsoft-dynamics-360.document-pregna.workers.dev",
+  "domain": "microsoft-dynamics-360.document-pregna.workers.dev",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 404,
+  "body_len": 19984,
+  "fetchable": false
+ },
+ {
+  "url": "http://walmart.inhershoesrk.com/amagc",
+  "domain": "walmart.inhershoesrk.com",
+  "brand": "walmart",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='walmart.inhershoesrk.com', port=80): Max retries exceeded with url: /amagc "
+ },
+ {
+  "url": "https://ledger.band",
+  "domain": "ledger.band",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 200,
+  "body_len": 41339,
+  "fetchable": true
+ },
+ {
+  "url": "https://ikea-promotion.com",
+  "domain": "ikea-promotion.com",
+  "brand": "ikea",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 200,
+  "body_len": 72079,
+  "fetchable": true
+ },
+ {
+  "url": "https://yahoo-mail-108447.weeblysite.com",
+  "domain": "yahoo-mail-108447.weeblysite.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 404,
+  "body_len": 1547,
+  "fetchable": false
+ },
+ {
+  "url": "https://doi.org",
+  "domain": "doi.org",
+  "brand": "doi",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 24206,
+  "fetchable": true
+ },
+ {
+  "url": "https://amazon-it.cgi-webmm.com/ap-signinen/sellercentralamazonen/2761fb2717/signin5c80.html?ap___=c087b2fb5c",
+  "domain": "amazon-it.cgi-webmm.com",
+  "brand": "amazon",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='amazon-it.cgi-webmm.com', port=443): Max retries exceeded with url: /ap-si"
+ },
+ {
+  "url": "https://webmd.com",
+  "domain": "webmd.com",
+  "brand": "webmd",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 422124,
+  "fetchable": true
+ },
+ {
+  "url": "https://login-shopify-billing-com-d6151256.boutaleb.fr/Shopify/?AUTH_TOKEN=2d63b2fe56756737b073a767bc7d365437ffeb697eb0e9f2401cddc763aac2c1&cur=home&page=cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e.",
+  "domain": "login-shopify-billing-com-d6151256.boutaleb.fr",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='login-shopify-billing-com-d6151256.boutaleb.fr', port=443): Max retries ex"
+ },
+ {
+  "url": "http://user-secureverfication.duckdns.org/mazon/f4ab3",
+  "domain": "user-secureverfication.duckdns.org",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectTimeout: HTTPConnectionPool(host='user-secureverfication.duckdns.org', port=80): Max retries exceeded with ur"
+ },
+ {
+  "url": "https://gov.teams.microsoft.us.office.gcch.leidos.govshn.net",
+  "domain": "gov.teams.microsoft.us.office.gcch.leidos.govshn.net",
+  "brand": "microsoft",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='gov.teams.microsoft.us.office.gcch.leidos.govshn.net', port=443): Max retr"
+ },
+ {
+  "url": "https://dutsh-helppackage.ecranul.ro/public/DiuiNKd4yAEH6tChbuVUg6FLfZtSMc3r",
+  "domain": "dutsh-helppackage.ecranul.ro",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='dutsh-helppackage.ecranul.ro', port=443): Max retries exceeded with url: /"
+ },
+ {
+  "url": "https://netflix-clone.michaelheinzman.com",
+  "domain": "netflix-clone.michaelheinzman.com",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "status": 404,
+  "body_len": 107,
+  "fetchable": false
+ },
+ {
+  "url": "https://www.eservicebits.com/landingpages/71576e83-bfb4-4046-bc2a-c90ef436f232/qE0lJHBl4ICUUciDkEeNpsJmLYoT7akIz4ecOPy1vms",
+  "domain": "www.eservicebits.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ReadTimeout: HTTPSConnectionPool(host='www.eservicebits.com', port=443): Read timed out. (read timeout=15)"
+ },
+ {
+  "url": "https://shopify.stores-booster.com/?login/e4115f4f-0579-0o15-lf2l-1cb99d01da70/?store/72487fa24026acd265b96f974d8dedf0",
+  "domain": "shopify.stores-booster.com",
+  "brand": "shopify",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='shopify.stores-booster.com', port=443): Max retries exceeded with url: /?l"
+ },
+ {
+  "url": "https://devicesmap-apple.us/isigneng.php",
+  "domain": "devicesmap-apple.us",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='devicesmap-apple.us', port=443): Max retries exceeded with url: /isigneng."
+ },
+ {
+  "url": "https://wufmuaambt.duckdns.org",
+  "domain": "wufmuaambt.duckdns.org",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='wufmuaambt.duckdns.org', port=443): Max retries exceeded with url: / (Caus"
+ },
+ {
+  "url": "https://alicdn.com",
+  "domain": "alicdn.com",
+  "brand": "alicdn",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "fetchable": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='alicdn.com', port=443): Max retries exceeded with url: / (Caused by Connec"
+ },
+ {
+  "url": "https://meta-account-quality.com/mwbkxt3xsawjbwk/?next=nkyzrhrqjxks84fgvrl3mwxiq5vpurgtuyd6sa6gpqsjp3ekzgz437vmn71uo8cr3wtnsnkppecivxpd6dulnxu7791ls29excqb&type=1",
+  "domain": "meta-account-quality.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='meta-account-quality.com', port=443): Max retries exceeded with url: /mwbk"
+ },
+ {
+  "url": "https://www.chase.ijrites.com/myaccount/uploads/index.php?websrc=132572c679b59327d946f73299446fa3&dispatched=64&id=8656634236",
+  "domain": "www.chase.ijrites.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='www.chase.ijrites.com', port=443): Max retries exceeded with url: /myaccou"
+ },
+ {
+  "url": "http://acceptable-hillside.000webhostapp.com/53rd-online/53rd-online/53us/53/1/fgasgd76568km123hafhkse123rgeuygr78q2346g6237/info/psycho/firststep.php?f567c6eb953c95dfc35c26100575b98c-f567c6eb953c95dfc35c26100575b98c-f567c6eb953c95dfc35c26100575b98cf567c6eb953c95dfc35c26100575b98cf567c6eb953c95dfc35c26100575b98cf567c6eb953c95dfc35c26100575b98cf567c6eb953c95dfc35c26100575b98cf567c6eb953c95dfc35c26100575b98cf567c6eb953c95dfc35c26100575b98cf567c6eb953c95dfc35c26100575b98cf567c6eb953c95dfc35c26100575b98c",
+  "domain": "acceptable-hillside.000webhostapp.com",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPConnectionPool(host='acceptable-hillside.000webhostapp.com', port=80): Max retries exceeded with"
+ },
+ {
+  "url": "https://sdvrg.blogspot.hr",
+  "domain": "sdvrg.blogspot.hr",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "status": 200,
+  "body_len": 81504,
+  "fetchable": true
+ },
+ {
+  "url": "https://costco-reward-campaign.ca/Finance/atb/secquestions.php",
+  "domain": "costco-reward-campaign.ca",
+  "brand": "costco",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='costco-reward-campaign.ca', port=443): Max retries exceeded with url: /Fin"
+ },
+ {
+  "url": "https://qpoi43jhlqc.icu/jp",
+  "domain": "qpoi43jhlqc.icu",
+  "brand": "unknown",
+  "expected_verdict": "fake",
+  "source": "phishing_database_generic",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='qpoi43jhlqc.icu', port=443): Max retries exceeded with url: /jp (Caused by"
+ },
+ {
+  "url": "https://newslin-apple-tw9654654.azurewebsites.net/signin.php",
+  "domain": "newslin-apple-tw9654654.azurewebsites.net",
+  "brand": "apple",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='newslin-apple-tw9654654.azurewebsites.net', port=443): Max retries exceede"
+ },
+ {
+  "url": "https://dailymotion.com",
+  "domain": "dailymotion.com",
+  "brand": "dailymotion",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 54472,
+  "fetchable": true
+ },
+ {
+  "url": "https://secure8j-netflix-verify.duckdns.org/netflix/index2.html",
+  "domain": "secure8j-netflix-verify.duckdns.org",
+  "brand": "netflix",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectTimeout: HTTPSConnectionPool(host='secure8j-netflix-verify.duckdns.org', port=443): Max retries exceeded with"
+ },
+ {
+  "url": "https://amazon.es",
+  "domain": "amazon.es",
+  "brand": "amazon",
+  "expected_verdict": "real",
+  "source": "top_sites_generic",
+  "status": 200,
+  "body_len": 2161,
+  "fetchable": true
+ },
+ {
+  "url": "https://samsung-accounts.us/signnewesp.php",
+  "domain": "samsung-accounts.us",
+  "brand": "samsung",
+  "expected_verdict": "fake",
+  "source": "phishing_database_brand_match",
+  "fetchable": false,
+  "error": "ConnectionError: HTTPSConnectionPool(host='samsung-accounts.us', port=443): Max retries exceeded with url: /signnewes"
+ }
+]

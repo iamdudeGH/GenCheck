@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="GenCheck">
+  <title>GenCheck</title>
+  <!-- Brackets inherit the surrounding text colour; the check is brand green.
+       Defaults to black so the file is safe on white; override with CSS
+       `color:` (or the `color` attribute) for dark backgrounds. -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 13 H10 V51 H18" stroke="currentColor" stroke-width="5"/>
+    <path d="M46 13 H54 V51 H46" stroke="currentColor" stroke-width="5"/>
+    <path d="M24 32.5 L30 38.5 L42 26" stroke="#3ecf8e" stroke-width="5"/>
+  </g>
+</svg>

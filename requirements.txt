@@ -1,0 +1,12 @@
+# GenCheck runtime dependencies.
+# Contract runner is pinned by hash in the contract header (py-genlayer:5jycge...).
+
+# Client package + MCP server + verification portal:
+#   python -m venv .venv && .venv/Scripts/pip install -r requirements.txt
+--pre genlayer-py==0.19.0rc2
+mcp>=2.0.0
+fastapi>=0.110
+uvicorn[standard]>=0.29
+
+# Local dev/test/lint tools (pytest, genlayer-test, genvm-linter) are in
+# requirements-dev.txt — the Vercel deployment only installs this file.

@@ -1,0 +1,128 @@
+[
+  {
+    "url": "https://apple.com/shop/bag",
+    "brand": "apple",
+    "domain": "apple.com",
+    "expected_real": true,
+    "is_real": true
+  },
+  {
+    "url": "https://www.apple.com/shop/watch",
+    "brand": "apple",
+    "domain": "www.apple.com",
+    "expected_real": true,
+    "is_real": true
+  },
+  {
+    "url": "https://www.amazon.com/gp/cart/view.html",
+    "brand": "amazon",
+    "domain": "www.amazon.com",
+    "expected_real": true,
+    "is_real": true
+  },
+  {
+    "url": "https://www.paypal.com/signin",
+    "brand": "paypal",
+    "domain": "www.paypal.com",
+    "expected_real": true,
+    "is_real": true
+  },
+  {
+    "url": "https://www.microsoft.com/en-us/store/buy",
+    "brand": "microsoft",
+    "domain": "www.microsoft.com",
+    "expected_real": true,
+    "is_real": true
+  },
+  {
+    "url": "https://www.netflix.com/YourAccount",
+    "brand": "netflix",
+    "domain": "www.netflix.com",
+    "expected_real": true,
+    "is_real": true
+  },
+  {
+    "url": "https://github.com/settings/billing",
+    "brand": "github",
+    "domain": "github.com",
+    "expected_real": true,
+    "is_real": null
+  },
+  {
+    "url": "https://store.google.com/us",
+    "brand": "google",
+    "domain": "store.google.com",
+    "expected_real": true,
+    "is_real": true
+  },
+  {
+    "url": "https://open.spotify.com",
+    "brand": "spotify",
+    "domain": "open.spotify.com",
+    "expected_real": true,
+    "is_real": true
+  },
+  {
+    "url": "https://www.bing.com/shop",
+    "brand": "apple",
+    "domain": "www.bing.com",
+    "expected_real": false,
+    "is_real": false
+  },
+  {
+    "url": "https://store.steampowered.com/cart",
+    "brand": "apple",
+    "domain": "store.steampowered.com",
+    "expected_real": false,
+    "is_real": false
+  },
+  {
+    "url": "https://www.ebay.com/sl/list",
+    "brand": "paypal",
+    "domain": "www.ebay.com",
+    "expected_real": false,
+    "is_real": null
+  },
+  {
+    "url": "https://www.walmart.com/checkout",
+    "brand": "amazon",
+    "domain": "www.walmart.com",
+    "expected_real": false,
+    "is_real": true
+  },
+  {
+    "url": "https://mail.yahoo.com",
+    "brand": "microsoft",
+    "domain": "mail.yahoo.com",
+    "expected_real": false,
+    "is_real": false
+  },
+  {
+    "url": "https://gitlab.com/users/sign_in",
+    "brand": "github",
+    "domain": "gitlab.com",
+    "expected_real": false,
+    "is_real": null
+  },
+  {
+    "url": "https://www.hulu.com",
+    "brand": "netflix",
+    "domain": "www.hulu.com",
+    "expected_real": false,
+    "is_real": false
+  },
+  {
+    "url": "https://music.apple.com/us/browse",
+    "brand": "spotify",
+    "domain": "music.apple.com",
+    "expected_real": false,
+    "is_real": null
+  },
+  {
+    "url": "https://www.target.com/cart",
+    "brand": "paypal",
+    "domain": "www.target.com",
+    "expected_real": false,
+    "is_real": true
+  }
+]

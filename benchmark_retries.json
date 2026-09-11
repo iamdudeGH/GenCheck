@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://github.com/pricing",
+    "brand": "github",
+    "domain": "github.com",
+    "expected_real": true,
+    "tx_id": "0x6f8f2170d6189d9d1919aa7d6f205efbee1b82719eec6cc4815294aa78afcc0b",
+    "result_name": "MAJORITY_AGREE",
+    "execution": "FINISHED_WITH_RETURN",
+    "is_real": true
+  },
+  {
+    "url": "https://about.gitlab.com",
+    "brand": "github",
+    "domain": "about.gitlab.com",
+    "expected_real": false,
+    "tx_id": "0xaa6b270ac1d4f7c2305b2a57e722c4af56dc7b59dde37d757c1c629b97a3ed68",
+    "result_name": "MAJORITY_AGREE",
+    "execution": "FINISHED_WITH_RETURN",
+    "is_real": false
+  },
+  {
+    "url": "https://music.apple.com/us/browse",
+    "brand": "spotify",
+    "domain": "music.apple.com",
+    "expected_real": false,
+    "tx_id": "0x3e21f99743ac89855820f45c6f49973c3ac4a3621ed20132d96758215163a615",
+    "result_name": "MAJORITY_AGREE",
+    "execution": "FINISHED_WITH_RETURN",
+    "is_real": true
+  }
+]

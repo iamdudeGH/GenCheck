@@ -1,0 +1,103 @@
+{
+  "contract": "0x12E17B838D81692Dd40ccc011C2538871E183559",
+  "prompt_version": "v2-domain-ownership",
+  "cases": [
+    {
+      "url": "https://www.walmart.com/checkout",
+      "brand": "amazon",
+      "domain": "www.walmart.com",
+      "expected_real": false,
+      "started_at": 1788961665.7951488,
+      "tx_id": "0x1caa7b9c2a5970722565fda7ce2e344415f9a3d66fa5a2c668a86e768eddd312",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "is_real": false,
+      "correct": true,
+      "duration_s": 61.5,
+      "note": "v1 FP #1"
+    },
+    {
+      "url": "https://www.target.com/cart",
+      "brand": "paypal",
+      "domain": "www.target.com",
+      "expected_real": false,
+      "started_at": 1788961732.3294306,
+      "tx_id": "0xd0f5a769330f6e87592b8d63784c553616077aea5eb21b3f72e18a5bef273949",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "is_real": false,
+      "correct": true,
+      "duration_s": 66.9,
+      "note": "v1 FP #2"
+    },
+    {
+      "url": "https://music.apple.com/us/browse",
+      "brand": "spotify",
+      "domain": "music.apple.com",
+      "expected_real": false,
+      "started_at": 1788961804.1887326,
+      "tx_id": "0x527838acb7c0ce17abd0824a6bb926ce0dcf55220c39cc8b56b4e206144c67c8",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "is_real": true,
+      "correct": false,
+      "duration_s": 95.4,
+      "note": "v1 FP #3"
+    },
+    {
+      "url": "https://apple.com/shop/bag",
+      "brand": "apple",
+      "domain": "apple.com",
+      "expected_real": true,
+      "started_at": 1788961904.597853,
+      "tx_id": "0x3e0be90362674eef9381a22f4ce084c332ceb66ec098c2779cc610194eba01de",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_ERROR",
+      "error": "GenLayerError: gen_call failed (code=-32000): execution failed",
+      "duration_s": 45.8,
+      "note": "TP: apex domain"
+    },
+    {
+      "url": "https://store.google.com/us",
+      "brand": "google",
+      "domain": "store.google.com",
+      "expected_real": true,
+      "started_at": 1788961955.4442496,
+      "tx_id": "0x89f60477df0da00672b146937e2778701a457705385e1970c363c95415863212",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "is_real": true,
+      "correct": true,
+      "duration_s": 60.4,
+      "note": "TP: subdomain"
+    },
+    {
+      "url": "https://open.spotify.com",
+      "brand": "spotify",
+      "domain": "open.spotify.com",
+      "expected_real": true,
+      "started_at": 1788962020.843416,
+      "tx_id": "0x3e49411c3d31f69461c49495f341469ee3408a70eb479e6415860dbe943b79ae",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "is_real": true,
+      "correct": true,
+      "duration_s": 67.7,
+      "note": "TP: subdomain"
+    },
+    {
+      "url": "https://www.bing.com/shop",
+      "brand": "apple",
+      "domain": "www.bing.com",
+      "expected_real": false,
+      "started_at": 1788962093.503304,
+      "tx_id": "0xb604a959a616f261302d29f26d9cb73343343039688badff675d976b80a04b00",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "is_real": false,
+      "correct": true,
+      "duration_s": 72.3,
+      "note": "TN: wrong-brand site"
+    }
+  ]
+}

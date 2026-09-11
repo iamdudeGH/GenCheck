@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-label="GenCheck">
+  <title>GenCheck</title>
+  <!-- Favicon build: carries its own ground so it stays legible in a browser
+       tab against both light and dark chrome. Stroke weight is raised slightly
+       and the geometry inset, so it holds up at 16px. -->
+  <rect width="64" height="64" rx="14" fill="#0a0a0b"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M19 15 H11 V49 H19" stroke="#ededf0" stroke-width="5.5"/>
+    <path d="M45 15 H53 V49 H45" stroke="#ededf0" stroke-width="5.5"/>
+    <path d="M25 32 L31 38 L42 27" stroke="#3ecf8e" stroke-width="5.5"/>
+  </g>
+</svg>

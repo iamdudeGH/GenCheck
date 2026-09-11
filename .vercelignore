@@ -1,0 +1,17 @@
+# Keep the serverless bundle small — runtime only needs:
+# api/, gencheck/, contracts/, portal/, final_contract.json,
+# benchmark_fees.json, requirements.txt, vercel.json
+.venv*
+examples
+artifacts
+demo
+scripts
+tests
+*.md
+# ...but the agent skill IS part of the served site — it is the /skill.md
+# endpoint. Without this negation `*.md` strips it from the bundle and the
+# headline "point your agent here" URL 404s in production.
+!portal/static/skill.md
+.git
+node_modules
+__pycache__

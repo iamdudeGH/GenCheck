@@ -1,0 +1,343 @@
+{
+  "new_brands": {
+    "walmart": "walmart.com",
+    "target": "target.com",
+    "facebook": "facebook.com",
+    "instagram": "instagram.com",
+    "ebay": "ebay.com",
+    "bestbuy": "bestbuy.com"
+  },
+  "phishing": [
+    {
+      "url": "https://vardhan2k3.github.io/Amazon-Clone-Project/checkout.html",
+      "brand": "amazon",
+      "expected_real": false,
+      "status": 200,
+      "final_url": "https://vardhan2k3.github.io/Amazon-Clone-Project/checkout.html",
+      "body_len": 2083,
+      "brand_kw": true,
+      "fetchable": true,
+      "note": "Amazon checkout clone hosted on github.io"
+    },
+    {
+      "url": "https://vardhan2k3.github.io/Amazon-Clone-Project/orders.html",
+      "brand": "amazon",
+      "expected_real": false,
+      "status": 200,
+      "final_url": "https://vardhan2k3.github.io/Amazon-Clone-Project/orders.html",
+      "body_len": 2378,
+      "brand_kw": true,
+      "fetchable": true,
+      "note": "Amazon orders-page clone on github.io"
+    },
+    {
+      "url": "https://rajesh207k.github.io/Aamazon_clone_2026",
+      "brand": "amazon",
+      "expected_real": false,
+      "status": 200,
+      "final_url": "https://rajesh207k.github.io/Aamazon_clone_2026/",
+      "body_len": 7223,
+      "brand_kw": true,
+      "fetchable": true,
+      "note": "'Aamazon' typo-clone hosted on github.io"
+    },
+    {
+      "url": "https://sukhpreetkaur2406.github.io/amazon-clone-project",
+      "brand": "amazon",
+      "expected_real": false,
+      "status": 200,
+      "final_url": "https://sukhpreetkaur2406.github.io/amazon-clone-project/",
+      "body_len": 6147,
+      "brand_kw": true,
+      "fetchable": true,
+      "note": "Amazon storefront clone on github.io"
+    },
+    {
+      "url": "https://officialshahzebanwar-stack.github.io/NETFLIX-CLONE",
+      "brand": "netflix",
+      "expected_real": false,
+      "status": 200,
+      "final_url": "https://officialshahzebanwar-stack.github.io/NETFLIX-CLONE/",
+      "body_len": 49205,
+      "brand_kw": true,
+      "fetchable": true,
+      "note": "Netflix clone hosted on github.io"
+    },
+    {
+      "url": "https://bhatinishant38.github.io/Netflix-Clone",
+      "brand": "netflix",
+      "expected_real": false,
+      "status": 200,
+      "final_url": "https://bhatinishant38.github.io/Netflix-Clone/",
+      "body_len": 6419,
+      "brand_kw": true,
+      "fetchable": true,
+      "note": "Netflix clone hosted on github.io"
+    },
+    {
+      "url": "https://shrimohite1.github.io/spotify-frontend-clone",
+      "brand": "spotify",
+      "expected_real": false,
+      "status": 200,
+      "final_url": "https://shrimohite1.github.io/spotify-frontend-clone/",
+      "body_len": 8225,
+      "brand_kw": true,
+      "fetchable": true,
+      "note": "Spotify clone hosted on github.io"
+    },
+    {
+      "url": "http://login-outlook365.yzz.me/",
+      "brand": "microsoft",
+      "expected_real": false,
+      "status": 200,
+      "final_url": "http://login-outlook365.yzz.me/",
+      "body_len": 849,
+      "brand_kw": false,
+      "fetchable": true,
+      "note": "Outlook 365 login phish on .me TLD"
+    },
+    {
+      "url": "https://www.facebooklogin21.blogspot.com/",
+      "brand": "facebook",
+      "expected_real": false,
+      "fetchable": false,
+      "error": "SSLError: HTTPSConnectionPool(host='www.facebooklogin21.blogspot.com', port=443): Max retries exceeded with url: / (Caused by SSLE",
+      "note": "Facebook login phish on blogspot"
+    },
+    {
+      "url": "https://www.instagramlogin68.blogspot.com/",
+      "brand": "instagram",
+      "expected_real": false,
+      "fetchable": false,
+      "error": "SSLError: HTTPSConnectionPool(host='www.instagramlogin68.blogspot.com', port=443): Max retries exceeded with url: / (Caused by SSL",
+      "note": "Instagram login phish on blogspot"
+    },
+    {
+      "url": "http://www.walletcoinbase-zeta.vercel.app/",
+      "brand": "coinbase",
+      "expected_real": false,
+      "fetchable": false,
+      "error": "SSLError: HTTPSConnectionPool(host='www.walletcoinbase-zeta.vercel.app', port=443): Max retries exceeded with url: / (Caused by SS",
+      "note": "Coinbase wallet phish on vercel (unregistered brand)"
+    },
+    {
+      "url": "https://exoduswallethelpcenter.vercel.app/",
+      "brand": "exodus",
+      "expected_real": false,
+      "status": 200,
+      "final_url": "https://exoduswallethelpcenter.vercel.app/",
+      "body_len": 17313,
+      "brand_kw": true,
+      "fetchable": true,
+      "note": "Exodus wallet support phish on vercel (unregistered brand)"
+    },
+    {
+      "url": "http://ledgre-wallet-io.pages.dev/",
+      "brand": "ledger",
+      "expected_real": false,
+      "status": 403,
+      "final_url": "http://ledgre-wallet-io.pages.dev/",
+      "body_len": 4463,
+      "brand_kw": false,
+      "fetchable": false,
+      "note": "'ledgre' typosquat of ledger.com (unregistered brand)"
+    },
+    {
+      "url": "https://fedx-logistics.netlify.app/login",
+      "brand": "fedex",
+      "expected_real": false,
+      "status": 200,
+      "final_url": "https://fedx-logistics.netlify.app/login",
+      "body_len": 11607,
+      "brand_kw": true,
+      "fetchable": true,
+      "note": "'fedx' typosquat of fedex.com (unregistered brand)"
+    },
+    {
+      "url": "https://www.walmart.com/checkout",
+      "brand": "amazon",
+      "expected_real": false,
+      "status": 200,
+      "final_url": "https://www.walmart.com/",
+      "body_len": 393111,
+      "brand_kw": false,
+      "fetchable": true,
+      "note": "real Walmart checkout claimed as Amazon"
+    },
+    {
+      "url": "https://www.target.com/cart",
+      "brand": "paypal",
+      "expected_real": false,
+      "status": 200,
+      "final_url": "https://www.target.com/cart",
+      "body_len": 107130,
+      "brand_kw": true,
+      "fetchable": true,
+      "note": "real Target cart claimed as PayPal"
+    },
+    {
+      "url": "https://music.apple.com/us/browse",
+      "brand": "spotify",
+      "expected_real": false,
+      "status": 200,
+      "final_url": "https://music.apple.com/us/new",
+      "body_len": 1858056,
+      "brand_kw": false,
+      "fetchable": true,
+      "note": "real Apple Music page claimed as Spotify"
+    }
+  ],
+  "real": [
+    {
+      "url": "https://www.apple.com/shop/bag",
+      "brand": "apple",
+      "expected_real": true,
+      "status": 503,
+      "final_url": "https://www.apple.com/shop/bag",
+      "body_len": 4787,
+      "brand_kw": true,
+      "fetchable": false,
+      "note": "Apple bag"
+    },
+    {
+      "url": "https://www.amazon.com/gp/cart/view.html",
+      "brand": "amazon",
+      "expected_real": true,
+      "status": 503,
+      "final_url": "https://www.amazon.com/gp/cart/view.html",
+      "body_len": 2671,
+      "brand_kw": true,
+      "fetchable": false,
+      "note": "Amazon cart"
+    },
+    {
+      "url": "https://www.paypal.com/signin",
+      "brand": "paypal",
+      "expected_real": true,
+      "status": 403,
+      "final_url": "https://www.paypal.com/signin",
+      "body_len": 4824,
+      "brand_kw": true,
+      "fetchable": false,
+      "note": "PayPal signin"
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/store/buy",
+      "brand": "microsoft",
+      "expected_real": true,
+      "status": 200,
+      "final_url": "https://www.microsoft.com/en-us/store/cart",
+      "body_len": 109632,
+      "brand_kw": true,
+      "fetchable": true,
+      "note": "MS Store"
+    },
+    {
+      "url": "https://www.netflix.com/YourAccount",
+      "brand": "netflix",
+      "expected_real": true,
+      "status": 200,
+      "final_url": "https://www.netflix.com/in/login?nextpage=https%3A%2F%2Fwww.netflix.com%2FYourAccount",
+      "body_len": 480676,
+      "brand_kw": true,
+      "fetchable": true,
+      "note": "Netflix account"
+    },
+    {
+      "url": "https://store.google.com/us",
+      "brand": "google",
+      "expected_real": true,
+      "status": 200,
+      "final_url": "https://store.google.com/us/?hl=en-US",
+      "body_len": 2740371,
+      "brand_kw": true,
+      "fetchable": true,
+      "note": "Google Store (subdomain)"
+    },
+    {
+      "url": "https://open.spotify.com",
+      "brand": "spotify",
+      "expected_real": true,
+      "status": 200,
+      "final_url": "https://open.spotify.com/",
+      "body_len": 162558,
+      "brand_kw": true,
+      "fetchable": true,
+      "note": "Spotify (subdomain)"
+    },
+    {
+      "url": "https://github.com/pricing",
+      "brand": "github",
+      "expected_real": true,
+      "status": 200,
+      "final_url": "https://github.com/pricing",
+      "body_len": 703222,
+      "brand_kw": true,
+      "fetchable": true,
+      "note": "GitHub pricing"
+    },
+    {
+      "url": "https://www.walmart.com/cart",
+      "brand": "walmart",
+      "expected_real": true,
+      "status": 200,
+      "final_url": "https://www.walmart.com/",
+      "body_len": 430276,
+      "brand_kw": true,
+      "fetchable": true,
+      "note": "Walmart cart [walmart]"
+    },
+    {
+      "url": "https://www.target.com/cart",
+      "brand": "target",
+      "expected_real": true,
+      "status": 200,
+      "final_url": "https://www.target.com/cart",
+      "body_len": 107130,
+      "brand_kw": true,
+      "fetchable": true,
+      "note": "Target cart [target]"
+    },
+    {
+      "url": "https://www.facebook.com",
+      "brand": "facebook",
+      "expected_real": true,
+      "status": 400,
+      "final_url": "https://www.facebook.com/",
+      "body_len": 1542,
+      "brand_kw": true,
+      "fetchable": false,
+      "note": "Facebook homepage"
+    },
+    {
+      "url": "https://www.instagram.com",
+      "brand": "instagram",
+      "expected_real": true,
+      "status": 200,
+      "final_url": "https://www.instagram.com/",
+      "body_len": 624853,
+      "brand_kw": true,
+      "fetchable": true,
+      "note": "Instagram homepage"
+    },
+    {
+      "url": "https://www.ebay.com",
+      "brand": "ebay",
+      "expected_real": true,
+      "status": 403,
+      "final_url": "https://www.ebay.com/",
+      "body_len": 1832,
+      "brand_kw": true,
+      "fetchable": false,
+      "note": "eBay homepage"
+    },
+    {
+      "url": "https://www.bestbuy.com/cart",
+      "brand": "bestbuy",
+      "expected_real": true,
+      "fetchable": false,
+      "error": "ReadTimeout: HTTPSConnectionPool(host='www.bestbuy.com', port=443): Read timed out. (read timeout=20)",
+      "note": "Best Buy cart"
+    }
+  ]
+}

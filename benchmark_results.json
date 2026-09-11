@@ -1,0 +1,343 @@
+{
+  "contract": "0x04a9cCB5Cd21D36d5345577dcEE3CEDE19A0917d",
+  "cases": [
+    {
+      "url": "https://www.paypal.com/signin",
+      "brand": "paypal",
+      "domain": "www.paypal.com",
+      "expected_real": true,
+      "started_at": 1788947960.0012622,
+      "fee_estimate": 627949200010352,
+      "tx_id": "0x314d5b8a48ea3ce459d3d52c6dfbe0c088981e6e6964a995957573ced3e32156",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "consensus_ok": true,
+      "returned": {
+        "": "validate_checkout",
+        "args": [
+          "https://www.paypal.com/signin",
+          "paypal"
+        ]
+      },
+      "is_real": true,
+      "correct": true,
+      "finished_at": 1788948062.3661127,
+      "duration_s": 102.4
+    },
+    {
+      "url": "https://apple.com/shop/bag",
+      "brand": "apple",
+      "domain": "apple.com",
+      "expected_real": true,
+      "started_at": 1788949845.6721416,
+      "tx_id": "0xdd90af9f946d2c2cd0d82d1c49299ebf1c13b51953056a19c6640f1a072e6921",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "consensus_ok": true,
+      "error": "AttributeError: 'str' object has no attribute 'get'",
+      "finished_at": 1788949929.1042376,
+      "duration_s": 83.4
+    },
+    {
+      "url": "https://www.apple.com/shop/watch",
+      "brand": "apple",
+      "domain": "www.apple.com",
+      "expected_real": true,
+      "started_at": 1788949934.105759,
+      "tx_id": "0x6d84007e40ade930165e34506075ebc3a198ba7ae7323234e37c2a68a2860711",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "consensus_ok": true,
+      "returned": {
+        "": "validate_checkout",
+        "args": [
+          "https://www.apple.com/shop/watch",
+          "apple"
+        ]
+      },
+      "is_real": true,
+      "correct": true,
+      "finished_at": 1788950009.1091,
+      "duration_s": 75.0
+    },
+    {
+      "url": "https://www.amazon.com/gp/cart/view.html",
+      "brand": "amazon",
+      "domain": "www.amazon.com",
+      "expected_real": true,
+      "started_at": 1788950014.110861,
+      "tx_id": "0xbe55aedb84494b721f1f148d5146bb217917cd8078cd4a4072d02a1df5e731ae",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "consensus_ok": true,
+      "returned": {
+        "": "validate_checkout",
+        "args": [
+          "https://www.amazon.com/gp/cart/view.html",
+          "amazon"
+        ]
+      },
+      "is_real": true,
+      "correct": true,
+      "finished_at": 1788950071.3869727,
+      "duration_s": 57.3
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/store/buy",
+      "brand": "microsoft",
+      "domain": "www.microsoft.com",
+      "expected_real": true,
+      "started_at": 1788950076.388317,
+      "tx_id": "0xe02b50148dfcf302970b32d72fca25a0b46906889d9d46177fe8d60f86116499",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "consensus_ok": true,
+      "returned": {
+        "": "validate_checkout",
+        "args": [
+          "https://www.microsoft.com/en-us/store/buy",
+          "microsoft"
+        ]
+      },
+      "is_real": true,
+      "correct": true,
+      "finished_at": 1788950154.3595538,
+      "duration_s": 78.0
+    },
+    {
+      "url": "https://www.netflix.com/YourAccount",
+      "brand": "netflix",
+      "domain": "www.netflix.com",
+      "expected_real": true,
+      "started_at": 1788950159.3609898,
+      "tx_id": "0x4a497c409891845dd56ead1cefab6c7805a458da5d00400e4d065b69887c0e0a",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "consensus_ok": true,
+      "returned": {
+        "": "validate_checkout",
+        "args": [
+          "https://www.netflix.com/YourAccount",
+          "netflix"
+        ]
+      },
+      "is_real": true,
+      "correct": true,
+      "finished_at": 1788950226.16156,
+      "duration_s": 66.8
+    },
+    {
+      "url": "https://github.com/settings/billing",
+      "brand": "github",
+      "domain": "github.com",
+      "expected_real": true,
+      "started_at": 1788950231.1636763,
+      "tx_id": "0xad52fa14ab134f091a940c7f5adb9a613da0fd10e704ccb2ac04cd5dce1f1297",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_ERROR",
+      "consensus_ok": false,
+      "error": "AttributeError: 'str' object has no attribute 'get'",
+      "finished_at": 1788950277.7629604,
+      "duration_s": 46.6
+    },
+    {
+      "url": "https://store.google.com/us",
+      "brand": "google",
+      "domain": "store.google.com",
+      "expected_real": true,
+      "started_at": 1788950282.7639673,
+      "tx_id": "0xc1e6b8494f3e8b4107ca920e72a00d6e840e06ff4466b0104eb348a1deaa09e1",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "consensus_ok": true,
+      "error": "AttributeError: 'str' object has no attribute 'get'",
+      "finished_at": 1788950354.2036796,
+      "duration_s": 71.4
+    },
+    {
+      "url": "https://open.spotify.com",
+      "brand": "spotify",
+      "domain": "open.spotify.com",
+      "expected_real": true,
+      "started_at": 1788950359.2053976,
+      "tx_id": "0xa5bf6773afe29c89cb0d19a267ff24272d090076492648b2cff7ab5b82a4113c",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "consensus_ok": true,
+      "returned": {
+        "": "validate_checkout",
+        "args": [
+          "https://open.spotify.com",
+          "spotify"
+        ]
+      },
+      "is_real": true,
+      "correct": true,
+      "finished_at": 1788950493.0540981,
+      "duration_s": 133.8
+    },
+    {
+      "url": "https://www.bing.com/shop",
+      "brand": "apple",
+      "domain": "www.bing.com",
+      "expected_real": false,
+      "started_at": 1788950498.0553498,
+      "tx_id": "0xfeea713557c39d8f8414a2789ca721aadc6b5fb3e7964cf7a77ed9702efc5e8b",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "consensus_ok": true,
+      "error": "AttributeError: 'str' object has no attribute 'get'",
+      "finished_at": 1788950875.861157,
+      "duration_s": 377.8
+    },
+    {
+      "url": "https://store.steampowered.com/cart",
+      "brand": "apple",
+      "domain": "store.steampowered.com",
+      "expected_real": false,
+      "started_at": 1788950880.8621383,
+      "tx_id": "0x6c42d91959f2acd4ccd25accd920af8097e9eaf81084d37f870f07aae8e5933b",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "consensus_ok": true,
+      "returned": {
+        "": "validate_checkout",
+        "args": [
+          "https://store.steampowered.com/cart",
+          "apple"
+        ]
+      },
+      "is_real": false,
+      "correct": true,
+      "finished_at": 1788950940.9311602,
+      "duration_s": 60.1
+    },
+    {
+      "url": "https://www.ebay.com/sl/list",
+      "brand": "paypal",
+      "domain": "www.ebay.com",
+      "expected_real": false,
+      "started_at": 1788950945.9329526,
+      "tx_id": "0x61e12902a726beb3af58d15f48aef98b16b658b9a12002e2bc7a6c77af7a6492",
+      "error": "GenLayerError: Transaction 0x61e12902a726beb3af58d15f48aef98b16b658b9a12002e2bc7a6c77af7a6492 did not reach 'finalized' after 150 attempts (polling every 5000ms for a total of 750.0s). Last observed lifecycle state: 'decided'. This may indicate the transaction is still processing, or the network is experiencing delays. Consider increasing 'retries' or 'interval' parameters.\nTransaction object simplified: {\n  \"ha",
+      "finished_at": 1788952059.4685853,
+      "duration_s": 1113.5
+    },
+    {
+      "url": "https://www.walmart.com/checkout",
+      "brand": "amazon",
+      "domain": "www.walmart.com",
+      "expected_real": false,
+      "started_at": 1788952064.4704282,
+      "tx_id": "0xbf521b2322ed4240253bc23f95d07cf8a9c695e086ed012243eac54686f20683",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "consensus_ok": true,
+      "returned": {
+        "": "validate_checkout",
+        "args": [
+          "https://www.walmart.com/checkout",
+          "amazon"
+        ]
+      },
+      "is_real": true,
+      "correct": false,
+      "finished_at": 1788952862.6834853,
+      "duration_s": 798.2
+    },
+    {
+      "url": "https://mail.yahoo.com",
+      "brand": "microsoft",
+      "domain": "mail.yahoo.com",
+      "expected_real": false,
+      "started_at": 1788952867.6847458,
+      "tx_id": "0x489a7590d7d9666e225984790f7876c31fa3eb7c9cac17c06683b86bcb64f333",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "consensus_ok": true,
+      "returned": {
+        "": "validate_checkout",
+        "args": [
+          "https://mail.yahoo.com",
+          "microsoft"
+        ]
+      },
+      "is_real": false,
+      "correct": true,
+      "finished_at": 1788952948.4420683,
+      "duration_s": 80.8
+    },
+    {
+      "url": "https://gitlab.com/users/sign_in",
+      "brand": "github",
+      "domain": "gitlab.com",
+      "expected_real": false,
+      "started_at": 1788952953.4435406,
+      "tx_id": "0x086038ff9c08e36278750ba49911158fb22eaaf143cf310f6fcf9fd72babd8ae",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_ERROR",
+      "consensus_ok": false,
+      "returned": {
+        "": "validate_checkout",
+        "args": [
+          "https://gitlab.com/users/sign_in",
+          "github"
+        ]
+      },
+      "error": "GenLayerError: gen_call failed (code=-32000): execution failed",
+      "finished_at": 1788952994.1117823,
+      "duration_s": 40.7
+    },
+    {
+      "url": "https://www.hulu.com",
+      "brand": "netflix",
+      "domain": "www.hulu.com",
+      "expected_real": false,
+      "started_at": 1788952999.1135955,
+      "tx_id": "0x429971547c82e912b94014aeb8a015b0d8079d43fa069a416ad8a05546488617",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "consensus_ok": true,
+      "error": "AttributeError: 'str' object has no attribute 'get'",
+      "finished_at": 1788953100.9775524,
+      "duration_s": 101.9
+    },
+    {
+      "url": "https://music.apple.com/us/browse",
+      "brand": "spotify",
+      "domain": "music.apple.com",
+      "expected_real": false,
+      "started_at": 1788953105.978678,
+      "tx_id": "0x2920cf892021a59a346895bea026d3be2f7240afc0470e6c9d96fe76790cea27",
+      "result_name": "TIMEOUT",
+      "execution": "FINISHED_WITH_RETURN",
+      "consensus_ok": true,
+      "error": "AttributeError: 'str' object has no attribute 'get'",
+      "finished_at": 1788953194.502813,
+      "duration_s": 88.5
+    },
+    {
+      "url": "https://www.target.com/cart",
+      "brand": "paypal",
+      "domain": "www.target.com",
+      "expected_real": false,
+      "started_at": 1788953199.5043242,
+      "tx_id": "0x37408add76364baacc3676d58c5f7b6e80c714e2f85e742ac10d37bc61b3cfb9",
+      "result_name": "MAJORITY_AGREE",
+      "execution": "FINISHED_WITH_RETURN",
+      "consensus_ok": true,
+      "returned": {
+        "": "validate_checkout",
+        "args": [
+          "https://www.target.com/cart",
+          "paypal"
+        ]
+      },
+      "is_real": true,
+      "correct": false,
+      "finished_at": 1788953260.1397328,
+      "duration_s": 60.6
+    }
+  ],
+  "started_at": 1788947767.90573
+}

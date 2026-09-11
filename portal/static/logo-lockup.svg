@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232 64" width="232" height="64" role="img" aria-label="GenCheck">
+  <title>GenCheck</title>
+  <!-- Horizontal lockup: mark + wordmark.
+       The wordmark uses live text, so it needs Geist (loaded from Google Fonts
+       on the site). For a context with no webfont — a slide, a README, a social
+       card — use logo-mark.svg plus HTML text instead, which needs no font. -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M18 13 H10 V51 H18" stroke="currentColor" stroke-width="5"/>
+    <path d="M46 13 H54 V51 H46" stroke="currentColor" stroke-width="5"/>
+    <path d="M24 32.5 L30 38.5 L42 26" stroke="#3ecf8e" stroke-width="5"/>
+  </g>
+  <text x="74" y="42"
+        font-family="Geist, Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif"
+        font-size="30" font-weight="500" letter-spacing="-0.7"
+        fill="currentColor">gen<tspan fill="#3ecf8e" font-weight="700">check</tspan></text>
+</svg>

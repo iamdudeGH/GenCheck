@@ -1,0 +1,7 @@
+# Local development / quality-gate dependencies (NOT needed at runtime).
+# See README.md "Run Quality Gates" for usage notes.
+
+pytest>=7.0.0
+genlayer-test>=0.3.0
+genvm-linter>=0.3.0
+# Integration tests (GLSim): pip install "genlayer-test[sim]"

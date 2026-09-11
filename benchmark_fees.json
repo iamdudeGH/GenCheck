@@ -1,0 +1,19 @@
+{
+  "distribution": {
+    "rotations": [
+      3
+    ],
+    "appealRounds": 0,
+    "totalMessageFees": 0,
+    "executionConsumed": 0,
+    "receiptFeeMaxGasPrice": 300000000,
+    "storageFeeMaxGasPrice": 300000000,
+    "maxPriceGenPerTimeUnit": 2,
+    "executionBudgetPerRound": 156987300000000,
+    "leaderTimeunitsAllocation": 100,
+    "validatorTimeunitsAllocation": 200
+  },
+  "paid_fee_value": 627949200010352,
+  "primary_fee_spent": 83236750000823,
+  "total_refunded": 544712450009529
+}
