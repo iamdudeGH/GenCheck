@@ -1,0 +1,32 @@
+{
+  "name": "gencheck",
+  "owner": {
+    "name": "iamdudeGH",
+    "url": "https://github.com/iamdudeGH"
+  },
+  "description": "Verify the seller before your agent pays. GenCheck asks GenLayer validators whether a checkout URL is the claimed brand's real seller or a lookalike scam, and blocks payment unless the answer is an explicit yes.",
+  "plugins": [
+    {
+      "name": "gencheck",
+      "source": "./plugins/gencheck",
+      "description": "Fail-closed pre-payment trust gate. Before an agent signs or sends payment for a checkout URL, GenLayer validators independently fetch the page and the brand's official site and vote on whether this is the real seller. Anything other than an explicit yes blocks.",
+      "author": {
+        "name": "iamdudeGH",
+        "url": "https://github.com/iamdudeGH"
+      },
+      "homepage": "https://gencheck-live.vercel.app",
+      "repository": "https://github.com/iamdudeGH/gencheck",
+      "license": "MIT",
+      "keywords": [
+        "genlayer",
+        "payments",
+        "fraud",
+        "phishing",
+        "shopping-agent",
+        "trust",
+        "consensus"
+      ],
+      "category": "security"
+    }
+  ]
+}

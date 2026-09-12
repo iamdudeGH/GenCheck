@@ -30,7 +30,23 @@ from .client import GenCheck, decide
 
 mcp = MCPServer("gencheck")
 
-_private_key = os.environ.get("GENCHECK_PRIVATE_KEY")
+def _env_private_key() -> str | None:
+    """GENCHECK_PRIVATE_KEY, treating an unexpanded placeholder as unset.
+
+    The Claude Code plugin passes the key through its `.mcp.json` as
+    `${user_config.private_key}`. If that substitution ever fails, the literal
+    string lands in the environment and `create_account()` raises something
+    opaque instead of saying the key is missing. Treating a residual `${...}`
+    as "no key" means the server simply runs read-only, and
+    `gencheck_validate` returns its normal explanatory error.
+    """
+    value = os.environ.get("GENCHECK_PRIVATE_KEY")
+    if not value or (value.startswith("${") and value.endswith("}")):
+        return None
+    return value
+
+
+_private_key = _env_private_key()
 # read-only until a validation is first requested with a key present
 _gc: GenCheck | None = None
 _gc_full: GenCheck | None = None

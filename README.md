@@ -284,6 +284,26 @@ server). The `genlayer-py` pin is an exact pre-release, which resolves without
 `--pre` — a range would silently pick a stable release that points consensus at
 the wrong chain.
 
+### Claude Code: install the plugin instead
+
+If your agent is Claude Code, the plugin bundles the skill and the MCP server and
+asks for your key **once** — kept in your OS keychain, not in a file you might commit:
+
+```bash
+/plugin marketplace add iamdudeGH/gencheck
+/plugin install gencheck@gencheck
+```
+
+The key prompt is skippable: leave it blank and you keep the free read-only checks.
+The plugin still needs the `pip install` above — the MCP server runs from that
+install, so do that first or the tools will not appear.
+
+**What happens to your key.** It is passed to the MCP server as
+`GENCHECK_PRIVATE_KEY`, used to sign validation transactions on your own account,
+and nothing else. GenCheck has no backend that receives it: every check goes
+straight from your machine to the GenLayer RPC. That is the whole reason the
+integration is a local package and not a hosted endpoint — see *Who pays* above.
+
 ### Option 1: CLI — works for any agent that can run a command
 
 The exit code *is* the gate, so a shell chain fails closed with no glue at all:

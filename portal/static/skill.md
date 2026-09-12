@@ -62,6 +62,19 @@ server over stdio).
 | speaks MCP (Claude Code, Cursor, custom) | the MCP server | one `claude mcp add` |
 | is a browser demo or a human | the hosted portal | none — but see the warning below |
 
+**On Claude Code?** Install the plugin instead of wiring it by hand — it bundles this
+skill and the MCP server, and asks for your key once (kept in your OS keychain, never
+written to a file you might commit):
+
+```bash
+/plugin marketplace add iamdudeGH/gencheck
+/plugin install gencheck@gencheck
+```
+
+The plugin still needs the package from step 2 — the MCP server runs from that install,
+so `pip install` first or the tools will not appear. The key prompt is skippable: leave
+it blank and you still get the free read-only checks.
+
 ---
 
 ## Option A — the CLI (works for any agent)

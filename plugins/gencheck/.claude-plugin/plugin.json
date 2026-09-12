@@ -1,0 +1,27 @@
+{
+  "name": "gencheck",
+  "description": "Fail-closed pre-payment trust gate — GenLayer validator consensus on a checkout URL before your agent pays.",
+  "author": {
+    "name": "iamdudeGH",
+    "url": "https://github.com/iamdudeGH"
+  },
+  "homepage": "https://gencheck-live.vercel.app",
+  "repository": "https://github.com/iamdudeGH/gencheck",
+  "license": "MIT",
+  "keywords": [
+    "genlayer",
+    "payments",
+    "fraud",
+    "phishing",
+    "shopping-agent"
+  ],
+  "userConfig": {
+    "private_key": {
+      "type": "string",
+      "title": "Your GenCheck private key (optional)",
+      "description": "Private key (0x...) of YOUR funded studio-dev account. Every validation is a real transaction, so it runs on your account and spends your GEN — fund it free at https://studio-next.genlayer.com (connect wallet, click Fund). Stored in your OS keychain, never written to the repo. Leave this empty to use the free read-only checks, which need no key.",
+      "sensitive": true,
+      "required": false
+    }
+  }
+}

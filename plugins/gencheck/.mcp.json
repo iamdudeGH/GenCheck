@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "gencheck": {
+      "command": "gencheck-mcp",
+      "env": {
+        "GENCHECK_PRIVATE_KEY": "${user_config.private_key}"
+      }
+    }
+  }
+}

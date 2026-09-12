@@ -23,6 +23,12 @@ tests
 # Excluding it keeps the deploy on requirements.txt, which lists everything
 # the portal needs. If you add a runtime dependency, add it to BOTH files.
 pyproject.toml
+# Claude Code plugin + marketplace manifests. These exist for `pip install` and
+# `/plugin install`, not for the deploy — the serverless runtime never reads
+# them, and `.vercelignore`'s whole job is keeping the bundle to what the
+# runtime actually needs. Same reasoning as pyproject.toml above.
+.claude-plugin
+plugins
 .git
 node_modules
 __pycache__
