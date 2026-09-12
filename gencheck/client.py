@@ -3,7 +3,7 @@
 Everything here is the code path proven live in the benchmark runs and the
 demo agent: cache reads via `get_cached_result`, full validation via
 `validate_checkout` through real validator consensus, verdict decode from
-the leader's on-chain eq_outputs.
+the leader's on-chain output.
 """
 
 import base64
@@ -22,6 +22,27 @@ _ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # get_transaction result names that mean "finished, no verdict coming" —
 # anything else means consensus is still running.
 _TERMINAL_RESULTS = {"FINISHED_WITH_ERROR", "REVERTED"}
+
+
+def _verdict_from_payload(receipt: dict) -> Optional[dict]:
+    """The leader's verdict out of a receipt's `result.payload.readable`.
+
+    The runtime hands the output back already decoded, as a JSON string. Only a
+    dict carrying `is_real` counts as a verdict, so a receipt whose payload is
+    something else falls through to the eq_outputs path instead of returning
+    noise that `decide()` would then have to rule on.
+    """
+    payload = (receipt.get("result") or {}).get("payload") or {}
+    readable = payload.get("readable")
+    if not isinstance(readable, str):
+        return None
+    try:
+        data = json.loads(readable)
+    except json.JSONDecodeError:
+        return None
+    if isinstance(data, dict) and "is_real" in data:
+        return data
+    return None
 
 
 def load_contract_address() -> str:
@@ -172,9 +193,25 @@ class GenCheck:
 
     def decode_verdict(self, tx_id: str) -> Optional[dict]:
         """Full verdict (reasons, verdict, confidence) from the leader's
-        on-chain eq_output; the cache only stores is_real."""
+        on-chain output; the cache only stores is_real.
+
+        Two receipt shapes are in circulation and both have to be handled:
+
+        * `result.payload.readable` — the output the runtime already decoded
+          to a JSON string. Present on old and new receipts alike.
+        * `eq_outputs` — base64 of a blob with the JSON verdict embedded in
+          it. Only the older rounds populate this.
+
+        Reading `eq_outputs` alone is what broke the live portal: on rounds run
+        after the network changed that field comes back EMPTY, so every fresh
+        validation decoded to None and failed closed to BLOCK — the contract
+        returned `is_real: true` while the page said "unverifiable".
+        """
         tx = retry(lambda: self.client.get_transaction(tx_id))
         for receipt in tx["consensus_data"]["leader_receipt"]:
+            from_payload = _verdict_from_payload(receipt)
+            if from_payload is not None:
+                return from_payload
             for val in (receipt.get("eq_outputs") or {}).values():
                 raw = val.get("raw", "")
                 data = base64.b64decode(raw + "=" * (-len(raw) % 4))

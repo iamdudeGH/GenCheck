@@ -80,8 +80,9 @@ EXAMPLES = [
 ]
 
 
-# Verdict details decoded from the leader's eq_outputs of the live consensus
-# runs on this contract (demo transcript + v4 unverifiable verification).
+# Verdict details decoded from the leader's on-chain output of the live
+# consensus runs on this contract (demo transcript + v4 unverifiable
+# verification).
 # The on-chain cache stores only {domain, is_real}; these let the portal show
 # the real reasoning for the pre-warmed example domains. Cache still wins:
 # is_real is always taken from the chain, never from this table.
